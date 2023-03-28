@@ -1,2 +1,2 @@
-# ramonia-wiki
-Wikipedia made for ramonia.pl.
+# RAMONIA & RAMONERA WIKI
+Fanmade wikipedia for ramonia.pl & ramonera.net.
