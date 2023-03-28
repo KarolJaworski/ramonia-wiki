@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ramonia Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="top">
+    <div class="top_container">
+      <a href="index.html"><img src="../imgs/ramoniawiki.gif" alt="Logo" class="logo"></a>
+      <form action="">
+        <input type="text" name="search" id="input-search" placeholder="Search..." size="22" maxlength="64">
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+  </div>
+  <!-- End of div top -->
+
+  <!-- Left bar -->
+  <div class="side-bar">
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+      <div class="item"><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></div>
+      <div class="item">
+        <a href="#" class="sub-btn"><i class="fa-solid fa-book"></i>Library<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="items.html">Items</a>
+          <a href="quests.html">Quests</a>
+          <a href="tasks.html">Tasks</a>
+          <a href="addons.html">Addons</a>
+          <a href="spells.html">Spells</a>
+          <a href="mounts.html">Mounts</a>
+        </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //jquery sub menu
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+    });
+    </script>
+  <!-- End of left bar -->
+  <!-- Main Page -->
+  <div id="main-page">
+    <div class="header">
+      <h1>Drakens Final</h1>
+    </div>
+    <table class="items">
+      <thead>
+        <tr>
+          <th>Localization</th>
+          <th>Requirements</th>
+          <th>Monsters</th>
+          <th>Reward</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Port Hope</td>
+          <td>100 lvl<br>Drakens Task</td>
+          <td>
+            <img src="../imgs/creatures/Lizard_High_Guard.gif" alt="">
+            <img src="../imgs/creatures/Lizard_Legionnaire.gif" alt="">
+            <img src="../imgs/creatures/Lizard_Dragon_Priest.gif" alt="">
+            <img src="../imgs/creatures/Lizard_Chosen.gif" alt="">
+            <img src="../imgs/creatures/Ghastly_Dragon.gif" alt="">
+            <img src="../imgs/creatures/Undead_Dragon.gif" alt="">
+            <img src="../imgs/creatures/Draken_Spellweaver.gif" alt="">
+            <img src="../imgs/creatures/Draken_Warmaster.gif" alt="">
+            <img src="../imgs/creatures/Draken_Elite.gif" alt="">
+            <img src="../imgs/creatures/Draken_Abomination.gif" alt="">
+          </td>
+          <td>
+            <img src="/imgs/items/item_9245.png" alt=""><br>
+            <img src="/imgs/items/item_9248.png" alt="">
+          </td>
+        </tr>
+        <tr>
+          <td class="spoiler" colspan="4">
+            <div class="spoilersh">Spoiler <span class="showhide">Show/Hide</span></div>
+            <div class="spoiler-content">
+              <h3>We are starting the quest from Port Hope temple.</h3>
+              <img src="../imgs/quests/df1.png" alt="" width="95%">
+              <h3>1. Follow the map. As soon as the blue path starts, expect to face all kind of lizards.</h3>
+              <img src="../imgs/quests/df2.png" alt="">
+              <img src="../imgs/quests/df3.png" alt="" width="95%">
+              <img src="../imgs/quests/df4.png" alt="">
+              <img src="../imgs/quests/df5.png" alt="" width="95%">
+              <img src="../imgs/quests/df6.png" alt="" width="95%">
+              <img src="../imgs/quests/df7.png" alt="">
+              <img src="../imgs/quests/df8.png" alt="" width="95%">
+              <img src="../imgs/quests/df9.png" alt="">
+              <img src="../imgs/quests/df10.png" alt="" width="95%">
+              <img src="../imgs/quests/df11.png" alt="">
+              <h3>2. From now on, expect to face all kind of drakens.</h3>
+              <img src="../imgs/quests/df12.png" alt="" width="95%">
+              <img src="../imgs/quests/df13.png" alt="">
+              <img src="../imgs/quests/df14.png" alt="" width="95%">
+              <img src="../imgs/quests/df15.png" alt="">
+              <img src="../imgs/quests/df16.png" alt="" width="95%">
+              <img src="../imgs/quests/df17.png" alt="">
+              <img src="../imgs/quests/df18.png" alt="" width="95%">
+              <img src="../imgs/quests/df19.png" alt="" width="95%">
+              <h3>3. You arrived at the Draken Final entrance. Good luck!</h3>
+              <img src="../imgs/quests/df20.png" alt="" width="95%">
+              <h3>4. You don't have to use the levitate spell here. Just walk normally using your arrows.</h3>
+              <img src="../imgs/quests/df21.png" alt="" width="95%">
+              <h3>5. Follow the path. You will encounter ghastly dragons and drakens on your way.</h3>
+              <img src="../imgs/quests/df22.png" alt="">
+              <h3>6. Now is the time for the real challenge! Beware adventurer, you will encounter drakens and undead dragons on your way.</h3>
+              <img src="../imgs/quests/df23.png" alt="" width="95%">
+              <h3>7. There are several rooms like this waiting for you. Follow the map, until you reach the reward room.</h3>
+              <h5>You still have a chance to escape alive... Simply walk into the teleport which is marked with "X" on the map.</h5>
+              <img src="../imgs/quests/df24.png" alt="">
+              <img src="../imgs/quests/df25.png" alt="" width="95%">
+              <img src="../imgs/quests/df26.png" alt="">
+              <img src="../imgs/quests/df27.png" alt="" width="95%">
+              <img src="../imgs/quests/df28.png" alt="">
+              <img src="../imgs/quests/df29.png" alt="" width="95%">
+              <img src="../imgs/quests/df30.png" alt="">
+              <img src="../imgs/quests/df31.png" alt="" width="95%">
+              <img src="../imgs/quests/df32.png" alt="">
+              <img src="../imgs/quests/df33.png" alt="" width="95%">
+              <h3>8. Congratulations! You have just finished the Draken Final quest!</h3>
+              <img src="../imgs/quests/df34.png" alt="" width="95%">
+            </div>
+          </td>
+          <script type="text/javascript">
+            $(document).ready(function() {
+              //jquery sub menu
+              $('.spoilersh').click(function(){
+                $(this).next('.spoiler-content').slideToggle();
+              });
+            });
+          </script>
+        </tr>
+      </tbody>
+    </table>
+    <div class="back">
+      <h2><a href="#top">Back to the top</a></h2>
+    </div>
+  </div>
+  <!-- End of main page -->
+  <div class="side-bar">
+    <div class="content">
+      <div class="interactive">
+        <h2><i class="fa-solid fa-map map"></i>Map viewer</h2>
+        <a href="https://ramonia.pl/map_viewer/#zoom,14,position,1263,1278,7"><img src="../imgs/intertactive.png" alt="" class="image"></a>
+      </div>
+      <div class="widget">
+        <iframe src="https://discord.com/widget?id=457182944260390912&theme=dark" width="100%" height="435" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="socials">
+        <h2>Server Status & Socials</h2>
+        <a href="https://www.facebook.com/people/Ramoniapl/100063498342253/" class="fb" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/invite/V6wwZXfZ4a" class="dsc" target="blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

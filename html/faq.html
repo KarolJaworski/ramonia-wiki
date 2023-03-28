@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ramonia Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="top">
+    <div class="top_container">
+      <a href="index.html"><img src="../imgs/ramoniawiki.gif" alt="Logo" class="logo"></a>
+      <form action="">
+        <input type="text" name="search" id="input-search" placeholder="Search..." size="22" maxlength="64">
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+  </div>
+  <!-- End of div top -->
+
+  <!-- Left bar -->
+  <div class="side-bar">
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+      <div class="item"><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></div>
+      <div class="item">
+        <a href="#" class="sub-btn"><i class="fa-solid fa-book"></i>Library<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="items.html">Items</a>
+          <a href="quests.html">Quests</a>
+          <a href="tasks.html">Tasks</a>
+          <a href="addons.html">Addons</a>
+          <a href="spells.html">Spells</a>
+          <a href="mounts.html">Mounts</a>
+        </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //jquery sub menu
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+    });
+    </script>
+  <!-- End of left bar -->
+  <!-- Main Page -->
+  <div id="main-page">
+    <div class="f">
+      <div class="q">
+        <h3>Q: What's the name of main city?</h3>
+      </div>
+      <div class="a">
+        <h3>Yurcity</h3>
+      </div>
+    </div>
+    <div class="f">
+      <div class="q">
+        <h3>Q: Can I buy promotion if I am not premium account?</h3>
+      </div>
+      <div class="a">
+        <h3>Yes, you can. Promotion is free for everyone. You need to be level 20.</h3>
+      </div>
+    </div>
+
+    <div class="f">
+      <div class="q">
+        <h3>Q: Where do I buy promotion and how much it cost?</h3>
+      </div>
+      <div class="a">
+        <h3>You can buy promotion in King Ramonian who is located on the top of the Temple. It costs 10k.</h3>
+        <a href="https://ramonia.pl/map_viewer/#zoom,16,position,1265,1275,4" target="_blank"><img src="../imgs/quests/promo.png" alt="" width="1050px"></a>
+      </div>
+    </div>
+
+    <div class="f">
+      <div class="q">
+        <h3>Q: I'm lost... What can I do to find my location?</h3>
+      </div>
+      <div class="a">
+        <h3>If you have no idea where you are, simply check your location by clicking this.</h3>
+        <img src="../imgs/maplocation.png" alt="">
+      </div>
+    </div>
+
+    <div class="f">
+      <div class="q">
+        <h3>Q: Where can I buy assassin stars?</h3>
+      </div>
+      <div class="a">
+        <h3>You can buy assassin stars in Atrad NPC. You need to have assassin outfit to trade with him.</h3>
+        <a href="https://ramonia.pl/map_viewer/#zoom,16,position,1447,1345,7" target="_blank"><img src="../imgs/quests/atrad.png" alt="" width="1050px"></a>
+      </div>
+    </div>
+
+    <div class="f">
+      <div class="q">
+        <h3>Q: What can I do with minor/major crystalline tokens?</h3>
+      </div>
+      <div class="a">
+        <h3>You can exchange them from various items. Talk to NPC Gnomally for more info.</h3>
+        <a href="https://ramonia.pl/map_viewer/#zoom,16,position,1456,968,6" target="_blank"><img src="../imgs/quests/gnomally.png" alt="" width="1050px"></a>
+      </div>
+    </div>
+
+    <div class="f">
+      <div class="q">
+        <h3>Q: Ramonia coins? What are those and how do I get them?</h3>
+      </div>
+      <div class="a">
+        <h3>Each ramonia coin is worth 10 shop points. You can obtain them from various tasks & events.</h3>
+      </div>
+    </div>
+
+    <div class="f">
+      <div class="q">
+        <h3>Q: How to turn on shared experience?</h3>
+      </div>
+      <div class="a">
+        <h3>To enable the shared experience, use the command "!share"</h3>
+      </div>
+    </div>
+
+    <div class="f">
+      <div class="q">
+        <h3>Q: What is the level difference of shared experience in party?</h3>
+      </div>
+      <div class="a">
+        <h3>To enable share exp with your team partner your level difference shall not be higher than 75%.</h3>
+      </div>
+    </div>
+
+    <div class="f">
+      <div class="q">
+        <h3>Q: Where do I sell all the creature products?</h3>
+      </div>
+      <div class="a">
+        <h3>All the creature products, including trophies, can be sold to NPC Yasir.</h3>
+      </div>
+    </div>
+
+    <div class="f">
+      <div class="q">
+        <h3>Q: Where can I buy flask of dust remover?</h3>
+      </div>
+      <div class="a">
+        <h3>You can buy it from NPC Yaman.</h3>
+      </div>
+    </div>
+
+    <div class="f">
+      <div class="q">
+        <h3>Q: How does autoloot work?</h3>
+      </div>
+      <div class="a">
+        <h3>By default the autoloot automatically collects all gold and potions from the monsters you've killed. There are 3 autoloot slots. You can add only stackable items to the autoloot.</h3>
+      </div>
+    </div>
+
+    <div class="f">
+          <div class="q">
+            <h3>Q: What are the autoloot commands?</h3>
+          </div>
+          <div class="a">
+            <h3>!autoloot potions - by deafult it's on. write this command to turn it off/on<br>
+            !autoloot list - shows you list of all the items, that you are currently autolooting<br>
+          !autoloot clean - clears your autoloot list<br>
+        !autoloot item:itemname - add an item to your autoloot (use the same command to remove your item from the list)</h3>
+          </div>
+        </div>
+
+        <div class="f">
+          <div class="q">
+            <h3>Q: Do I have to wear AOL when I have blesses from Avar Tar?</h3>
+          </div>
+          <div class="a">
+            <h3>Yes, you have to wear AOL. Blesses don't fully protect you from item loss.</h3>
+          </div>
+        </div>
+
+        <div class="f">
+          <div class="q">
+            <h3>Q: How to buy blesses from Avar Tar?</h3>
+          </div>
+          <div class="a">
+            <h3>To buy blesses from Avar Tar you have to either complete the Inquistion Quest or buy Avar Tar scroll from store.</h3>
+          </div>
+        </div>
+
+        <div class="f">
+          <div class="q">
+            <h3>Q: Can I buy blesses if I don't have the Avar Tar yet?</h3>
+          </div>
+          <div class="a">
+            <h3>Yes, there are 3 blessings available:<br>
+            - Norf (Yurcity temple),<br>
+          - Humphrey (Ankrahmun depo),<br>
+        - Eremo (Edron depo).</h3>
+          </div>
+        </div>
+
+        <div class="f">
+          <div class="q">
+            <h3>Q: How much do I need to pay for a training monks ticket?</h3>
+          </div>
+          <div class="a">
+            <h3>Here's the formula: your_level * 50 gold coins. <br>Quick example: 50 lvl needs to pay 2.500  gold coins (50 * 50 = 2500).</h3>
+          </div>
+        </div>
+
+        <div class="f">
+          <div class="q">
+            <h3>Q: Are monks available for all professions??</h3>
+          </div>
+          <div class="a">
+            <h3>Nope, monks are available for paladins & knights only. This change has been made to prevent runemaking.</h3>
+          </div>
+        </div>
+
+        <div class="f">
+          <div class="q">
+            <h3>Q: What can I do with silver tokens?</h3>
+          </div>
+          <div class="a">
+            <h3>You can exchange them for various items. Talk to NPC Cledwyn for more info.</h3>
+            <a href="" target="_blank"><img src="../imgs/quests/cledwyn.png" alt="" width="1050px"></a>
+            <table>
+              <caption>Exchange 100x silver token for:</caption>
+              <thead>
+              <tr>
+                <th></th>
+                <th>Fire</th>
+                <th>Earth</th>
+                <th>Energy</th>
+                <th>Ice</th>
+              </tr>
+              <tr>
+                <th>Sword</th>
+                <td><span class="tooltipq"><span class="tooltip-textq">Fireheart Cuirass</span><img src="../imgs/items/fireheart_cuirass.gif" alt=""></span></td>
+                <td><span class="tooltipq"><span class="tooltip-textq">Eartheart Cuirass</span><img src="../imgs/items/earthheart_cuirass.gif" alt=""></span></td>
+                <td><span class="tooltipq"><span class="tooltip-textq">Thunderheart Cuirass</span><img src="../imgs/items/thunderheart_cuirass.gif" alt=""></span></td>
+                <td><span class="tooltipq"><span class="tooltip-textq">Frostheart Cuirass</span><img src="../imgs/items/frostheart_cuirass.gif" alt=""></span></td>
+              </tr>
+              <tr>
+                <th>Axe</th>
+                <td><span class="tooltipq"><span class="tooltip-textq">Fireheart Hauberk</span><img src="../imgs/items/fireheart_hauberk.gif" alt=""></span></td>
+                <td><span class="tooltipq"><span class="tooltip-textq">EarthheartHauberk</span><img src="../imgs/items/earthheart_hauberk.gif" alt=""></span></td>
+                <td><span class="tooltipq"><span class="tooltip-textq">Thunderheart Hauberk</span><img src="../imgs/items/thunderheart_hauberk.gif" alt=""></span></td>
+                <td><span class="tooltipq"><span class="tooltip-textq">Frostheart Hauberk</span><img src="../imgs/items/frostheart_hauberk.gif" alt=""></span></td>
+              </tr>
+              <tr>
+                <th>Club</th>
+                <td><span class="tooltipq"><span class="tooltip-textq">Fireheart Platemail</span><img src="../imgs/items/fireheart_platemail.gif" alt=""></span></td>
+                <td><span class="tooltipq"><span class="tooltip-textq">Earthheart Platemail</span><img src="../imgs/items/earthheart_platemail.gif" alt=""></span></td>
+                <td><span class="tooltipq"><span class="tooltip-textq">Thunderheart Platemail</span><img src="../imgs/items/thunderheart_platemail.gif" alt=""></span></td>
+                <td><span class="tooltipq"><span class="tooltip-textq">Frostheart Platemail</span><img src="../imgs/items/frostheart_platemail.gif" alt=""></span></td>
+              </tr>
+              <tr>
+                <th>Distance</th>
+                <td><span class="tooltipq"><span class="tooltip-textq">Firesoul Tabard</span><img src="../imgs/items/firesoul_tabard.gif" alt=""></span></td>
+                <td><span class="tooltipq"><span class="tooltip-textq">Earthsoul Tabard</span><img src="../imgs/items/earthsoul_tabard.gif" alt=""></span></td>
+                <td><span class="tooltipq"><span class="tooltip-textq">ThundersoulTabard</span><img src="../imgs/items/thundersoul_tabard.gif" alt=""></span></td>
+                <td><span class="tooltipq"><span class="tooltip-textq">Frostsoul Tabard</span><img src="../imgs/items/frostsoul_tabard.gif" alt=""></span></td>
+              </tr>
+              <tr>
+                <th>Magic Level</th>
+                <td><span class="tooltipq"><span class="tooltip-textq">Firemind Raiment</span><img src="../imgs/items/firemind_raiment.gif" alt=""></span></td>
+                <td><span class="tooltipq"><span class="tooltip-textq">Earthmind Raiment</span><img src="../imgs/items/earthmind_raiment.gif" alt=""></span></td>
+                <td><span class="tooltipq"><span class="tooltip-textq">Thundermind Raiment</span><img src="../imgs/items/thundermind_raiment.gif" alt=""></span></td>
+                <td><span class="tooltipq"><span class="tooltip-textq">Frostmind Raiment</span><img src="../imgs/items/frostmind_raiment.gif" alt=""></span></td>
+              </tr>
+              <tr>
+                <td colspan="5" style="text-align: center;">Hi > Token > Silver > (Item Name)</td>
+              </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+        
+        <div class="f">
+          <div class="q">
+            <h3>Q: What can I do with gold tokens?</h3>
+          </div>
+          <div class="a">
+            <h3>You can exchange them for various items. Talk to NPC Yana for more info.</h3>
+            <a href="" target="_blank"><img src="../imgs/quests/yana.png" alt="" width="1050px"></a>
+            <table>
+              <caption>Exchange 50x golden token for:</caption>
+              <thead>
+                <th>Swords</th>
+                <th>Axes</th>
+                <th>Clubs</th>
+                <th>Rods</th>
+                <th>Wands</th>
+                <th>Bows</th>
+                <th>Crossbows</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="tooltipq1"><span class="tooltip-textq1">Blade of Destruction</span><img src="../imgs/items/blade_of_destruction.gif" alt=""></span></td>
+                  <td><span class="tooltipq"><span class="tooltip-textq">Axe of Destruction</span><img src="../imgs/items/axe_of_destruction.gif" alt=""></span></td>
+                  <td><span class="tooltipq"><span class="tooltip-textq">Mace of Destruction</span><img src="../imgs/items/mace_of_destruction.gif" alt=""></span></td>
+                  <td><span class="tooltipq"><span class="tooltip-textq">Rod of Destruction</span><img src="../imgs/items/rod_of_destruction.gif" alt=""></span></td>
+                  <td><span class="tooltipq"><span class="tooltip-textq">Wand of Destruction</span><img src="../imgs/items/wand_of_destruction.gif" alt=""></span></td>
+                  <td><span class="tooltipq"><span class="tooltip-textq">Bow of Destruction</span><img src="../imgs/items/bow_of_destruction.gif" alt=""></span></td>
+                  <td><span class="tooltipq"><span class="tooltip-textq">Crossbow of Destruction</span><img src="../imgs/items/crossbow_of_destruction.gif" alt=""></span></td>
+                </tr>
+                <tr>
+                  <td><span class="tooltipq1"><span class="tooltip-textq1">Slayer of Destruction</span><img src="../imgs/items/slayer_of_destruction.gif" alt=""></span></td>
+                  <td><span class="tooltipq"><span class="tooltip-textq">Chopper of Destruction</span><img src="../imgs/items/chopper_of_destruction.gif" alt=""></span></td>
+                  <td><span class="tooltipq"><span class="tooltip-textq">Hammer of Destruction</span><img src="../imgs/items/hammer_of_destruction.gif" alt=""></span></td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td colspan="7" style="text-align: center;">Hi > Token > Gold > (Item Name)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+
+    <div class="back">
+      <h2><a href="#top">Back to the top</a></h2>
+    </div>
+  </div>
+  <!-- End of main page -->
+  <div class="side-bar">
+    <div class="content">
+      <div class="interactive">
+        <h2><i class="fa-solid fa-map map"></i>Map viewer</h2>
+        <a href="https://ramonia.pl/map_viewer/#zoom,14,position,1263,1278,7"><img src="../imgs/intertactive.png" alt="" class="image"></a>
+      </div>
+      <div class="widget">
+        <iframe src="https://discord.com/widget?id=457182944260390912&theme=dark" width="100%" height="435" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="socials">
+        <h2>Server Status & Socials</h2>
+        <a href="https://www.facebook.com/people/Ramoniapl/100063498342253/" class="fb" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/invite/V6wwZXfZ4a" class="dsc" target="blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

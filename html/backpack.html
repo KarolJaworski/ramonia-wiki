@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ramonia Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="top">
+    <div class="top_container">
+      <a href="index.html"><img src="../imgs/ramoniawiki.gif" alt="Logo" class="logo"></a>
+      <form action="">
+        <input type="text" name="search" id="input-search" placeholder="Search..." size="22" maxlength="64">
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+  </div>
+  <!-- End of div top -->
+
+  <!-- Left bar -->
+  <div class="side-bar">
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+      <div class="item"><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></div>
+      <div class="item">
+        <a href="#" class="sub-btn"><i class="fa-solid fa-book"></i>Library<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="items.html">Items</a>
+          <a href="quests.html">Quests</a>
+          <a href="tasks.html">Tasks</a>
+          <a href="addons.html">Addons</a>
+          <a href="spells.html">Spells</a>
+          <a href="mounts.html">Mounts</a>
+        </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //jquery sub menu
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+    });
+    </script>
+  <!-- End of left bar -->
+  <!-- Main Page -->
+  <div id="main-page">
+    <div class="header">
+      <h1>Bolts</h1>
+    </div>
+    <table class="items">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Item Name</th>
+          <th>Size</th>
+          <th>Specials</th>
+          <th>Weight</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href=""><img src="../imgs/items/1987.gif" alt=""></a></td>
+          <td>Bag</td>
+          <td>8</td>
+          <td>-</td>
+          <td>8.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/1991.gif" alt=""></a></td>
+          <td>Green Bag</td>
+          <td>8</td>
+          <td>-</td>
+          <td>8.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/1992.gif" alt=""></a></td>
+          <td>Yellow Bag</td>
+          <td>8</td>
+          <td>-</td>
+          <td>8.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/1993.gif" alt=""></a></td>
+          <td>Red Bag</td>
+          <td>8</td>
+          <td>-</td>
+          <td>8.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/1994.gif" alt=""></a></td>
+          <td>Purple Bag</td>
+          <td>8</td>
+          <td>-</td>
+          <td>8.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/1995.gif" alt=""></a></td>
+          <td>Blue Bag</td>
+          <td>8</td>
+          <td>-</td>
+          <td>8.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/1996.gif" alt=""></a></td>
+          <td>Gray Bag</td>
+          <td>8</td>
+          <td>-</td>
+          <td>8.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/1997.gif" alt=""></a></td>
+          <td>Golden Bag</td>
+          <td>8</td>
+          <td>-</td>
+          <td>8.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/3939.gif" alt=""></a></td>
+          <td>Camouflage Bag</td>
+          <td>8</td>
+          <td>-</td>
+          <td>8.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/fur_bag.gif" alt=""></a></td>
+          <td>Fur Bag</td>
+          <td>8</td>
+          <td>-</td>
+          <td>8.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/pirate_bag.gif" alt=""></a></td>
+          <td>Pirate Bag</td>
+          <td>8</td>
+          <td>-</td>
+          <td>8.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_7474.png" alt=""></a></td>
+          <td>Bag of Mawhawk</td>
+          <td>12</td>
+          <td>-</td>
+          <td>15.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/1988.gif" alt=""></a></td>
+          <td>Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/1998.gif" alt=""></a></td>
+          <td>Green Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/1999.gif" alt=""></a></td>
+          <td>Yellow Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2000.gif" alt=""></a></td>
+          <td>Red Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2001.gif" alt=""></a></td>
+          <td>Purple Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2002.gif" alt=""></a></td>
+          <td>Blue Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2003.gif" alt=""></a></td>
+          <td>Gray Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2004.gif" alt=""></a></td>
+          <td>Golden Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/3940.gif" alt=""></a></td>
+          <td>Camouflage Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/mushroom_backpack.gif" alt=""></a></td>
+          <td>Mushroom Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/buggy_backpack.gif" alt=""></a></td>
+          <td>Buggy Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/wolf_backpack.gif" alt=""></a></td>
+          <td>Wolf Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/deepling_backpack.gif" alt=""></a></td>
+          <td>Deepling Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9217.png" alt=""></a></td>
+          <td>Frozen Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>15.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9230.png" alt=""></a></td>
+          <td>Weed Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/beach_backpack.gif" alt=""></a></td>
+          <td>Beach Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/fur_backpack.gif" alt=""></a></td>
+          <td>Fur Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/crystal_backpack.gif" alt=""></a></td>
+          <td>Crystal Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/pirate_backpack.gif" alt=""></a></td>
+          <td>Pirate Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/glooth_backpack.gif" alt=""></a></td>
+          <td>Glooth Backpack</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/feedbag.gif" alt=""></a></td>
+          <td>Feedbag</td>
+          <td>20</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/jewelled_backpack.gif" alt=""></a></td>
+          <td>Jewelled Backpack</td>
+          <td>22</td>
+          <td>-</td>
+          <td>17.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2365.gif" alt=""></a></td>
+          <td>Backpack of Holding</td>
+          <td>24</td>
+          <td>-</td>
+          <td>15.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/energetic_backpack.gif" alt=""></a></td>
+          <td>Energetic Backpack</td>
+          <td>24</td>
+          <td>-</td>
+          <td>21.60 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9268.png" alt=""></a></td>
+          <td>Apocalyptic Backpack</td>
+          <td>24</td>
+          <td>Physical +3%</td>
+          <td>15.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_7473_7473.png" alt=""></a></td>
+          <td>Backpack of Mawhawk</td>
+          <td>28</td>
+          <td>-</td>
+          <td>15.00 oz</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_7475_7475.png" alt=""></a></td>
+          <td>Backpack of Dream</td>
+          <td>28</td>
+          <td>-</td>
+          <td>15.00 oz</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="back">
+      <h2><a href="#top">Back to the top</a></h2>
+    </div>
+  </div>
+  <!-- End of main page -->
+  <div class="side-bar">
+    <div class="content">
+      <div class="interactive">
+        <h2><i class="fa-solid fa-map map"></i>Map viewer</h2>
+        <a href="https://ramonia.pl/map_viewer/#zoom,14,position,1263,1278,7"><img src="../imgs/intertactive.png" alt="" class="image"></a>
+      </div>
+      <div class="widget">
+        <iframe src="https://discord.com/widget?id=457182944260390912&theme=dark" width="100%" height="435" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="socials">
+        <h2>Server Status & Socials</h2>
+        <a href="https://www.facebook.com/people/Ramoniapl/100063498342253/" class="fb" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/invite/V6wwZXfZ4a" class="dsc" target="blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

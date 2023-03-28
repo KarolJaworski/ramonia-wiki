@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ramonia Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="top">
+    <div class="top_container">
+      <a href="index.html"><img src="../imgs/ramoniawiki.gif" alt="Logo" class="logo"></a>
+      <form action="">
+        <input type="text" name="search" id="input-search" placeholder="Search..." size="22" maxlength="64">
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+  </div>
+  <!-- End of div top -->
+
+  <!-- EAEEEC, D68E19, 2D2E38, 884234, 3B3D49 -->
+
+  <!-- Left bar -->
+  <div class="side-bar">
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+      <div class="item"><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></div>
+      <div class="item">
+        <a href="#" class="sub-btn"><i class="fa-solid fa-book"></i>Library<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="items.html">Items</a>
+          <a href="quests.html">Quests</a>
+          <a href="tasks.html">Tasks</a>
+          <a href="addons.html">Addons</a>
+          <a href="spells.html">Spells</a>
+          <a href="mounts.html">Mounts</a>
+        </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //jquery sub menu
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+    });
+  </script>
+  <!-- End of left bar -->
+  <!-- Main Page -->
+  <div id="main-page">
+    <div class="header">
+      <h1>Spells</h1>
+    </div>
+    <div class="grid-container-spells">   
+      <div class="grid-category">Druid</div>
+      <div class="grid-category">Sorcerer</div>
+      <div class="grid-category">Knight</div>
+      <div class="grid-category">Paladin</div>
+      <a class="grid-item grid-druid sdruid" href="#druid"><div class="text"></div></a>
+      <a class="grid-item grid-sorcerer ssorcerer" href="#sorcerer"><div class="text"></div></a>
+      <a class="grid-item grid-knight sknight" href="#knight"><div class="text"></div></a>
+      <a class="grid-item grid-paladin spaladin" href="#paladin"><div class="text"></div></a>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".sdruid").click(function(){
+          $(".druid-table").show();
+          $(".paladin-table").hide();
+          $(".knight-table").hide();
+          $(".sorcerer-table").hide();
+          $(".return").show();
+         });
+         $(".ssorcerer").click(function(){
+          $(".sorcerer-table").show();
+          $(".paladin-table").hide();
+          $(".knight-table").hide();
+          $(".druid-table").hide();
+          $(".return").show();
+         });
+         $(".sknight").click(function(){
+          $(".knight-table").show();
+          $(".paladin-table").hide();
+          $(".druid-table").hide();
+          $(".sorcerer-table").hide();
+          $(".return").show();
+         });
+         $(".spaladin").click(function(){
+          $(".paladin-table").show();
+          $(".druid-table").hide();
+          $(".knight-table").hide();
+          $(".sorcerer-table").hide();
+          $(".return").show();
+         });
+        });
+    </script>
+    <a href="top"></a>
+    <table class="sorcerer-table">
+      <caption id="sorcerer">Spells - Sorcerer</caption>
+      <thead>
+        <tr>
+          <th>Lvl</th>
+          <th>Name</th>
+          <th>Incantation</th>
+          <th>Type</th>
+          <th>Group</th>
+          <th>Mana</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8</td>
+          <td>Find Person</td>
+          <td>exiva "nick</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Light</td>
+          <td>utevo lux</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Light Healing</td>
+          <td>exura</td>
+          <td>Instant</td>
+          <td>Healing</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Magic Rope</td>
+          <td>exani tera</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Antidote</td>
+          <td>exana pox</td>
+          <td>Instant</td>
+          <td>Healing</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Intense Healing</td>
+          <td>exura gran</td>
+          <td>Instant</td>
+          <td>Healing</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Force Strike</td>
+          <td>exori mort</td>
+          <td>Instant</td>
+          <td>Attack</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Levitate</td>
+          <td>exani hur "up/down</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Energy Strike</td>
+          <td>exori vis</td>
+          <td>Instant</td>
+          <td>Attack</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Flame Strike</td>
+          <td>exori flam</td>
+          <td>Instant</td>
+          <td>Attack</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Great Light</td>
+          <td>utevo gran lux</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Poison Field</td>
+          <td>adevo grav pox</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Haste</td>
+          <td>utani hur</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Magic Shield</td>
+          <td>utamo vita</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>Light Magic Missile</td>
+          <td>exiva "nick</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>Fire Field</td>
+          <td>adevo grav flam</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>Fireball</td>
+          <td>adori flam</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>Destroy Field</td>
+          <td>adito grav</td>
+          <td>Rune</td>
+          <td>Support</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>Energy Field</td>
+          <td>adevo grav vis</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>Fire Wave</td>
+          <td>exevo flam hur</td>
+          <td>Instant</td>
+          <td>Attack</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Ultimate Healing</td>
+          <td>exura vita</td>
+          <td>Instant</td>
+          <td>Healing</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Heavy Magic Missile</td>
+          <td>adori gran</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Strong Haste</td>
+          <td>utani gran hur</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>Desintegrate</td>
+          <td>adito tera</td>
+          <td>Rune</td>
+          <td>Support</td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td>Energy Beam</td>
+          <td>exevo vis lux</td>
+          <td>Instant</td>
+          <td>Attack</td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td>Creature Illusion</td>
+          <td>utevo res ina "name</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>Holy Magic Missle</td>
+          <td>adori san</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>Thunderstorm</td>
+          <td>adori mas vis</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <td>26</td>
+          <td>Cancel Invisibility</td>
+          <td>exana ina</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <td>26</td>
+          <td>Ultimate Light</td>
+          <td>utevo vis lux</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>140</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>Animate Dead</td>
+          <td>adana mort</td>
+          <td>Rune</td>
+          <td>Summon</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>Fire Bomb</td>
+          <td>adevo mas flam</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>225</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>Soulfire</td>
+          <td>adevo res flam</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>225</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>Summon Creature</td>
+          <td>utevo res "name</td>
+          <td>Instant</td>
+          <td>Summon</td>
+          <td>var.</td>
+        </tr>
+        <tr>
+          <td>29</td>
+          <td>Poison Wall</td>
+          <td>adevo mas grav pox</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>340</td>
+        </tr>
+        <tr>
+          <td>29</td>
+          <td>Great Energy Beam</td>
+          <td>exevo gran vis lux</td>
+          <td>Instant</td>
+          <td>Attack</td>
+          <td>250</td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>Explosion</td>
+          <td>adevo mas hur</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>270</td>
+        </tr>
+        <tr>
+          <td>32</td>
+          <td>Magic Wall</td>
+          <td>adevo grav tera</td>
+          <td>Rune</td>
+          <td>Support</td>
+          <td>375</td>
+        </tr>
+        <tr>
+          <td>33</td>
+          <td>Fire Wall</td>
+          <td>adevo mas grav flam</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>330</td>
+        </tr>
+        <tr>
+          <td>35</td>
+          <td>Invisible</td>
+          <td>utana vid</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>210</td>
+        </tr>
+        <tr>
+          <td>37</td>
+          <td>Energy Bomb</td>
+          <td>adevo mas vis</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>330</td>
+        </tr>
+        <tr>
+          <td>38</td>
+          <td>Energy Wave</td>
+          <td>exevo mort hur</td>
+          <td>Instant</td>
+          <td>Attack</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>41</td>
+          <td>Energy Wall</td>
+          <td>adevo mas grav vis</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>45</td>
+          <td>Sudden Death</td>
+          <td>adori vita vis</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>225</td>
+        </tr>
+        <tr>
+          <td>60</td>
+          <td>Ultimate Explosion</td>
+          <td>exevo gran mas vis</td>
+          <td>Instant</td>
+          <td>Attack</td>
+          <td>1200</td>
+        </tr>
+        
+      </tbody>
+    </table>
+<!-- Gorna dla ms,
+dolna dla ed -->
+    <table class="druid-table">
+      <caption id="druid">Spells - Druid</caption>
+      <thead>
+        <tr>
+          <th>Lvl</th>
+          <th>Name</th>
+          <th>Incantation</th>
+          <th>Type</th>
+          <th>Group</th>
+          <th>Mana</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8</td>
+          <td>Food</td>
+          <td>exevo pan</td>
+          <td>Instant</td>
+          <td>Supply</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Find Person</td>
+          <td>exiva "nick</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Light</td>
+          <td>utevo lux</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Light Healing</td>
+          <td>exura</td>
+          <td>Instant</td>
+          <td>Healing</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Magic Rope</td>
+          <td>exani tera</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Antidote</td>
+          <td>exana pox</td>
+          <td>Instant</td>
+          <td>Healing</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Intense Healing</td>
+          <td>exura gran</td>
+          <td>Instant</td>
+          <td>Healing</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Force Strike</td>
+          <td>exori mort</td>
+          <td>Instant</td>
+          <td>Attack</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Levitate</td>
+          <td>exani hur "up/down</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Energy Strike</td>
+          <td>exori vis</td>
+          <td>Instant</td>
+          <td>Attack</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Flame Strike</td>
+          <td>exori flam</td>
+          <td>Instant</td>
+          <td>Attack</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Great Light</td>
+          <td>utevo gran lux</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Haste</td>
+          <td>utani hur</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Magic Shield</td>
+          <td>utamo vita</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Poison Field</td>
+          <td>adevo grav pox</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>Light Magic Missile</td>
+          <td>exiva "nick</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>Fire Field</td>
+          <td>adevo grav flam</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>Convince Creature</td>
+          <td>adeta sio</td>
+          <td>Rune</td>
+          <td>Summon</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>Fireball</td>
+          <td>adori flam</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>Destroy Field</td>
+          <td>adito grav</td>
+          <td>Rune</td>
+          <td>Support</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>Energy Field</td>
+          <td>adevo grav vis</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Heavy Magic Missile</td>
+          <td>adori gran</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Ultimate Healing</td>
+          <td>exura vita</td>
+          <td>Instant</td>
+          <td>Healing</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Strong Haste</td>
+          <td>utani gran hur</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Ultimate Healing Rune</td>
+          <td>adura vita</td>
+          <td>Rune</td>
+          <td>Healing</td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>Envenom</td>
+          <td>adevo res pox</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>Desintegrate</td>
+          <td>adito tera</td>
+          <td>Rune</td>
+          <td>Support</td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td>Creature Illusion</td>
+          <td>utevo res ina "name</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>Holy Magic Missle</td>
+          <td>adori san</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>Poison Bomb</td>
+          <td>adevo mas pox</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>Great Fireball</td>
+          <td>adori gran flam</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>Stone Shower</td>
+          <td>adori mas tera</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>Avalanche</td>
+          <td>adori mas frigo</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <td>26</td>
+          <td>Ultimate Light</td>
+          <td>utevo vis lux</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>140</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>Animate Dead</td>
+          <td>adana mort</td>
+          <td>Rune</td>
+          <td>Summon</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>Fire Bomb</td>
+          <td>adevo mas flam</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>225</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>Chameleon</td>
+          <td>adevo ina</td>
+          <td>Rune</td>
+          <td>Support</td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>Soulfire</td>
+          <td>adevo res flam</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>225</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>Summon Creature</td>
+          <td>utevo res "name</td>
+          <td>Instant</td>
+          <td>Summon</td>
+          <td>var.</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>Wild Growth</td>
+          <td>adevo grav vita</td>
+          <td>Rune</td>
+          <td>Support</td>
+          <td>350</td>
+        </tr>
+        <tr>
+          <td>29</td>
+          <td>Poison Wall</td>
+          <td>adevo mas grav pox</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>340</td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>Undead Legion</td>
+          <td>exana mas mort</td>
+          <td>Instant</td>
+          <td>Summon</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>Explosion</td>
+          <td>adevo mas hur</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>270</td>
+        </tr>
+        <tr>
+          <td>33</td>
+          <td>Fire Wall</td>
+          <td>adevo mas grav flam</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>330</td>
+        </tr>
+        <tr>
+          <td>35</td>
+          <td>Invisible</td>
+          <td>utana vid</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>210</td>
+        </tr>
+        <tr>
+          <td>36</td>
+          <td>Mass Healing</td>
+          <td>exura gran mas res</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>210</td>
+        </tr>
+        <tr>
+          <td>50</td>
+          <td>Poison Storm</td>
+          <td>exevo gran mas pox</td>
+          <td>Instant</td>
+          <td>Attack</td>
+          <td>1200</td>
+        </tr>
+        <tr>
+          <td>54</td>
+          <td>Paralyze</td>
+          <td>adana ani</td>
+          <td>Rune</td>
+          <td>Support</td>
+          <td>1400</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="paladin-table">
+      <caption id="paladin">Spells - Paladin</caption>
+      <thead>
+        <tr>
+          <th>Lvl</th>
+          <th>Name</th>
+          <th>Incantation</th>
+          <th>Type</th>
+          <th>Group</th>
+          <th>Mana</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8</td>
+          <td>Food</td>
+          <td>exevo pan</td>
+          <td>Instant</td>
+          <td>Supply</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Find Person</td>
+          <td>exiva "nick</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Light</td>
+          <td>utevo lux</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Light Healing</td>
+          <td>exura</td>
+          <td>Instant</td>
+          <td>Healing</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Magic Rope</td>
+          <td>exani tera</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Antidote</td>
+          <td>exana pox</td>
+          <td>Instant</td>
+          <td>Healing</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Intense Healing</td>
+          <td>exura gran</td>
+          <td>Instant</td>
+          <td>Healing</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Levitate</td>
+          <td>exani hur "up/down</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Conjure Arrow</td>
+          <td>exevo con</td>
+          <td>Instant</td>
+          <td>Supply</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Great Light</td>
+          <td>utevo gran lux</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Haste</td>
+          <td>utani hur</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Magic Shield</td>
+          <td>utamo vita</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>Light Magic Missile</td>
+          <td>exiva "nick</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>Poisoned Arrow</td>
+          <td>exevo con pox</td>
+          <td>Instant</td>
+          <td>Supply</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>Conjure Bolt</td>
+          <td>exevo con mort</td>
+          <td>Instant</td>
+          <td>Supply</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>Destroy Field</td>
+          <td>adito grav</td>
+          <td>Rune</td>
+          <td>Support</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Heavy Magic Missle</td>
+          <td>adori gran</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Ultimate Healing</td>
+          <td>exura vita</td>
+          <td>Instant</td>
+          <td>Healing</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>Desintegrate</td>
+          <td>adito tera</td>
+          <td>Rune</td>
+          <td>Support</td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td>Ethereal Spear</td>
+          <td>exori con</td>
+          <td>Instant</td>
+          <td>Attack</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>Holy Magic Missle</td>
+          <td>adori san</td>
+          <td>Rune</td>
+          <td>Attack</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>Conjure Explosive Arrow</td>
+          <td>exevo con flam</td>
+          <td>Istant</td>
+          <td>Supply</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>33</td>
+          <td>Conjure Piercing Bolt</td>
+          <td>exevo con grav</td>
+          <td>Instant</td>
+          <td>Supply</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>35</td>
+          <td>Invisible</td>
+          <td>utana vid</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>210</td>
+        </tr>
+        <tr>
+          <td>40</td>
+          <td>Conjure Onyx Arrow</td>
+          <td>exevo con on</td>
+          <td>Instant</td>
+          <td>Supply</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <td>45</td>
+          <td>Enchant Spear</td>
+          <td>exeta con</td>
+          <td>Instant</td>
+          <td>Supply</td>
+          <td>350</td>
+        </tr>
+        <tr>
+          <td>50</td>
+          <td>Divine Caldera</td>
+          <td>exevo mas san</td>
+          <td>Instant</td>
+          <td>Attack</td>
+          <td>240</td>
+        </tr>
+        <tr>
+          <td>55</td>
+          <td>Conjure Power Bolt</td>
+          <td>exevo con vis</td>
+          <td>Instant</td>
+          <td>Supply</td>
+          <td>200</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="knight-table">
+      <caption id="knight">Spells - Knight</caption>
+      <thead>
+        <tr>
+          <th>Lvl</th>
+          <th>Name</th>
+          <th>Incantation</th>
+          <th>Type</th>
+          <th>Group</th>
+          <th>Mana</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8</td>
+          <td>Find Person</td>
+          <td>exiva "nick</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Light</td>
+          <td>utevo lux</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Wound Cleansing</td>
+          <td>exura ico</td>
+          <td>Instant</td>
+          <td>Healing</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Magic Rope</td>
+          <td>exani tera</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Light Healing</td>
+          <td>exura</td>
+          <td>Instant</td>
+          <td>Healing</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Antidote</td>
+          <td>exana pox</td>
+          <td>Instant</td>
+          <td>Healing</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Levitate</td>
+          <td>exani hur "up/down</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Great Light</td>
+          <td>utevo gran lux</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Haste</td>
+          <td>utani hur</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>Whirlwind Throw</td>
+          <td>exori hur</td>
+          <td>Instant</td>
+          <td>Attack</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Challenge</td>
+          <td>exeta res</td>
+          <td>Instant</td>
+          <td>Support</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>35</td>
+          <td>Berserk</td>
+          <td>exori</td>
+          <td>Instant</td>
+          <td>Attack</td>
+          <td>125</td>
+        </tr>
+        <tr>
+          <td>70</td>
+          <td>Fierce Berserk</td>
+          <td>exori gran</td>
+          <td>Instant</td>
+          <td>Attack</td>
+          <td>350</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div class="return">
+      <h2><a href="#top">Back to the top</a></h2>
+    </div>
+  </div>
+  <!-- End of main page -->
+  <div class="side-bar">
+    <div class="content">
+      <div class="interactive">
+        <h2><i class="fa-solid fa-map map"></i>Map viewer</h2>
+        <a href="https://ramonia.pl/map_viewer/#zoom,14,position,1263,1278,7"><img src="../imgs/intertactive.png" alt="" class="image"></a>
+      </div>
+      <div class="widget">
+        <iframe src="https://discord.com/widget?id=457182944260390912&theme=dark" width="100%" height="435" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="socials">
+        <h2>Server Status & Socials</h2>
+        <a href="https://www.facebook.com/people/Ramoniapl/100063498342253/" class="fb" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/invite/V6wwZXfZ4a" class="dsc" target="blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

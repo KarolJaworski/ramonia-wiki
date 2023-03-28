@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ramonia Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="top">
+    <div class="top_container">
+      <a href="index.html"><img src="../imgs/ramoniawiki.gif" alt="Logo" class="logo"></a>
+      <form action="">
+        <input type="text" name="search" id="input-search" placeholder="Search..." size="22" maxlength="64">
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+  </div>
+  <!-- End of div top -->
+
+  <!-- Left bar -->
+  <div class="side-bar">
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+      <div class="item"><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></div>
+      <div class="item">
+        <a href="#" class="sub-btn"><i class="fa-solid fa-book"></i>Library<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="items.html">Items</a>
+          <a href="quests.html">Quests</a>
+          <a href="tasks.html">Tasks</a>
+          <a href="addons.html">Addons</a>
+          <a href="spells.html">Spells</a>
+          <a href="mounts.html">Mounts</a>
+        </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //jquery sub menu
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+    });
+    </script>
+  <!-- End of left bar -->
+  <!-- Main Page -->
+  <div id="main-page">
+    <div class="header">
+      <h1>Rings</h1>
+    </div>
+    <table class="items">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Item Name</th>
+          <th>Specials</th>
+          <th>Time</th>
+          <th>Charges</th>
+          <th>Weight</th>
+          <th>Vocation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2121.gif" alt=""></a></td>
+          <td>Wedding Ring</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>0.40 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2123.gif" alt=""></a></td>
+          <td>Ring of the Sky</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>0.40 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2124.gif" alt=""></a></td>
+          <td>Crystal Ring</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>0.90 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2164.gif" alt=""></a></td>
+          <td>Might Ring</td>
+          <td>All Elements +20%</td>
+          <td>-</td>
+          <td>20</td>
+          <td>1.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2165.gif" alt=""></a></td>
+          <td>Stealth Ring</td>
+          <td>Invisibility</td>
+          <td>10 min.</td>
+          <td>-</td>
+          <td>1.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2166.gif" alt=""></a></td>
+          <td>Power Ring</td>
+          <td>Fist +6</td>
+          <td>30 min.</td>
+          <td>-</td>
+          <td>0.80 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2167.gif" alt=""></a></td>
+          <td>Energy Ring</td>
+          <td>Manashield</td>
+          <td>20 min.</td>
+          <td>-</td>
+          <td>0.80 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2168.gif" alt=""></a></td>
+          <td>Life Ring</td>
+          <td>Faster Regeneration<br><span class="regen">(1hp & 4mp / sec)</span></td>
+          <td>20 min.</td>
+          <span class="regen">
+            <td>-</td>
+          </span>
+          <td>0.80 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2169.gif" alt=""></a></td>
+          <td>Time Ring</td>
+          <td>Speed +30</td>
+          <td>10 min.</td>
+          <td>-</td>
+          <td>0.90 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2179.gif" alt=""></a></td>
+          <td>Gold Ring</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>1.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2207.gif" alt=""></a></td>
+          <td>Sword Ring</td>
+          <td>Sword +4</td>
+          <td>30 min.</td>
+          <td>-</td>
+          <td>0.90 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2208.gif" alt=""></a></td>
+          <td>Axe Ring</td>
+          <td>Axe +4</td>
+          <td>30 min.</td>
+          <td>-</td>
+          <td>0.90 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2209.gif" alt=""></a></td>
+          <td>Club Ring</td>
+          <td>Club +4</td>
+          <td>30 min.</td>
+          <td>-</td>
+          <td>0.90 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2213.gif" alt=""></a></td>
+          <td>Dwarven Ring</td>
+          <td>Anti Hicks</td>
+          <td>60 min.</td>
+          <td>-</td>
+          <td>1.10 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2214.gif" alt=""></a></td>
+          <td>Ring of Healing</td>
+          <td>Faster Regeneration<br><span class="regen">(3hp & 12mp / sec)</span></td>
+          <td>7.5 min.</td>
+          <td>-</td>
+          <td>0.80 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/death_ring.gif" alt=""></a></td>
+          <td>Death Ring</td>
+          <td>Shielding -10<br>Death +5%</td>
+          <td>8 min</td>
+          <td>-</td>
+          <td>0.80 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/prismatic_ring.gif" alt=""></a></td>
+          <td>Prismatic Ring</td>
+          <td>Physical +10%<br>Energy +8%</td>
+          <td>-</td>
+          <td>750</td>
+          <td>1.05 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/horn.gif" alt=""></a></td>
+          <td>Horn</td>
+          <td>Armor +1</td>
+          <td>-</td>
+          <td>-</td>
+          <td>1.20 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/ring_of_blue_plasma.gif" alt=""></a></td>
+          <td>Ring of Blue Plasma</td>
+          <td>Magic Level +1<br>Distance +3</td>
+          <td>30 min.</td>
+          <td>-</td>
+          <td>0.90 oz</td>
+          <td>Paladin</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/ring_of_green_plasma.gif" alt=""></a></td>
+          <td>Ring of Green Plasma</td>
+          <td>Magic Level +2<br>Faster Regeneration<br><span class="regen">(1 hp & 2mp / sec)</span></td>
+          <td>30 min.</td>
+          <td>-</td>
+          <td>0.90 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/ring_of_red_plasma.gif" alt=""></a></td>
+          <td>Ring of Red Plasma</td>
+          <td>Physical +3%<br>Sword +3<br>Axe +3<br>Club +3</td>
+          <td>30 min.</td>
+          <td>-</td>
+          <td>0.90 oz</td>
+          <td>Knight</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="back">
+      <h2><a href="#top">Back to the top</a></h2>
+    </div>
+  </div>
+  <!-- End of main page -->
+  <div class="side-bar">
+    <div class="content">
+      <div class="interactive">
+        <h2><i class="fa-solid fa-map map"></i>Map viewer</h2>
+        <a href="https://ramonia.pl/map_viewer/#zoom,14,position,1263,1278,7"><img src="../imgs/intertactive.png" alt="" class="image"></a>
+      </div>
+      <div class="widget">
+        <iframe src="https://discord.com/widget?id=457182944260390912&theme=dark" width="100%" height="435" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="socials">
+        <h2>Server Status & Socials</h2>
+        <a href="https://www.facebook.com/people/Ramoniapl/100063498342253/" class="fb" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/invite/V6wwZXfZ4a" class="dsc" target="blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

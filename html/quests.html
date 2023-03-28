@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ramonia Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="top">
+    <div class="top_container">
+      <a href="index.html"><img src="../imgs/ramoniawiki.gif" alt="Logo" class="logo"></a>
+      <form action="">
+        <input type="text" name="search" id="input-search" placeholder="Search..." size="22" maxlength="64">
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+  </div>
+  <!-- End of div top -->
+
+  <!-- Left bar -->
+  <div class="side-bar">
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+      <div class="item"><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></div>
+      <div class="item">
+        <a href="#" class="sub-btn"><i class="fa-solid fa-book"></i>Library<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="items.html">Items</a>
+          <a href="quests.html">Quests</a>
+          <a href="tasks.html">Tasks</a>
+          <a href="addons.html">Addons</a>
+          <a href="spells.html">Spells</a>
+          <a href="mounts.html">Mounts</a>
+        </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //jquery sub menu
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+    });
+  </script>
+  <!-- End of left bar -->
+  <!-- Main Page -->
+  <div id="main-page">
+    <div class="header">
+      <h1>Quests</h1>
+    </div>
+    <table class="quests">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Min. Lvl</th>
+          <th>Localization</th>
+          <th>Reward</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a class="qname" href="firsticelandarenaq.html">First Iceland Arena</a></td>
+          <td>10</td>
+          <td>Iceland</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Dragon Hammer</span><img src="../imgs/clubs/dragon_hammer.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Knight Axe</span><img src="../imgs/axes/knight_axe.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Fire Sword</span><img src="../imgs/swords/Fire_Sword_(Old).gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="skeletonq.html" class="qname">Skeleton Quest</a></td>
+          <td>20</td>
+          <td>Yurcity</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Wand of Plague</span><img src="../imgs/wands/wand_of_plague.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Might Ring</span><img src="../imgs/others/might_ring.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="orcq.html" class="qname">Orc Hell Quest</a></td>
+          <td>20</td>
+          <td>Yurcity</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Knight Armor</span><img src="../imgs/armors/knight_armor.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Dragon Hammer</span><img src="../imgs/clubs/dragon_hammer.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="undeadq.html" class="qname">Undead Quest</a></td>
+          <td>30</td>
+          <td>Yurcity</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Wand of Starstorm</span><img src="../imgs/wands/wand_of_starstorm.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Crown Shield</span><img src="../imgs/shields/crown_shield.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="dwarfdungeonq.html" class="qname">Dwarf Quest</a></td>
+          <td>30</td>
+          <td>Yurcity</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Crusader Helmet</span><img src="../imgs/helmets/crusader_helmet.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Ring of Healing</span><img src="../imgs/others/ring_of_healing.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Elven Amulet</span><img src="../imgs/others/elven_amulet.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="fierytowerq.html" class="qname">Fiery Tower Quest</a></td>
+          <td>40</td>
+          <td>Yurcity</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Knight Legs</span><img src="../imgs/legs/knight_legs.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Tower Shield</span><img src="../imgs/shields/tower_shield.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="necromancerq.html" class="qname">Necromancer Quest</a></td>
+          <td>40</td>
+          <td>Yurcity</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Blue Robe</span><img src="../imgs/armors/blue_robe.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Skull Staff</span><img src="../imgs/clubs/skull_staff.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="vampireq.html" class="qname">Vampire Quest</a></td>
+          <td>40</td>
+          <td>Yurcity</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Vampire Shield</span><img src="../imgs/shields/vampire_shield.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="heroq.html" class="qname">Hero Quest</a></td>
+          <td>45</td>
+          <td>Yurcity</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Crown Legs</span><img src="../imgs/legs/crown_legs.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Crown</span><img src="../imgs/helmets/crown.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="secondicelandarenaq.html" class="qname">Second Iceland Arena</a></td>
+          <td>50</td>
+          <td>Iceland</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Cranial Basher</span><img src="../imgs/items/cranial_basher.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Heroic Axe</span><img src="../imgs/items/heroic_axe.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Mystic Blade</span><img src="../imgs/items/mystic_blade.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="steelq.html" class="qname">Steel Quest</a></td>
+          <td>60</td>
+          <td>Yurcity</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Giant Sword</span><img src="../imgs/swords/giant_sword.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Dragon Lance</span><img src="../imgs/axes/dragon_lance.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="jungleq.html" class="qname">Jungle Quest</a></td>
+          <td>60</td>
+          <td>Yurcity</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Dragon Scale Mail</span><img src="../imgs/items/2492.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Medusa Shield</span><img src="../imgs/items/2536.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Shockwave Amulet</span><img src="../imgs/items/shockwave_amulet.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="wyrmsq.html" class="qname">Wyrm Quest</a></td>
+          <td>60</td>
+          <td>Sahara</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Magma Coat</span><img src="../imgs/items/magma_coat.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Magma Legs</span><img src="../imgs/items/magma_legs.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="thirdicelandarenaq.html" class="qname">Third Iceland Arena</a></td>
+          <td>80</td>
+          <td>Iceland</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">The Justice Seeker</span><img src="../imgs/items/the_justice_seeker.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Royal Axe</span><img src="../imgs/items/royal_axe.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Blessed Sceptre</span><img src="../imgs/items/blessed_sceptre.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="yalahariq.html" class="qname">Yalahari Quest</a></td>
+          <td>80</td>
+          <td>Yalahar</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Yalahari Armor</span><img src="../imgs/items/yalahari_armor.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Yalahari Legs</span><img src="../imgs/items/yalahari_leg_piece.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Yalahari Mask</span><img src="../imgs/items/yalahari_mask.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="poiq.html" class="qname">Pits of Inferno Quest</a></td>
+          <td>80</td>
+          <td>Edron</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Soft Boots</span><img src="../imgs/boots/soft_boots.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Backpack of Holding</span><img src="../imgs/backpacks/backpack_of_holding.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Ceremonial Ankh</span><img src="../imgs/others/ceremonial_ankh.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Frozen Starlight</span><img src="../imgs/backpacks/frozen_starlight.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Arcane Staff</span><img src="../imgs/clubs/arcane_staff.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">The Avenger</span><img src="../imgs/swords/the_avenger.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Arbalest</span><img src="../imgs/distance/arbalest.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="exerciseq.html" class="qname">Exercise Quest</a></td>
+          <td>80</td>
+          <td>Yurcity</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Exercise Axe</span><img src="../imgs/axes/exercise_axe.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Exercise Sword</span><img src="../imgs/swords/durable_exercise_sword.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Exercise Bow</span><img src="../imgs/distance/exercise_bow.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Exercise Club</span><img src="../imgs/clubs/exercise_club.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Flask of Warrior's Sweat</span><img src="../imgs/others/flask_of_warriors_sweat.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="behemothq.html" class="qname">Behemoth Quest</a></td>
+          <td>80</td>
+          <td>Edron</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Golden Armor</span><img src="../imgs/items/golden_armor.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Giant Sword</span><img src="../imgs/items/giant_sword.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Demon Shield</span><img src="../imgs/items/demon_shield.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Guardian Halberd</span><img src="../imgs/items/guardian_halberd.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="ghastlyq.html" class="qname">Ghastly Dragon Quest</a></td>
+          <td>80</td>
+          <td>Desert</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Zaoan Helmet</span><img src="../imgs/items/zaoan_helmet.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Dark Lord's Cape</span><img src="../imgs/items/witchhunters_coat.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="nightmareislandq.html" class="qname">Nightmare Island Quest</a></td>
+          <td>80</td>
+          <td>Yalahar</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">1x Silver Token</span><img src="../imgs/items/silver_token.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">1x Gold Token</span><img src="../imgs/items/gold_token.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Nightmare Teddy</span><img src="../imgs/items/nightmare_teddy.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="mawhawkq.html" class="qname">Mawhawk Quest</a></td>
+          <td>100</td>
+          <td>Roshamuul</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Divine Plate</span><img src="../imgs/items/divine_plate.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Expedition Backpack</span><img src="../imgs/items/expedition_backpack.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="demonhelmetq.html" class="qname">Demon Helmet Quest</a></td>
+          <td>100</td>
+          <td>Edron</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Demon Helmet</span><img src="../imgs/items/demon_helmet.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Steel Boots</span><img src="../imgs/items/steel_boots.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Demon Shield</span><img src="../imgs/items/demon_shield.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="anhiq.html" class="qname">Annihilator Quest</a></td>
+          <td>100</td>
+          <td>Edron</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Magic Sword</span><img src="../imgs/items/magic_sword.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Stonecutter Axe</span><img src="../imgs/items/stonecutter_axe.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Demon Armor</span><img src="../imgs/items/demon_armor.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Teddy Bear</span><img src="../imgs/items/annihilation_bear.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="inq.html" class="qname">Inquisition Quest</a></td>
+          <td>100</td>
+          <td>Edron</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Royal Crossbow</span><img src="/imgs/items/royal_crossbow.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Warsinger Bow</span><img src="/imgs/items/warsinger_bow.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Dwarven Armor</span><img src="/imgs/items/2503.gif" alt=""></span>
+           <span class="tooltipq"><span class="tooltip-textq">Emerald Sword</span><img src="/imgs/items/emerald_sword.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Hellforged Axe</span><img src="/imgs/items/hellforged_axe.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Obsidian Truncheon</span><img src="/imgs/items/obsidian_truncheon.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Master Archer's Armor</span><img src="/imgs/items/master_archers_armor.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Fireborn Giant Armor</span><img src="/imgs/items/fireborn_giant_armor.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Robe of the Underworld</span><img src="/imgs/items/robe_of_the_underworld.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="dfq.html" class="qname">Drakens Final Quest</a></td>
+          <td>100</td>
+          <td>Port Hope</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Physical Amulet</span><img src="/imgs/items/item_9245.png" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Magic Plate Legs</span><img src="/imgs/items/item_9248.png" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="apocalypticq.html" class="qname">Apocalyptic Quest</a></td>
+          <td>100</td>
+          <td>Edron</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Dragon Scale Helmet</span><img src="../imgs/items/2506.png" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Apocalyptic Backpack</span><img src="../imgs/items/item_9268.png" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="anhi2q.html" class="qname">Annihilator 2 Quest</a></td>
+          <td>120</td>
+          <td>Yurcity</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Blessing Amulet</span><img src="../imgs/others/blessing.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Dragon Scale Legs</span><img src="../imgs/legs/dsl.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Bunny Slippers</span><img src="../imgs/boots/bunnyslippers.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="riddleq.html" class="qname">Riddle Quest</a></td>
+          <td>120</td>
+          <td>Yurcity</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Dragon Robe</span><img src="../imgs/items/dragon_robe.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Dragon Backpack</span><img src="../imgs/items/dragon_backpack.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="demonoakq.html" class="qname">Demon Oak Quest</a></td>
+          <td>120</td>
+          <td>Edron</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Rainbow Shield</span><img src="../imgs/shields/Rainbow_Shield.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Thorn Spitter</span><img src="../imgs/distance/thorn.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Spellbook of Ancient Arcana</span><img src="../imgs/spellbooks/ancient_arcana.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Demon Legs</span><img src="../imgs/legs/demon_legs.png" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="wz1q.html" class="qname">Warzone I Quest</a></td>
+          <td>120</td>
+          <td>Yurcity</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">2x Major Crystalline Token</span><img src="../imgs/items/Major_Crystalline_Token.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">5x Green Crystal Shard</span><img src="../imgs/items/Green_Crystal_Shard.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Head of Deathstrike</span><img src="../imgs/items/Head_of_Deathstrike.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="wz2q.html" class="qname">Warzone II Quest</a></td>
+          <td>120</td>
+          <td>Ankrahmun</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">2x Major Crystalline Token</span><img src="../imgs/items/Major_Crystalline_Token.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">5x Blue Crystal Shard</span><img src="../imgs/items/Blue_Crystal_Shard.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Legs of Gnomevil</span><img src="../imgs/items/Legs_of_Gnomevil.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Prismatic Necklace</span><img src="../imgs/items/prismatic_necklace.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="wz3q.html" class="qname">Warzone III Quest</a></td>
+          <td>120</td>
+          <td>Yurcity</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">2x Major Crystalline Token</span><img src="../imgs/items/Major_Crystalline_Token.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">5x Violet Crystal Shard</span><img src="../imgs/items/Violet_Crystal_Shard.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Tail of Abyssador</span><img src="../imgs/items/Tail_of_Abyssador.gif" alt=""></span>
+            <span class="tooltipq"><span class="tooltip-textq">Prismatic Ring</span><img src="../imgs/items/prismatic_ring.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="wz4q.html" class="qname">Warzone IV Quest</a></td>
+          <td>120</td>
+          <td>Port Hope</td>
+          <td>
+            Loot from boss
+          </td>
+        </tr>
+        <tr>
+          <td><a href="wz5q.html" class="qname">Warzone V Quest</a></td>
+          <td>120</td>
+          <td>Yurcity</td>
+          <td>
+            Loot from boss
+          </td>
+        </tr>
+        <tr>
+          <td><a href="wz6q.html" class="qname">Warzone VI Quest</a></td>
+          <td>120</td>
+          <td>Port Hope</td>
+          <td>
+            Loot from boss
+          </td>
+        </tr>
+        <tr>
+          <td><a href="fwbq.html" class="qname">Firewalker Boots Quest</a></td>
+          <td>130</td>
+          <td>Roshamuul</td>
+          <td>
+            <span class="tooltipq"><span class="tooltip-textq">Firewalker Boots</span><img src="../imgs/items/firewalker_boots.gif" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="anhi3q.html" class="qname">Annihilator 3 Quest</a></td>
+          <td>150</td>
+          <td>Yurcity</td>
+          <td>
+            <span class="tooltipqq"><span class="tooltip-textqq">Umbral Blade</span><img src="../imgs/items/umbral_blade.gif" alt=""></span>
+            <span class="tooltipqq"><span class="tooltip-textqq">Umbral Axe</span><img src="../imgs/items/umbral_axe.gif" alt=""></span>
+            <span class="tooltipqq"><span class="tooltip-textqq">Umbral Mace</span><img src="../imgs/items/umbral_mace.gif" alt=""></span>
+            <span class="tooltipqq"><span class="tooltip-textqq">Umbral Crossbow</span><img src="../imgs/items/umbral_crossbow.gif" alt=""></span>
+            <span class="tooltipqq"><span class="tooltip-textqq">Umbral Spellbook</span><img src="../imgs/items/umbral_spellbook.gif" alt=""></span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="back">
+      <h2><a href="#top">Back to the top</a></h2>
+    </div>
+  </div>
+  <!-- End of main page -->
+  <div class="side-bar">
+    <div class="content">
+      <div class="interactive">
+        <h2><i class="fa-solid fa-map map"></i>Map viewer</h2>
+        <a href="https://ramonia.pl/map_viewer/#zoom,14,position,1263,1278,7"><img src="../imgs/intertactive.png" alt="" class="image"></a>
+      </div>
+      <div class="widget">
+        <iframe src="https://discord.com/widget?id=457182944260390912&theme=dark" width="100%" height="435" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="socials">
+        <h2>Server Status & Socials</h2>
+        <a href="https://www.facebook.com/people/Ramoniapl/100063498342253/" class="fb" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/invite/V6wwZXfZ4a" class="dsc" target="blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

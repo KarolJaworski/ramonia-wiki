@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ramonia Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="top">
+    <div class="top_container">
+      <a href="index.html"><img src="../imgs/ramoniawiki.gif" alt="Logo" class="logo"></a>
+      <form action="">
+        <input type="text" name="search" id="input-search" placeholder="Search..." size="22" maxlength="64">
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+  </div>
+  <!-- End of div top -->
+
+  <!-- Left bar -->
+  <div class="side-bar">
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+      <div class="item"><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></div>
+      <div class="item">
+        <a href="#" class="sub-btn"><i class="fa-solid fa-book"></i>Library<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="items.html">Items</a>
+          <a href="quests.html">Quests</a>
+          <a href="tasks.html">Tasks</a>
+          <a href="addons.html">Addons</a>
+          <a href="spells.html">Spells</a>
+          <a href="mounts.html">Mounts</a>
+        </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //jquery sub menu
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+    });
+    </script>
+  <!-- End of left bar -->
+  <!-- Main Page -->
+  <div id="main-page">
+    <div class="header">
+      <h1>Necklaces</h1>
+    </div>
+    <table class="items">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Item Name</th>
+          <th>Specials</th>
+          <th>Charges<br>-----------<br>duration</th>
+          <th>Weight</th>
+          <th>Vocation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2125.gif" alt=""></a></td>
+          <td>Crystal Necklace</td>
+          <td>-</td>
+          <td>-</td>
+          <td>4.90 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2126.gif" alt=""></a></td>
+          <td>Bronze Necklace</td>
+          <td>-</td>
+          <td>-</td>
+          <td>4.10 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2129.gif" alt=""></a></td>
+          <td>Wolf Tooth Chain</td>
+          <td>-</td>
+          <td>-</td>
+          <td>3.30 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2131.gif" alt=""></a></td>
+          <td>Star Amulet</td>
+          <td>-</td>
+          <td>-</td>
+          <td>6.10 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2132.gif" alt=""></a></td>
+          <td>Silver Necklace</td>
+          <td>-</td>
+          <td>-</td>
+          <td>4.80 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2133.gif" alt=""></a></td>
+          <td>Ruby Necklace</td>
+          <td>-</td>
+          <td>-</td>
+          <td>5.70 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2135.gif" alt=""></a></td>
+          <td>Scarab Amulet</td>
+          <td>-</td>
+          <td>-</td>
+          <td>7.70 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2136.gif" alt=""></a></td>
+          <td>Demonbone Amulet</td>
+          <td>-</td>
+          <td>-</td>
+          <td>6.90 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2138.gif" alt=""></a></td>
+          <td>Sapphire Amulet</td>
+          <td>Armor +3</td>
+          <td>-</td>
+          <td>52.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2142.gif" alt=""></a></td>
+          <td>Ancient Amulet</td>
+          <td>-</td>
+          <td>-</td>
+          <td>8.40 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2161.gif" alt=""></a></td>
+          <td>Strange Amulet</td>
+          <td>Energy +10%</td>
+          <td>200</td>
+          <td>2.90 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2170.gif" alt=""></a></td>
+          <td>Silver Amulet</td>
+          <td>Earth +10%</td>
+          <td>200</td>
+          <td>5.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2171.gif" alt=""></a></td>
+          <td>Platinum Amulet</td>
+          <td>Armor +2</td>
+          <td>-</td>
+          <td>6.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2172.gif" alt=""></a></td>
+          <td>Bronze Amulet</td>
+          <td>Protection Manadrain +20%</td>
+          <td>200</td>
+          <td>5.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2173.gif" alt=""></a></td>
+          <td>Amulet of Loss</td>
+          <td>Prevents Item Loss</td>
+          <td>1</td>
+          <td>4.20 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2197.gif" alt=""></a></td>
+          <td>Stone Skin Amulet</td>
+          <td>Physical +80%<br>Death +80%</td>
+          <td>5</td>
+          <td>7.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2198.gif" alt=""></a></td>
+          <td>Elven Amulet</td>
+          <td>Physical +5%<br>Fire +5%<br>Energy +5%<br>Earth +5%</td>
+          <td>50</td>
+          <td>2.70 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2199.gif" alt=""></a></td>
+          <td>Garlic Necklace</td>
+          <td>Protection Lifedrain +20%</td>
+          <td>150</td>
+          <td>3.80 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2200.gif" alt=""></a></td>
+          <td>Protection Amulet</td>
+          <td>Physical +6%</td>
+          <td>200</td>
+          <td>6.30 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2201.gif" alt=""></a></td>
+          <td>Dragon Necklace</td>
+          <td>Fire +8%</td>
+          <td>200</td>
+          <td>6.30 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2218.gif" alt=""></a></td>
+          <td>Paw Amulet</td>
+          <td>-</td>
+          <td>-</td>
+          <td>10.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2661.gif" alt=""></a></td>
+          <td>Scarf</td>
+          <td>Armor +1</td>
+          <td>-</td>
+          <td>2.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/lightning_pendant.gif" alt=""></a></td>
+          <td>Lightning Pendant</td>
+          <td>Energy +20%<br>Earth -10%</td>
+          <td>200</td>
+          <td>5.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/sacred_tree_amulet.gif" alt=""></a></td>
+          <td>Sacred Tree Amulet</td>
+          <td>Physical +60%<br>Earth +40%</td>
+          <td>5</td>
+          <td>7.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/shockwave_amulet.gif" alt=""></a></td>
+          <td>Shockwave Amulet</td>
+          <td>Physical +60%<br>Energy +40%</td>
+          <td>5</td>
+          <td>7.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/magma_amulet.gif" alt=""></a></td>
+          <td>Magma Amulet</td>
+          <td>Fire +20%<br>Ice -10%</td>
+          <td>200</td>
+          <td>5.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/terra_amulet.gif" alt=""></a></td>
+          <td>Terra Amulet</td>
+          <td>Earth +20%<br>Fire-10%</td>
+          <td>200</td>
+          <td>5.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/gill_necklace.gif" alt=""></a></td>
+          <td>Gill Necklace</td>
+          <td>Physical +15%<br>Earth +10%</td>
+          <td>750</td>
+          <td>4.10 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/prismatic_necklace.gif" alt=""></a></td>
+          <td>Prismatic Necklace</td>
+          <td>Physical +10%<br>Energy +15%</td>
+          <td>750</td>
+          <td>6.50 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/werewolf_amulet.gif" alt=""></a></td>
+          <td>Werewolf Amulet</td>
+          <td>-</td>
+          <td>-</td>
+          <td>5.50 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/enchanted_werewolf_amulet.gif" alt=""></a></td>
+          <td>Enchanted Werewolf Amulet</td>
+          <td>Armor +3<br>Physical +6%</td>
+          <td>60 min.</td>
+          <td>5.50 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/necklace_of_the_deep.gif" alt=""></a></td>
+          <td>Necklace of the Deep</td>
+          <td>Lifedrain +50%</td>
+          <td>50</td>
+          <td>5.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9224.png" alt=""></a></td>
+          <td>Ruby Amulet</td>
+          <td>Armor +2</td>
+          <td>-</td>
+          <td>4.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9245.png" alt=""></a></td>
+          <td>Physical Amulet</td>
+          <td>Armor +2<br>Physical +5%</td>
+          <td>-</td>
+          <td>7.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/glacier_amulet.gif" alt=""></a></td>
+          <td>Glacier Amulet</td>
+          <td>Ice +20%<br>Energy -10%</td>
+          <td>200</td>
+          <td>5.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/ferumbras_amulet.gif" alt=""></a></td>
+          <td>Ferumbras' Amulet</td>
+          <td>Armor +3</td>
+          <td>-</td>
+          <td>5.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/wailing_widows_necklace.gif" alt=""></a></td>
+          <td>Wailing Widow's Necklace</td>
+          <td>Emits Green Light</td>
+          <td>-</td>
+          <td>5.40 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/beetle_necklace.gif" alt=""></a></td>
+          <td>Beetle Necklace</td>
+          <td>Emits Green Light</td>
+          <td>-</td>
+          <td>8.20 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/leviathans_amulet.gif" alt=""></a></td>
+          <td>Leviathan's Amulet</td>
+          <td>Physical +40%<br>Ice +40%</td>
+          <td>5</td>
+          <td>7.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/glooth_amulet.gif" alt=""></a></td>
+          <td>Glooth Amulet</td>
+          <td>All Elements +10%</td>
+          <td>20</td>
+          <td>2.20 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_13346.png" alt=""></a></td>
+          <td>Amulet of Life</td>
+          <td>Prevents item loss even on <span style="color: rgb(253, 36, 36)">red skull</span></td>
+          <td>1</td>
+          <td>4.20 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/gearwheel_chain.gif" alt=""></a></td>
+          <td>Gearwheel Chain</td>
+          <td>Armor +3</td>
+          <td>-</td>
+          <td>10.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/onyx_pendant.gif" alt=""></a></td>
+          <td>Onyx Pendant</td>
+          <td>Death +2%</td>
+          <td>-</td>
+          <td>8.50 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/collar_of_blue_plasma.gif" alt=""></a></td>
+          <td>Collar of Blue Plasma</td>
+          <td>Magic Level +2<br>Distance +4</td>
+          <td>30 min.</td>
+          <td>5.00 oz</td>
+          <td>Paladin</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/collar_of_green_plasma.gif" alt=""></a></td>
+          <td>Collar of Green Plasma</td>
+          <td>Magic Level +3<br>Faster Regeneration<br><span class="regen">(1hp & 4mp / sec)</span></td>
+          <td>30 min.</td>
+          <td>5.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/collar_of_red_plasma.gif" alt=""></a></td>
+          <td>Collar of Red Plasma</td>
+          <td>Physical +5%<br>Sword +4<br>Axe +4<br>Club +4</td>
+          <td>30 min.</td>
+          <td>5.00 oz</td>
+          <td>Knight</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/sleep_shawl.gif" alt=""></a></td>
+          <td>Sleep Shawl</td>
+          <td>-</td>
+          <td>-</td>
+          <td>4.30 oz</td>
+          <td>Paladin</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/enchanted_sleep_shawl.gif" alt=""></a></td>
+          <td>Enchanted Sleep Shawl</td>
+          <td>Armor +3<br>Distance +3<br>Earth +24%</td>
+          <td>100 min.</td>
+          <td>4.30 oz</td>
+          <td>Paladin</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="back">
+      <h2><a href="#top">Back to the top</a></h2>
+    </div>
+  </div>
+  <!-- End of main page -->
+  <div class="side-bar">
+    <div class="content">
+      <div class="interactive">
+        <h2><i class="fa-solid fa-map map"></i>Map viewer</h2>
+        <a href="https://ramonia.pl/map_viewer/#zoom,14,position,1263,1278,7"><img src="../imgs/intertactive.png" alt="" class="image"></a>
+      </div>
+      <div class="widget">
+        <iframe src="https://discord.com/widget?id=457182944260390912&theme=dark" width="100%" height="435" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="socials">
+        <h2>Server Status & Socials</h2>
+        <a href="https://www.facebook.com/people/Ramoniapl/100063498342253/" class="fb" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/invite/V6wwZXfZ4a" class="dsc" target="blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

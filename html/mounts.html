@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ramonia Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="top">
+    <div class="top_container">
+      <a href="index.html"><img src="../imgs/ramoniawiki.gif" alt="Logo" class="logo"></a>
+      <form action="">
+        <input type="text" name="search" id="input-search" placeholder="Search..." size="22" maxlength="64">
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+  </div>
+  <!-- End of div top -->
+
+  <!-- Left bar -->
+  <div class="side-bar">
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+      <div class="item"><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></div>
+      <div class="item">
+        <a href="#" class="sub-btn"><i class="fa-solid fa-book"></i>Library<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="items.html">Items</a>
+          <a href="quests.html">Quests</a>
+          <a href="tasks.html">Tasks</a>
+          <a href="addons.html">Addons</a>
+          <a href="spells.html">Spells</a>
+          <a href="mounts.html">Mounts</a>
+        </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //jquery sub menu
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+    });
+    </script>
+  <!-- End of left bar -->
+  <!-- Main Page -->
+  <div id="main-page">
+    <div class="header">
+      <h1>Mounts</h1>
+    </div>
+    <table class="items">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Mount Name</th>
+          <th>Bonus</th>
+          <th>In-game</th>
+          <th>Store</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="../imgs/mounts/armoured_war_horse.gif" alt=""></td>
+          <td>Armoured War Horse</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/black_sheep.gif" alt=""></td>
+          <td>Black Sheep</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/blazebringer.gif" alt=""></td>
+          <td>Blazebringer</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/cerberus_champion.gif" alt=""></td>
+          <td>Cerberus Champion</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/crimson_ray.gif" alt=""></td>
+          <td>Crimson Ray</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/crystal_wolf.gif" alt=""></td>
+          <td>Crystal Wolf</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/desert_king.gif" alt=""></td>
+          <td>Desert King</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/donkey.gif" alt=""></td>
+          <td>Donkey</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/dragonling.gif" alt=""></td>
+          <td>Dragonling</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/draptor.gif" alt=""></td>
+          <td>Draptor</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/dromedary.gif" alt=""></td>
+          <td>Dromedary</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/flamesteed.gif" alt=""></td>
+          <td>Flamesteed</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/gnarlhound.gif" alt=""></td>
+          <td>Gnarlhound</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/gryphon.gif" alt=""></td>
+          <td>Gryphon</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/ironblight.gif" alt=""></td>
+          <td>Ironblight</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/kingly_deer.gif" alt=""></td>
+          <td>Kingly Deer</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/lady_bug.gif" alt=""></td>
+          <td>Lady Bug</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/magma_crawler.gif" alt=""></td>
+          <td>Magma Crawler</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/manta_ray.gif" alt=""></td>
+          <td>Manta Ray</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/midnight_panther.gif" alt=""></td>
+          <td>Midnight Panther</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/mole.gif" alt=""></td>
+          <td>Mole</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/noble_lion.gif" alt=""></td>
+          <td>Noble Lion</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/platesaurian.gif" alt=""></td>
+          <td>Platesaurian</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/racing_bird.gif" alt=""></td>
+          <td>Racing Bird</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/rapid_boar.gif" alt=""></td>
+          <td>Rapid Boar</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/rift_runner.gif" alt=""></td>
+          <td>Rift Runner</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/scorpion_king.gif" alt=""></td>
+          <td>Scorpion King</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/shadow_draptor.gif" alt=""></td>
+          <td>Shadow Draptor</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/shock_head.gif" alt=""></td>
+          <td>Shock Head</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/stampor.gif" alt=""></td>
+          <td>Stampor</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/steelbeak.gif" alt=""></td>
+          <td>Steelbeak</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/stone_rhino.gif" alt=""></td>
+          <td>Stone Rhino</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/tamed_panda.gif" alt=""></td>
+          <td>Tamed Panda</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/tawny_owl.gif" alt=""></td>
+          <td>Tawny Owl</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/the_hellgrip.gif" alt=""></td>
+          <td>The Hellgrip</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/tiger_slug.gif" alt=""></td>
+          <td>Tiger Slug</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/tin_lizzard.gif" alt=""></td>
+          <td>Tin Lizzard</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/titanica.gif" alt=""></td>
+          <td>Titanica</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/tombstinger.gif" alt=""></td>
+          <td>Tombstinger</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/undead_cavebear.gif" alt=""></td>
+          <td>Undead Cavebear</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/uniwheel.gif" alt=""></td>
+          <td>Uniwheel</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/ursagrodon.gif" alt=""></td>
+          <td>Usargrodon</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/war_bear.gif" alt=""></td>
+          <td>War Bear</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/war_horse.gif" alt=""></td>
+          <td>War Horse</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/water_buffalo.gif" alt=""></td>
+          <td>Water Buffalo</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><img src="../imgs/mounts/widow_queen.gif" alt=""></td>
+          <td>Widow Queen</td>
+          <td>Speed +10</td>
+          <td>-</td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="back">
+      <h2><a href="#top">Back to the top</a></h2>
+    </div>
+  </div>
+  <!-- End of main page -->
+  <div class="side-bar">
+    <div class="content">
+      <div class="interactive">
+        <h2><i class="fa-solid fa-map map"></i>Map viewer</h2>
+        <a href="https://ramonia.pl/map_viewer/#zoom,14,position,1263,1278,7"><img src="../imgs/intertactive.png" alt="" class="image"></a>
+      </div>
+      <div class="widget">
+        <iframe src="https://discord.com/widget?id=457182944260390912&theme=dark" width="100%" height="435" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="socials">
+        <h2>Server Status & Socials</h2>
+        <a href="https://www.facebook.com/people/Ramoniapl/100063498342253/" class="fb" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/invite/V6wwZXfZ4a" class="dsc" target="blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

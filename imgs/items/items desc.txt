@@ -1,0 +1,42 @@
+	<item id="9278" name="Ferumbras' head">
+		<attribute key="description" value="It is the proof that Ferumbras has fallen. For now. The Edron Academy should be interested in this." />
+		<attribute key="weight" value="850" />
+		<attribute key="armor" value="5" />
+		<attribute key="magicpoints" value="1" />
+		<attribute key="speed" value="10" />
+		<attribute key="slotType" value="head" />
+	</item>	
+
+	<item id="9280" article="a" name="skullish helmet">
+		<attribute key="weight" value="3800"/>
+		<attribute key="armor" value="9"/>
+		<attribute key="slotType" value="head"/>
+	</item>
+	<item id="9281" article="an" name="sorcerery backpack">
+		<attribute key="weight" value="1500"/>
+		<attribute key="containerSize" value="24"/>
+		<attribute key="magicpoints" value="1"/>
+		<attribute key="slotType" value="backpack"/>
+	</item>	
+
+	<item id="9285" article="a" name="bonelord helmet">
+		<attribute key="weight" value="4000"/>
+		<attribute key="armor" value="7"/>
+		<attribute key="absorbPercentEarth" value="4"/>
+		<attribute key="absorbPercentFire" value="-4" />
+		<attribute key="slotType" value="head"/>
+	</item>	
+	<item id="9286" article="a" name="bonelord armor">
+		<attribute key="weight" value="6900"/>
+		<attribute key="armor" value="12"/>
+		<attribute key="absorbPercentEarth" value="8"/>
+		<attribute key="absorbPercentFire" value="-8" />
+		<attribute key="slotType" value="body"/>
+	</item>		
+	<item id="9287" name="bonelord legs">
+		<attribute key="weight" value="4900"/>
+		<attribute key="armor" value="6"/>
+		<attribute key="absorbPercentEarth" value="6"/>
+		<attribute key="absorbPercentFire" value="-6" />
+		<attribute key="slotType" value="legs"/>
+	</item>	

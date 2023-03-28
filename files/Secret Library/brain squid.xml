@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Brain Squid" nameDescription="a brain squid" race="undead" experience="17672" speed="430" manacost="0">
+	<health now="18000" max="18000"/>
+	<look type="584" head="97" body="18" legs="61" feet="85" corpse="15602" />
+	<targetchange interval="5000" chance="8"/>
+	<targetstrategies nearest="100" health="0" damage="0" random="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-100" max="-600"/>
+		<attack name="energy" interval="2000" chance="12" range="7" target="1" min="-500" max="-700">
+			<attribute key="shootEffect" value="energyshot"/>
+			<attribute key="areaEffect" value="purplearea"/>
+		</attack>
+		<attack name="energy" interval="2000" chance="14" radius="2" target="0" min="-700" max="-1000">
+			<attribute key="areaEffect" value="purplearea"/>
+		</attack>	
+		<attack name="energy" interval="2000" chance="12" radius="3" range="7" target="1" min="-500" max="-700">
+			<attribute key="shootEffect" value="energyshot"/>
+			<attribute key="areaEffect" value="energyhit"/>
+		</attack>		
+		<attack name="energy" interval="2000" chance="14" radius="3" target="0" min="-500" max="-700">
+			<attribute key="areaEffect" value="energyhit"/>
+		</attack>			
+	</attacks>
+	<defenses armor="82" defense="40">
+	</defenses>
+	<elements>
+		<element deathPercent="-15"/>
+	</elements>
+	<immunities>
+		<immunity holy="1"/>
+		<immunity energy="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+	</voices>
+	<loot>
+		<item id="2152" countmax="20" chance="75180"/><!-- platinum coin -->
+		<item id="5576" countmax="4" chance="34220"/><!-- violet crystal shard -->
+		<item id="15687" countmax="4" chance="23460" /><!-- glowing rune -->	
+		<item id="15677" chance="19060" /><!-- energy ball -->
+		<item id="15671" chance="18460" /><!-- Instable Proto Matter -->
+		<item id="15679" chance="14990" /><!-- energy drink -->
+		<item id="14618" chance="14760" /><!-- energy bar -->
+		<item id="15674" chance="12400" /><!-- frozen lightning -->
+		<item id="9294" chance="11950" /><!-- ultimate mana potion-->
+		<item id="15685" chance="11060"/><!-- inkwell (black)-->	
+		<item id="15670" chance="7720"/><!-- odd organ-->	
+		<item id="5580" chance="7320" /><!-- blue crystal splinter -->	
+		<item id="2147" countmax="6" chance="6100"/><!-- small ruby -->
+		<item id="10248" countmax="2" chance="5170"/><!-- lightning headband -->	
+		<item id="2153" chance="4680"/><!-- violet gem -->	
+		<item id="5581" chance="4190"/><!-- Cyan Crystal Fragment -->	
+		<item id="14616" chance="2890"/>					<!-- ring of red plasma -->	
+		<item id="14614" chance="2320"/>				<!-- ring of green plasma -->	
+		<item id="14612" chance="2130"/>					<!-- ring of blue plasma -->
+		<item id="2164" chance="2080" /><!-- might ring-->	
+		<item id="5298" chance="1890" /><!-- lightning pendant-->		
+		<item id="14619" chance="1360"/>						<!-- collar of blue plasma-->	
+		<item id="14621" chance="1790"/>						<!-- collar of red plasma-->	
+		<item id="14620" chance="680"/>						<!-- collar of green plasma-->	
+		<item id="14106" chance="1770"/><!-- slime heart -->	
+		<item id="15664" chance="1110" /><!--piece of dead brain -->	
+		<item id="5519" chance="1110"/><!-- wand of defiance -->	
+		<item id="5280" chance="490"/><!-- Spellweaver's Robe -->		
+	</loot>
+</monster>

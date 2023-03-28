@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ramonia Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="top">
+    <div class="top_container">
+      <a href="index.html"><img src="../imgs/ramoniawiki.gif" alt="Logo" class="logo"></a>
+      <form action="">
+        <input type="text" name="search" id="input-search" placeholder="Search..." size="22" maxlength="64">
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+  </div>
+  <!-- End of div top -->
+
+  <!-- Left bar -->
+  <div class="side-bar">
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+      <div class="item"><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></div>
+      <div class="item">
+        <a href="#" class="sub-btn"><i class="fa-solid fa-book"></i>Library<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="items.html">Items</a>
+          <a href="quests.html">Quests</a>
+          <a href="tasks.html">Tasks</a>
+          <a href="addons.html">Addons</a>
+          <a href="spells.html">Spells</a>
+          <a href="mounts.html">Mounts</a>
+        </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //jquery sub menu
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+    });
+    </script>
+  <!-- End of left bar -->
+  <!-- Main Page -->
+  <div id="main-page">
+    <div class="header">
+      <h1>Spellbooks</h1>
+    </div>
+    <table class="items">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Item Name</th>
+          <th>Defense</th>
+          <th>Specials</th>
+          <th>Weight</th>
+          <th>Vocation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href=""><img src="../imgs/items/spellscroll_of_prophecies.gif" alt=""></a></td>
+          <td>Spellscroll of Prophecies</td>
+          <td>12</td>
+          <td>Magic Level +3</td>
+          <td>26.50 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2175.gif" alt=""></a></td>
+          <td>Spellbook</td>
+          <td>14</td>
+          <td>Shows a list of spells</td>
+          <td>58.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>  
+        <tr>
+          <td><a href=""><img src="../imgs/items/crude_umbral_spellbook.gif" alt=""></a></td>
+          <td>Crude Umbral Spellbook</td>
+          <td>14</td>
+          <td>Magic Level +1<br>Earth +2%<br>Energy +2%<br>Fire +2%<br>Ice +2%</td>
+          <td>40.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs/items/snake_gods_wristguard.gif" alt=""></a></td>
+          <td>Snake God's Wristguard</td>
+          <td>14</td>
+          <td>Magic Level +3</td>
+          <td>28.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9256.png" alt=""></a></td>
+          <td>Spellbook of Mystery Eye</td>
+          <td>15</td>
+          <td>Magic Level +2<br>Earth +3%<br>Fire +3%<br>Ice +3%<br>Energy +3%</td>
+          <td>30.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>     
+        <tr>
+          <td><a href=""><img src="../imgs/items/spellbook_of_dark_mysteries.gif" alt=""></a></td>
+          <td>Spellbook of Dark Mysteries</td>
+          <td>16</td>
+          <td>Magic Level +3</td>
+          <td>28.50 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>  
+        <tr>
+          <td><a href=""><img src="../imgs/items/spellbook_of_mind_control.gif" alt=""></a></td>
+          <td>Spellbook of Mind Control</td>
+          <td>16</td>
+          <td>Magic Level +2</td>
+          <td>24.50 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>  
+        <tr>
+          <td><a href=""><img src="../imgs/items/umbral_spellbook.gif" alt=""></a></td>
+          <td>Umbral Spellbook</td>
+          <td>16</td>
+          <td>Magic Level +2<br>Earth +3%<br>Energy +3%<br>Fire +3%<br>Ice +3%</td>
+          <td>35.00 oz</td>
+          <td>Druid<br>Sorcerer</td>
+        </tr>    
+        <tr>
+          <td><a href=""><img src="../imgs/items/spellbook_of_enlightenment.gif" alt=""></a></td>
+          <td>Spellbook of Enlightenment</td>
+          <td>18</td>
+          <td>Magic Level +1</td>
+          <td>19.50 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs/items/wooden_spellbook.gif" alt=""></a></td>
+          <td>Wooden Spellbook</td>
+          <td>18</td>
+          <td>Magic Level +2<br>Earth +5%</td>
+          <td>24.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/book_of_lies.gif" alt=""></a></td>
+          <td>Book of Lies</td>
+          <td>18</td>
+          <td>Magic Level +4</td>
+          <td>24.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/spellbook_of_ancient_arcana.gif" alt=""></a></td>
+          <td>Spellbook of Ancient Arcana</td>
+          <td>19</td>
+          <td>Magic Level +4<br>Death +5%</td>
+          <td>25.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>  
+        <tr>
+          <td><a href=""><img src="../imgs/items/brain_in_a_jar.gif" alt=""></a></td>
+          <td>Brain in a Jar</td>
+          <td>19</td>
+          <td>Magic Level +3<br>Earth +7%</td>
+          <td>27.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/spellbook_of_lost_souls.gif" alt=""></a></td>
+          <td>Spellbook of Lost Souls</td>
+          <td>20</td>
+          <td>Magic Level +2</td>
+          <td>25.60 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>           
+        <tr>
+          <td><a href=""><img src="../imgs/items/umbral_master_spellbook.gif" alt=""></a></td>
+          <td>Umbral Master Spellbook</td>
+          <td>20</td>
+          <td>Magic Level +4<br>Earth +5%<br>Energy +5%<br>Fire +5%<br>Ice +5%</td>
+          <td>30.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>           
+        <tr>
+          <td><a href=""><img src="../imgs/items/spellbook_of_vigilance.gif" alt=""></a></td>
+          <td>Spellbook of Vigilance</td>
+          <td>20</td>
+          <td>Magic Level +3<br>Earth +3%<br>Fire -3%</td>
+          <td>27.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/spellbook_of_warding.gif" alt=""></a></td>
+          <td>Spellbook of Warding</td>
+          <td>22</td>
+          <td>Magic Level +1</td>
+          <td>21.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs/items/depth_scutum.gif" alt=""></a></td>
+          <td>Depth Scutum</td>
+          <td>25</td>
+          <td>Magic Level +2</td>
+          <td>30.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs/items/shoulder_plate.gif" alt=""></a></td>
+          <td>Shoulder Plate</td>
+          <td>26</td>
+          <td>Magic Level +3<br>Earth +6%<br>Physical +2%</td>
+          <td>35.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>             
+      </tbody>
+    </table>
+    <div class="back">
+      <h2><a href="#top">Back to the top</a></h2>
+    </div>
+  </div>
+  <!-- End of main page -->
+  <div class="side-bar">
+    <div class="content">
+      <div class="interactive">
+        <h2><i class="fa-solid fa-map map"></i>Map viewer</h2>
+        <a href="https://ramonia.pl/map_viewer/#zoom,14,position,1263,1278,7"><img src="../imgs/intertactive.png" alt="" class="image"></a>
+      </div>
+      <div class="widget">
+        <iframe src="https://discord.com/widget?id=457182944260390912&theme=dark" width="100%" height="435" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="socials">
+        <h2>Server Status & Socials</h2>
+        <a href="https://www.facebook.com/people/Ramoniapl/100063498342253/" class="fb" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/invite/V6wwZXfZ4a" class="dsc" target="blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

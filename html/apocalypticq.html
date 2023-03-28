@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ramonia Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="top">
+    <div class="top_container">
+      <a href="index.html"><img src="../imgs/ramoniawiki.gif" alt="Logo" class="logo"></a>
+      <form action="">
+        <input type="text" name="search" id="input-search" placeholder="Search..." size="22" maxlength="64">
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+  </div>
+  <!-- End of div top -->
+
+  <!-- Left bar -->
+  <div class="side-bar">
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+      <div class="item"><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></div>
+      <div class="item">
+        <a href="#" class="sub-btn"><i class="fa-solid fa-book"></i>Library<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="items.html">Items</a>
+          <a href="quests.html">Quests</a>
+          <a href="tasks.html">Tasks</a>
+          <a href="addons.html">Addons</a>
+          <a href="spells.html">Spells</a>
+          <a href="mounts.html">Mounts</a>
+        </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //jquery sub menu
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+    });
+    </script>
+  <!-- End of left bar -->
+  <!-- Main Page -->
+  <div id="main-page">
+    <div class="header">
+      <h1>Apocalyptic Quest</h1>
+    </div>
+    <table class="items">
+      <thead>
+        <tr>
+          <th>Localization</th>
+          <th>Requirements</th>
+          <th>Monsters</th>
+          <th>Reward</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Edron</td>
+          <td>100 lvl.</td>
+          <td>
+            <img src="../imgs/creatures/Fire_Elemental.gif" alt="">
+            <img src="../imgs/creatures/Cyclops.gif" alt="">
+            <img src="../imgs/creatures/Cyclops_Drone.gif" alt="">
+            <img src="../imgs/creatures/Cyclops_Smith.gif" alt="">
+            <img src="../imgs/creatures/Behemoth.gif" alt="">
+            <img src="../imgs/creatures/Dragon.gif" alt="">
+            <img src="../imgs/creatures/Demon.gif" alt="">
+            <img src="../imgs/creatures/Hellfire_Fighter.gif" alt="">
+            <img src="../imgs/creatures/Hellhound.gif" alt="">
+            <img src="../imgs/creatures/lucifer.gif" alt="">
+            <img src="../imgs/creatures/Ushuriel.gif" alt="">
+          </td>
+          <td>
+            <img src="../imgs/items/2506.png" alt=""><br>
+            <img src="../imgs/items/item_9268.png" alt="">
+          </td>
+        </tr>
+        <tr>
+          <td class="spoiler" colspan="4">
+            <div class="spoilersh">Spoiler <span class="showhide">Show/Hide</span></div>
+            <div class="spoiler-content">
+              <h3>We are starting the quest from Edron temple.</h3>
+              <img src="../imgs/quests/poiq1.png" alt="" width="95%">
+              <h3>1. Head to the cyclopolis. (Follow the map)</h3>
+              <img src="../imgs/quests/beheq1.png" alt="">
+              <img src="../imgs/quests/beheq2.png" alt=""width="95%">
+              <img src="../imgs/quests/beheq3.png" alt=""><br>
+              <img src="../imgs/quests/beheq4.png" alt=""><br>
+              <img src="../imgs/quests/beheq5.png" alt=""><br>
+              <img src="../imgs/quests/beheq6.png" alt=""><br>
+              <img src="../imgs/quests/beheq7.png" alt="" width="95%">
+              <h3>2. After going down, watch out for demons.</h3>
+              <img src="../imgs/quests/apocalypticq1.png" alt="">
+              <img src="../imgs/quests/apocalypticq2.png" alt="" width="95%">
+              <h3>3. Follow the map.</h3>
+              <img src="../imgs/quests/apocalypticq3.png" alt=""><br>
+              <img src="../imgs/quests/apocalyptiq4.png" alt="" width="95%">
+              <img src="../imgs/quests/apocalypticq5.png" alt="">
+              <h3>4. You are walking into hell. On your way you will encounter hellfire fighters and hellhounds.</h3>
+              <img src="../imgs/quests/apocalypticq6.png" alt="" width="95%">
+              <img src="../imgs/quests/apocalypticq7.png" alt="">
+              <h3>5. Walk through the door and carefully follow the spoiler.</h3>
+              <img src="../imgs/quests/apocalypticq8.png" alt="" width="95%">
+              <h3>6. Don't forget the key!!</h3>
+              <img src="../imgs/quests/apocalypticq9.png" alt="" width="95%">
+              <img src="../imgs/quests/apocalypticq10.png" alt="" width="95%">
+              <h3>7. You arrived at the Hellgate. Once you go down, expect monsters like lucifers and hellhounds.</h3>
+              <img src="../imgs/quests/apocalypticq11.png" alt="" width="95%">
+              <img src="../imgs/quests/apocalypticq12.png" alt="">
+              <img src="../imgs/quests/apocalypticq13.png" alt="" width="95%">
+              <img src="../imgs/quests/apocalypticq14.png" alt="">
+              <h3>8. You reached the top floor of Hellgate. </h3>
+              <img src="../imgs/quests/apocalypticq15.png" alt="" width="95%">
+              <h3>9. Follow the path to get to the reward room.</h3>
+              <h5>The exclamation mark on the map is where the Apocalypse spawns. Watch out!</h5>
+              <img src="../imgs/quests/apocalypticq16.png" alt="">
+              <h3>10. Use the golden key, and go inside of the vault.</h3>
+              <img src="../imgs/quests/apocalypticq17.png" alt="" width="95%">
+              <h3>11. Claim your rewards and prepare to leave the Hellgate.</h3>
+              <img src="../imgs/quests/apocalypticq21.png" alt="" width="95%">
+              <h3>12. Follow the map.</h3>
+              <img src="../imgs/quests/apocalypticq22.png" alt="">
+              <h3>13. First sever</h3>
+              <img src="../imgs/quests/apocalypticq18.png" alt="" width="95%">
+              <img src="../imgs/quests/apocalypticq19.png" alt="">  
+              <h3>14. Second sever</h3>
+              <img src="../imgs/quests/apocalypticq20.png" alt="" width="95%">
+              <h3>15. You are at the bottom floor. Follow the map.</h3>
+              <img src="../imgs/quests/apocalypticq23.png" alt="">
+              <h3>16. Leave the hell, using the same way you did earlier.</h3>
+              <img src="../imgs/quests/apocalypticq24.png" alt="" width="95%">
+            </div>
+          </td>
+          <script type="text/javascript">
+            $(document).ready(function() {
+              //jquery sub menu
+              $('.spoilersh').click(function(){
+                $(this).next('.spoiler-content').slideToggle();
+              });
+            });
+          </script>
+        </tr>
+      </tbody>
+    </table>
+    <div class="back">
+      <h2><a href="#top">Back to the top</a></h2>
+    </div>
+  </div>
+  <!-- End of main page -->
+  <div class="side-bar">
+    <div class="content">
+      <div class="interactive">
+        <h2><i class="fa-solid fa-map map"></i>Map viewer</h2>
+        <a href="https://ramonia.pl/map_viewer/#zoom,14,position,1263,1278,7"><img src="../imgs/intertactive.png" alt="" class="image"></a>
+      </div>
+      <div class="widget">
+        <iframe src="https://discord.com/widget?id=457182944260390912&theme=dark" width="100%" height="435" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="socials">
+        <h2>Server Status & Socials</h2>
+        <a href="https://www.facebook.com/people/Ramoniapl/100063498342253/" class="fb" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/invite/V6wwZXfZ4a" class="dsc" target="blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

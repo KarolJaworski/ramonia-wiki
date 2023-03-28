@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ramonia Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="top">
+    <div class="top_container">
+      <a href="index.html"><img src="../imgs/ramoniawiki.gif" alt="Logo" class="logo"></a>
+      <form action="">
+        <input type="text" name="search" id="input-search" placeholder="Search..." size="22" maxlength="64">
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+  </div>
+  <!-- End of div top -->
+
+  <!-- Left bar -->
+  <div class="side-bar">
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+      <div class="item"><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></div>
+      <div class="item">
+        <a href="#" class="sub-btn"><i class="fa-solid fa-book"></i>Library<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="items.html">Items</a>
+          <a href="quests.html">Quests</a>
+          <a href="tasks.html">Tasks</a>
+          <a href="addons.html">Addons</a>
+          <a href="spells.html">Spells</a>
+          <a href="mounts.html">Mounts</a>
+        </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //jquery sub menu
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+    });
+    </script>
+  <!-- End of left bar -->
+  <!-- Main Page -->
+  <div id="main-page">
+    <div class="header">
+      <h1>Armors</h1>
+    </div>
+    <table class="items">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Item Name</th>
+          <th>Armor</th>
+          <th>Specials</th>
+          <th>Weight</th>
+          <th>Vocation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2657.gif" alt=""></a></td>
+          <td>Simple Dress</td>
+          <td>0</td>
+          <td>-</td>
+          <td>24.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2659.gif" alt=""></a></td>
+          <td>Ball Gown</td>
+          <td>0</td>
+          <td>-</td>
+          <td>25.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/hibiscus_dress.gif" alt=""></a></td>
+          <td>Hibiscus Dress</td>
+          <td>0</td>
+          <td>-</td>
+          <td>19.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2650.gif" alt=""></a></td>
+          <td>Jacket</td>
+          <td>1</td>
+          <td>-</td>
+          <td>24.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2651.gif" alt=""></a></td>
+          <td>Coat</td>
+          <td>1</td>
+          <td>-</td>
+          <td>27.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2652.gif" alt=""></a></td>
+          <td>Green Tunic</td>
+          <td>1</td>
+          <td>-</td>
+          <td>9.30 oz</td>
+          <td>All</td>
+        </tr>  
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2654.gif" alt=""></a></td>
+          <td>Cape</td>
+          <td>1</td>
+          <td>-</td>
+          <td>32.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2655.gif" alt=""></a></td>
+          <td>Red Robe</td>
+          <td>1</td>
+          <td>-</td>
+          <td>26.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2658.gif" alt=""></a></td>
+          <td>White Dress</td>
+          <td>1</td>
+          <td>-</td>
+          <td>24.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2485.gif" alt=""></a></td>
+          <td>Doublet</td>
+          <td>2</td>
+          <td>-</td>
+          <td>25.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2653.gif" alt=""></a></td>
+          <td>Red Tunic</td>
+          <td>2</td>
+          <td>-</td>
+          <td>30.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/pirate_shirt.gif" alt=""></a></td>
+          <td>Pirate Shirt</td>
+          <td>3</td>
+          <td>-</td>
+          <td>20.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2467.gif" alt=""></a></td>
+          <td>Leather Armor</td>
+          <td>4</td>
+          <td>-</td>
+          <td>60.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2484.gif" alt=""></a></td>
+          <td>Studded Armor</td>
+          <td>5</td>
+          <td>-</td>
+          <td>71.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2464.gif" alt=""></a></td>
+          <td>Chain Armor</td>
+          <td>6</td>
+          <td>-</td>
+          <td>100.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2508.gif" alt=""></a></td>
+          <td>Native Armor</td>
+          <td>7</td>
+          <td>-</td>
+          <td>80.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2660.gif" alt=""></a></td>
+          <td>Ranger's Cloak</td>
+          <td>7</td>
+          <td>-</td>
+          <td>48.80 oz</td>
+          <td>Paladin</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2465.gif" alt=""></a></td>
+          <td>Brass Armor</td>
+          <td>8</td>
+          <td>-</td>
+          <td>80.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/spirit_cloak.gif" alt=""></a></td>
+          <td>Spirit Cloak</td>
+          <td>8</td>
+          <td>Magic Level +1</td>
+          <td>26.50 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2483.gif" alt=""></a></td>
+          <td>Scale Armor</td>
+          <td>9</td>
+          <td>-</td>
+          <td>105.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/3968.gif" alt=""></a></td>
+          <td>Leopard Armor</td>
+          <td>9</td>
+          <td>-</td>
+          <td>95.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/focus_cape.gif" alt=""></a></td>
+          <td>Focus Cape</td>
+          <td>9</td>
+          <td>Magic Level +1</td>
+          <td>21.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/leather_harness.gif" alt=""></a></td>
+          <td>Leather Harness</td>
+          <td>9</td>
+          <td>-</td>
+          <td>29.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/glooth_cape.gif" alt=""></a></td>
+          <td>Glooth Cape</td>
+          <td>9</td>
+          <td>Earth +5%<br>Fire -5%</td>
+          <td>29.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2463.gif" alt=""></a></td>
+          <td>Plate Armor</td>
+          <td>10</td>
+          <td>-</td>
+          <td>120.00 oz</td>
+          <td>All</td>
+        </tr>    
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2489.gif" alt=""></a></td>
+          <td>Dark Armor</td>
+          <td>10</td>
+          <td>-</td>
+          <td>120.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2503.gif" alt=""></a></td>
+          <td>Dwarven Armor</td>
+          <td>10</td>
+          <td>Magic Level +3</td>
+          <td>35.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>  
+        <tr>
+          <td><a href="#"><img src="../imgs/items/belted_cape.gif" alt=""></a></td>
+          <td>Belted Cape</td>
+          <td>10</td>
+          <td>-</td>
+          <td>35.00 oz</td>
+          <td>Paladin</td>
+        </tr>  
+        <tr>
+          <td><a href="#"><img src="../imgs/items/mammoth_fur_cape.gif" alt=""></a></td>
+          <td>Mammoth Fur Cape</td>
+          <td>10</td>
+          <td>-</td>
+          <td>20.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2486.gif" alt=""></a></td>
+          <td>Noble Armor</td>
+          <td>11</td>
+          <td>-</td>
+          <td>120.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2656.gif" alt=""></a></td>
+          <td>Blue Robe</td>
+          <td>11</td>
+          <td>-</td>
+          <td>22.00 oz</td>
+          <td>All</td>
+        </tr>  
+        <tr>
+          <td><a href="#"><img src="../imgs/items/glacier_robe.gif" alt=""></a></td>
+          <td>Glacier Robe</td>
+          <td>11</td>
+          <td>Ice +8%<br>Energy -8%</td>
+          <td>22.50 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>  
+        <tr>
+          <td><a href="#"><img src="../imgs/items/magma_coat.gif" alt=""></a></td>
+          <td>Magma Coat</td>
+          <td>11</td>
+          <td>Fire +8%<br>Ice -8%</td>
+          <td>22.50 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr> 
+	        <tr>
+          <td><a href="#"><img src="../imgs/items/spellweavers_robe.gif" alt=""></a></td>
+          <td>Spellweaver's Robe</td>
+          <td>11</td>
+          <td>Energy +10%<br>Energy -10%</td>
+          <td>23.50 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/terra_mantle.gif" alt=""></a></td>
+          <td>Terra Mantle</td>
+          <td>11</td>
+          <td>Earth +8%<br>Fire -8%</td>
+          <td>22.50 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/lightning_robe.gif" alt=""></a></td>
+          <td>Lightning Robe</td>
+          <td>11</td>
+          <td>Energy +8%<br>Earth -8%</td>
+          <td>22.50 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/dark_lords_cape.gif" alt=""></a></td>
+          <td>Dark Lord's Cape</td>
+          <td>11</td>
+          <td>Death +8%<br>Holy -8%</td>
+          <td>29.00 oz</td>
+          <td>Sorcerer</td>
+        </tr>  
+        <tr>
+          <td><a href="#"><img src="../imgs/items/zaoan_robe.gif" alt=""></a></td>
+          <td>Zaoan Robe</td>
+          <td>11</td>
+          <td>Fire +10%<br>Ice -10%</td>
+          <td>24.50 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/fur_armor.gif" alt=""></a></td>
+          <td>Fur Armor</td>
+          <td>11</td>
+          <td>Earth +5%<br>Ice +5%</td>
+          <td>49.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/item_9236.png" alt=""></a></td>
+          <td>Ghost Armor</td>
+          <td>11</td>
+          <td>Magic Level +2</td>
+          <td>45.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/albino_plate.gif" alt=""></a></td>
+          <td>Albino Plate</td>
+          <td>11</td>
+          <td>-</td>
+          <td>84.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2476.gif" alt=""></a></td>
+          <td>Knight Armor</td>
+          <td>12</td>
+          <td>-</td>
+          <td>120.00 oz</td>
+          <td>All</td>
+        </tr>  
+        <tr>
+          <td><a href="#"><img src="../imgs/items/dragon_robe.gif" alt=""></a></td>
+          <td>Dragon Robe</td>
+          <td>12</td>
+          <td>Fire +12%<br>Ice -12%</td>
+          <td>28.50 oz</td>
+          <td>Sorcerer</td>
+        </tr>  
+        <tr>
+          <td><a href="#"><img src="../imgs/items/paladin_armor.gif" alt=""></a></td>
+          <td>Paladin Armor</td>
+          <td>12</td>
+          <td>Distance +2</td>
+          <td>65.00 oz</td>
+          <td>Paladin</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/robe_of_the_underworld.gif" alt=""></a></td>
+          <td>Robe of the underworld</td>
+          <td>12</td>
+          <td>Death +12%<br>Holy -12%</td>
+          <td>31.00 oz</td>
+          <td>Sorcerer</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/velvet_mantle.gif" alt=""></a></td>
+          <td>Velvet Mantle</td>
+          <td>12</td>
+          <td>Energy +12%<br>Earth -12%</td>
+          <td>28.50 oz</td>
+          <td>Sorcerer</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/greenwood_coat.gif" alt=""></a></td>
+          <td>Greenwood Coat</td>
+          <td>12</td>
+          <td>Earth +12%<br>Fire -12%</td>
+          <td>28.50 oz</td>
+          <td>Druid</td>
+        </tr>  
+        <tr>
+          <td><a href="#"><img src="../imgs/items/robe_of_the_ice_queen.gif" alt=""></a></td>
+          <td>Robe of the Ice Queen</td>
+          <td>12</td>
+          <td>Ice +12%<br>Energy -12%</td>
+          <td>29.50 oz</td>
+          <td>Druid</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/calopteryx_cape.gif" alt=""></a></td>
+          <td>Calopteryx Cape</td>
+          <td>12</td>
+          <td>Magic Level +1<br>Ice +5%</td>
+          <td>20.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/buckle.gif" alt=""></a></td>
+          <td>Buckle</td>
+          <td>12</td>
+          <td>-</td>
+          <td>75.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/item_9216.png" alt=""></a></td>
+          <td>Frozen Armor</td>
+          <td>12</td>
+          <td>Ice +5%</td>
+          <td>99.00 oz</td>
+          <td>All</td>
+        </tr>  
+        <tr>
+          <td><a href="#"><img src="../imgs/items/item_9235.png" alt=""></a></td>
+          <td>Archer's Armor</td>
+          <td>12</td>
+          <td>Distance +2</td>
+          <td>99.00 oz</td>
+          <td>Paladin</td>
+        </tr>    
+        <tr>
+          <td><a href="#"><img src="../imgs/items/moohtah_plate.gif" alt=""></a></td>
+          <td>Mooh'tah Plate</td>
+          <td>12</td>
+          <td>-</td>
+          <td>125.00 oz</td>
+          <td>Knight,<br>Paladin</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/gill_coat.gif" alt=""></a></td>
+          <td>Gill Coat</td>
+          <td>12</td>
+          <td>Magic Level +1<br>Earth +10%<br>Fire -10%</td>
+          <td>19.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>  
+        <tr>
+          <td><a href="#"><img src="../imgs/items/heat_core.gif" alt=""></a></td>
+          <td>Heat Core</td>
+          <td>12</td>
+          <td>-</td>
+          <td>55.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/dream_shroud.gif" alt=""></a></td>
+          <td>Dream Shroud</td>
+          <td>12</td>
+          <td>Magic Level +3<br>Energy +10%</td>
+          <td>25.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2487.gif" alt=""></a></td>
+          <td>Crown Armor</td>
+          <td>13</td>
+          <td>-</td>
+          <td>99.00 oz</td>
+          <td>All</td>
+        </tr>  
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2500.gif" alt=""></a></td>
+          <td>Amazon Armor</td>
+          <td>13</td>
+          <td>-</td>
+          <td>99.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/lavos_armor.gif" alt=""></a></td>
+          <td>Lavos Armor</td>
+          <td>13</td>
+          <td>Fire +3%<br>Ice -3%</td>
+          <td>85.00 oz</td>
+          <td>Knight,<br>Paladin</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/zaoan_armor.gif" alt=""></a></td>
+          <td>Zaoan Armor</td>
+          <td>13</td>
+          <td>Speed +10</td>
+          <td>95.50 oz</td>
+          <td>Knight,<br>Paladin</td>
+        </tr>  
+        <tr>
+          <td><a href="#"><img src="../imgs/items/crystalline_armor.gif" alt=""></a></td>
+          <td>Crystalline Armor</td>
+          <td>13</td>
+          <td>Ice +3%<br>Energy -3%</td>
+          <td>84.50 oz</td>
+          <td>Knight,<br>Paladin</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/voltage_armor.gif" alt=""></a></td>
+          <td>Voltage Armor</td>
+          <td>13</td>
+          <td>Energy +3%<br>Earth -3%</td>
+          <td>84.50 oz</td>
+          <td>Knight,<br>Paladin</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/molten_plate.gif" alt=""></a></td>
+          <td>Molten Plate</td>
+          <td>13</td>
+          <td>Fire +7%<br>Ice -7%</td>
+          <td>75.00 oz</td>
+          <td>Paladin</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/divine_plate.gif" alt=""></a></td>
+          <td>Divine Plate</td>
+          <td>13</td>
+          <td>Death +10%<br>Holy -10%</td>
+          <td>75.00 oz</td>
+          <td>Paladin</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/frozen_plate.gif" alt=""></a></td>
+          <td>Frozen Plate</td>
+          <td>13</td>
+          <td>Ice +7%<br>Energy -7%</td>
+          <td>75.00 oz</td>
+          <td>Paladin</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/item_9240.png" alt=""></a></td>
+          <td>Green Scale Armor</td>
+          <td>13</td>
+          <td>Earth +8%<br>Fire -8%</td>
+          <td>85.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/item_9250.png" alt=""></a></td>
+          <td>Witchy Armor</td>
+          <td>13</td>
+          <td>Magic Level +2</td>
+          <td>130.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/item_9282.png" alt=""></a></td>
+          <td>Brave Armor</td>
+          <td>13</td>
+          <td>-</td>
+          <td>79.00 oz</td>
+          <td>Any</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/living_armor.gif" alt=""></a></td>
+          <td>Living Armor</td>
+          <td>13</td>
+          <td>Magic Level +2<br>Earth +12%<br>Fire -5%</td>
+          <td>48.00 oz</td>
+          <td>Druid,<br> Sorcerer</td>
+        </tr>     
+        <tr>
+          <td><a href="#"><img src="../imgs/items/swamplair_armor.gif" alt=""></a></td>
+          <td>Swamplair Armor</td>
+          <td>13</td>
+          <td>Earth +3%<br>Fire -3%</td>
+          <td>84.50 oz</td>
+          <td>Knight,<br>Paladin</td>
+        </tr>      
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2466.gif" alt=""></a></td>
+          <td>Golden Armor</td>
+          <td>14</td>
+          <td>-</td>
+          <td>80.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2505.gif" alt=""></a></td>
+          <td>Elven Armor</td>
+          <td>14</td>
+          <td>-</td>
+          <td>99.00 oz</td>
+          <td>All</td>
+        </tr>  
+        <tr>
+          <td><a href="#"><img src="../imgs/items/skullcracker_armor.gif" alt=""></a></td>
+          <td>Skullcracker Armor</td>
+          <td>14</td>
+          <td>Death +5%<br>Holy -5%</td>
+          <td>110.00 oz</td>
+          <td>Knight</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/item_9237.png" alt=""></a></td>
+          <td>Court Armor</td>
+          <td>14</td>
+          <td>-</td>
+          <td>65.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2492.gif" alt=""></a></td>
+          <td>Dragon Scale Mail</td>
+          <td>15</td>
+          <td>-</td>
+          <td>114.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/fireborn_giant_armor.gif" alt=""></a></td>
+          <td>Fireborn Giant Armor</td>
+          <td>15</td>
+          <td>Sword +2<br>Fire +5%<br>Ice -5%</td>
+          <td>120.00 oz</td>
+          <td>Knight</td>
+        </tr>    
+        <tr>
+          <td><a href="#"><img src="../imgs/items/master_archers_armor.gif" alt=""></a></td>
+          <td>Master Archer's Armor</td>
+          <td>15</td>
+          <td>Distance +3</td>
+          <td>69.00 oz</td>
+          <td>Paladin</td>
+        </tr>  
+
+        <tr>
+          <td><a href="#"><img src="../imgs/items/oceanborn_leviathan_armor.gif" alt=""></a></td>
+          <td>Oceanborn Leviathan Armor</td>
+          <td>15</td>
+          <td>Shielding +1<br>Ice +5%<br>Energy -5%</td>
+          <td>100.00 oz</td>
+          <td>Knight</td>
+        </tr>        
+        <tr>
+          <td><a href="#"><img src="../imgs/items/elite_draken_mail.gif" alt=""></a></td>
+          <td>Elite Draken Mail</td>
+          <td>15</td>
+          <td>Speed +10</td>
+          <td>120.00 oz</td>
+          <td>Knight,<br>Paladin</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/item_9239.png" alt=""></a></td>
+          <td>Scale Plate Armor</td>
+          <td>15</td>
+          <td>-</td>
+          <td>130.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/prismatic_armor.gif" alt=""></a></td>
+          <td>Prismatic Armor</td>
+          <td>15</td>
+          <td>Speed +15<br>Physical +5%</td>
+          <td>79.00 oz</td>
+          <td>Knight,<br>Paladin</td>
+        </tr>            
+        <tr>
+          <td><a href="#"><img src="../imgs/items/earthborn_titan_armor.gif" alt=""></a></td>
+          <td>Earthborn Titan Armor</td>
+          <td>15</td>
+          <td>Axe +2<br>Earth +5%<br>Fire -5%</td>
+          <td>120.00 oz</td>
+          <td>Knight</td>
+        </tr>  
+        <tr>
+          <td><a href="#"><img src="../imgs/items/firemind_raiment.gif" alt=""></a></td>
+          <td>Firemind Raiment</td>
+          <td>15</td>
+          <td>Magic Level +4<br>Fire +8%<br>Ice -8%</td>
+          <td>55.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/frostmind_raiment.gif" alt=""></a></td>
+          <td>Frostmind Raiment</td>
+          <td>15</td>
+          <td>Magic Level +4<br>Ice +8%<br>Energy -8%</td>
+          <td>55.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/earthmind_raiment.gif" alt=""></a></td>
+          <td>Earthmind Raiment</td>
+          <td>15</td>
+          <td>Magic Level +4<br>Earth +8%<br>Fire -8%</td>
+          <td>55.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/thundermind_raiment.gif" alt=""></a></td>
+          <td>Thundermind Raiment</td>
+          <td>15</td>
+          <td>Magic Level +4<br>Energy +8%<br>Earth -8%</td>
+          <td>55.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2494.gif" alt=""></a></td>
+          <td>Demon Armor</td>
+          <td>16</td>
+          <td>-</td>
+          <td>80.00 oz</td>
+          <td>All</td>
+        </tr>                                 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/yalahari_armor.gif" alt=""></a></td>
+          <td>Yalahari Armor</td>
+          <td>16</td>
+          <td>Death +3%</td>
+          <td>70.00 oz</td>
+          <td>Knight</td>
+        </tr>                  
+        <tr>
+          <td><a href="#"><img src="../imgs/items/ornate_chestplate.gif" alt=""></a></td>
+          <td>Ornate Chestplate</td>
+          <td>16</td>
+          <td>Shielding +3<br>Physical +8%</td>
+          <td>156.00 oz</td>
+          <td>Knight</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/depth_lorica.gif" alt=""></a></td>
+          <td>Depth Lorica</td>
+          <td>16</td>
+          <td>Distance +3<br>Death +5%</td>
+          <td>145.00 oz</td>
+          <td>Paladin</td>
+        </tr>         
+        <tr>
+          <td><a href="#"><img src="../imgs/items/item_9241.png" alt=""></a></td>
+          <td>Ornament Cape</td>
+          <td>16</td>
+          <td>-</td>
+          <td>135.00 oz</td>
+          <td>All</td>
+        </tr>         
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2472.gif" alt=""></a></td>
+          <td>Magic Plate Armor</td>
+          <td>17</td>
+          <td>-</td>
+          <td>85.00 oz</td>
+          <td>All</td>
+        </tr>  
+        <tr>
+          <td><a href="#"><img src="../imgs/items/gnome_armor.gif" alt=""></a></td>
+          <td>Gnome Armor</td>
+          <td>17</td>
+          <td>Distance +3<br>Energy +8%<br>Physical +4%<br>Ice -2%</td>
+          <td>120.00 oz</td>
+          <td>Paladin</td>
+        </tr>                      
+        <tr>
+          <td><a href="#"><img src="../imgs/items/fireheart_cuirass.gif" alt=""></a></td>
+          <td>Fireheart Cuirass</td>
+          <td>18</td>
+          <td>Sword +4<br>Fire +8%<br>Ice -8%</td>
+          <td>145.00 oz</td>
+          <td>Knight</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/fireheart_hauberk.gif" alt=""></a></td>
+          <td>Fireheart Hauberk</td>
+          <td>18</td>
+          <td>Axe +4<br>Fire +8%<br>Ice -8%</td>
+          <td>145.00 oz</td>
+          <td>Knight</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/fireheart_platemail.gif" alt=""></a></td>
+          <td>Fireheart Platemail</td>
+          <td>18</td>
+          <td>Club +3<br>Fire +8%<br>Ice -8%</td>
+          <td>145.00 oz</td>
+          <td>Knight</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/earthheart_cuirass.gif" alt=""></a></td>
+          <td>Earthheart Cuirass</td>
+          <td>18</td>
+          <td>Sword +4<br>Earth +8%<br>Fire -8%</td>
+          <td>145.00 oz</td>
+          <td>Knight</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/earthheart_hauberk.gif" alt=""></a></td>
+          <td>Earthheart Hauberk</td>
+          <td>18</td>
+          <td>Axe +4<br>Earth +8%<br>Fire -8%</td>
+          <td>145.00 oz</td>
+          <td>Knight</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/earthheart_platemail.gif" alt=""></a></td>
+          <td>Earthheart Platemail</td>
+          <td>18</td>
+          <td>Club +4<br>Earth +8%<br>Fire -8%</td>
+          <td>145.00 oz</td>
+          <td>Knight</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/thunderheart_cuirass.gif" alt=""></a></td>
+          <td>Thunderheart Cuirass</td>
+          <td>18</td>
+          <td>Sword +4<br>Energy +8%<br>Earth -8%</td>
+          <td>145.00 oz</td>
+          <td>Knight</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/thunderheart_hauberk.gif" alt=""></a></td>
+          <td>Thunderheart Hauberk</td>
+          <td>18</td>
+          <td>Axe +4<br>Energy +8%<br>Earth -8%</td>
+          <td>145.00 oz</td>
+          <td>Knight</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/thunderheart_platemail.gif" alt=""></a></td>
+          <td>Thunderheart Platemail</td>
+          <td>18</td>
+          <td>Club +4<br>Energy +8%<br>Earth -8%</td>
+          <td>145.00 oz</td>
+          <td>Knight</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/frostheart_cuirass.gif" alt=""></a></td>
+          <td>Frostheart Cuirass</td>
+          <td>18</td>
+          <td>Sword +4<br>Ice +8%<br>Energy -8%</td>
+          <td>145.00 oz</td>
+          <td>Knight</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/frostheart_hauberk.gif" alt=""></a></td>
+          <td>Frostheart Hauberk</td>
+          <td>18</td>
+          <td>Axe +4<br>Ice +8%<br>Energy -8%</td>
+          <td>145.00 oz</td>
+          <td>Knight</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/frostheart_platemail.gif" alt=""></a></td>
+          <td>Frostheart Platemail</td>
+          <td>18</td>
+          <td>Club +4<br>Ice +8%<br>Energy -8%</td>
+          <td>145.00 oz</td>
+          <td>Knight</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/firesoul_tabard.gif" alt=""></a></td>
+          <td>Firesoul Tabard</td>
+          <td>18</td>
+          <td>Distance +4<br>Fire +8%<br>Ice -8%</td>
+          <td>145.00 oz</td>
+          <td>Paladin</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/earthsoul_tabard.gif" alt=""></a></td>
+          <td>Earthsoul Tabard</td>
+          <td>18</td>
+          <td>Distance +4<br>Earth +8%<br>Fire -8%</td>
+          <td>145.00 oz</td>
+          <td>Paladin</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/thundersoul_tabard.gif" alt=""></a></td>
+          <td>Thundersoul Tabard</td>
+          <td>18</td>
+          <td>Distance +4<br>Energy +8%<br>Earth -8%</td>
+          <td>145.00 oz</td>
+          <td>Paladin</td>
+        </tr>   
+        <tr>
+          <td><a href="#"><img src="../imgs/items/frostsoul_tabard.gif" alt=""></a></td>
+          <td>Frostsoul Tabard</td>
+          <td>18</td>
+          <td>Distance +4<br>Ice +8%<br>Energy -8%</td>
+          <td>145.00 oz</td>
+          <td>Paladin</td>
+        </tr>     
+      </tbody>
+    </table>
+    <div class="back">
+      <h2><a href="#top">Back to the top</a></h2>
+    </div>
+  </div>
+  <!-- End of main page -->
+  <div class="side-bar">
+    <div class="content">
+      <div class="interactive">
+        <h2><i class="fa-solid fa-map map"></i>Map viewer</h2>
+        <a href="https://ramonia.pl/map_viewer/#zoom,14,position,1263,1278,7"><img src="../imgs/intertactive.png" alt="" class="image"></a>
+      </div>
+      <div class="widget">
+        <iframe src="https://discord.com/widget?id=457182944260390912&theme=dark" width="100%" height="435" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="socials">
+        <h2>Server Status & Socials</h2>
+        <a href="https://www.facebook.com/people/Ramoniapl/100063498342253/" class="fb" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/invite/V6wwZXfZ4a" class="dsc" target="blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ramonia Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="top">
+    <div class="top_container">
+      <a href="index.html"><img src="../imgs/ramoniawiki.gif" alt="Logo" class="logo"></a>
+      <form action="">
+        <input type="text" name="search" id="input-search" placeholder="Search..." size="22" maxlength="64">
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+  </div>
+  <!-- End of div top -->
+
+  <!-- Left bar -->
+  <div class="side-bar">
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+      <div class="item"><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></div>
+      <div class="item">
+        <a href="#" class="sub-btn"><i class="fa-solid fa-book"></i>Library<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="items.html">Items</a>
+          <a href="quests.html">Quests</a>
+          <a href="tasks.html">Tasks</a>
+          <a href="addons.html">Addons</a>
+          <a href="spells.html">Spells</a>
+          <a href="mounts.html">Mounts</a>
+        </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //jquery sub menu
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+    });
+    </script>
+  <!-- End of left bar -->
+  <!-- Main Page -->
+  <div id="main-page">
+    <div class="header">
+      <h1>Helmets</h1>
+    </div>
+    <table class="items">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Item Name</th>
+          <th>Armor</th>
+          <th>Specials</th>
+          <th>Weight</th>
+          <th>Vocation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/pair_of_earmuffs.gif" alt=""></a></td>
+          <td>Pair of Earmuffs</td>
+          <td>0</td>
+          <td>-</td>
+          <td>5.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2128.gif" alt=""></a></td>
+          <td>Crown</td>
+          <td>0</td>
+          <td>-</td>
+          <td>19.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/rusted_helmet.gif" alt=""></a></td>
+          <td>Rusted Helmet</td>
+          <td>0</td>
+          <td>Use flask of rusted remover to uncover a helmet.</td>
+          <td>52.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2139.gif" alt=""></a></td>
+          <td>Ancient Tiara</td>
+          <td>0</td>
+          <td>-</td>
+          <td>8.20 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2461.gif" alt=""></a></td>
+          <td>Leather Helmet</td>
+          <td>1</td>
+          <td>-</td>
+          <td>22.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/broken_visor.gif" alt=""></a></td>
+          <td>Broken Visor</td>
+          <td>1</td>
+          <td>-</td>
+          <td>14.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2662.gif" alt=""></a></td>
+          <td>Magician Hat</td>
+          <td>1</td>
+          <td>-</td>
+          <td>7.50 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2663.gif" alt=""></a></td>
+          <td>Mystic Turban</td>
+          <td>1</td>
+          <td>-</td>
+          <td>8.50 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/bandana.gif" alt=""></a></td>
+          <td>Bandana</td>
+          <td>1</td>
+          <td>-</td>
+          <td>8.50 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/ferumbras_hat.gif" alt=""></a></td>
+          <td>Ferumbras' Hat</td>
+          <td>5</td>
+          <td>Magic Level +2<br>Speed +10</td>
+          <td>8.50 oz</td>
+          <td>Sorcerer,<br>Druid</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2458.gif" alt=""></a></td>
+          <td>Chain Helmet</td>
+          <td>2</td>
+          <td>-</td>
+          <td>42.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2482.gif" alt=""></a></td>
+          <td>Studded Helmet</td>
+          <td>2</td>
+          <td>-</td>
+          <td>24.50 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/3970.gif" alt=""></a></td>
+          <td>Feather Headdress</td>
+          <td>2</td>
+          <td>-</td>
+          <td>21.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/3971.gif" alt=""></a></td>
+          <td>Charmer's Tiara</td>
+          <td>2</td>
+          <td>-</td>
+          <td>22.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/3967.gif" alt=""></a></td>
+          <td>Tribal Mask</td>
+          <td>2</td>
+          <td>-</td>
+          <td>25.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2460.gif" alt=""></a></td>
+          <td>Brass Helmet</td>
+          <td>3</td>
+          <td>-</td>
+          <td>27.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2323.gif" alt=""></a></td>
+          <td>Hat of the Mad</td>
+          <td>3</td>
+          <td>Magic Level +1</td>
+          <td>7.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/cobra_crown.gif" alt=""></a></td>
+          <td>Cobra Crown</td>
+          <td>3</td>
+          <td>Magic Level +2<br> Earth +5%<br> Fire -5%</td>
+          <td>8.50 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/mages_cap.gif" alt=""></a></td>
+          <td>Mage's Cap</td>
+          <td>3</td>
+          <td>Fire +4%</td>
+          <td>10.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/pirate_hat.gif" alt=""></a></td>
+          <td>Pirate Hat</td>
+          <td>3</td>
+          <td>-</td>
+          <td>12.50 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/fur_cap.gif" alt=""></a></td>
+          <td>Fur Cap</td>
+          <td>3</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/witch_hat.gif" alt=""></a></td>
+          <td>Witch Hat</td>
+          <td>3</td>
+          <td>Mana Drain +5%</td>
+          <td>7.80 oz</td>
+          <td>Sorcerer,<br>Druid</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/batwing_hat.gif" alt=""></a></td>
+          <td>Batwing Hat</td>
+          <td>3</td>
+          <td>Magic Level +1</td>
+          <td>6.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2480.gif" alt=""></a></td>
+          <td>Legion Helmet</td>
+          <td>4</td>
+          <td>-</td>
+          <td>31.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2473.gif" alt=""></a></td>
+          <td>Viking Helmet</td>
+          <td>4</td>
+          <td>-</td>
+          <td>39.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/shamanic_mask.gif" alt=""></a></td>
+          <td>Shamanic Mask</td>
+          <td>4</td>
+          <td>-</td>
+          <td>31.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/jade_hat.gif" alt=""></a></td>
+          <td>Jade Hat</td>
+          <td>4</td>
+          <td>Magic Level +1</td>
+          <td>9.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2459.gif" alt=""></a></td>
+          <td>Iron helmet</td>
+          <td>5</td>
+          <td>-</td>
+          <td>30.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2481.gif" alt=""></a></td>
+          <td>Soldier Helmet</td>
+          <td>5</td>
+          <td>-</td>
+          <td>32.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/terra_hood.gif" alt=""></a></td>
+          <td>Terra Hood</td>
+          <td>5</td>
+          <td> Earth +4%<br> Fire -5%</td>
+          <td>10.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/yalahari_mask.gif" alt=""></a></td>
+          <td>Yalahari Mask</td>
+          <td>5</td>
+          <td>Magic Level +2</td>
+          <td>35.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/rubber_cap.gif" alt=""></a></td>
+          <td>Rubber Cap</td>
+          <td>5</td>
+          <td>Magic Level +1<br>Earth +3%<br>Fire -3%</td>
+          <td>8.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/glacier_mask.gif" alt=""></a></td>
+          <td>Glacier Mask</td>
+          <td>5</td>
+          <td> Ice +4%<br> Energy -5%</td>
+          <td>10.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/gill_gugel.gif" alt=""></a></td>
+          <td>Gill Gugel</td>
+          <td>5</td>
+          <td>Magic Level +2<br>Earth +6%<br>Fire -6%</td>
+          <td>9.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/magma_monocle.gif" alt=""></a></td>
+          <td>Magma Monocle</td>
+          <td>5</td>
+          <td>Fire +4%<br>Ice -5%</td>
+          <td>10.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/lightning_headband.gif" alt=""></a></td>
+          <td>Lightning Headband</td>
+          <td>5</td>
+          <td>Earth -5%<br>Energy +4%</td>
+          <td>10.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2490.gif" alt=""></a></td>
+          <td>Dark Helmet</td>
+          <td>6</td>
+          <td>-</td>
+          <td>46.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/ragnir_helmet.gif" alt=""></a></td>
+          <td>Ragnir Helmet</td>
+          <td>6</td>
+          <td>-</td>
+          <td>31.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/krimhorn_helmet.gif" alt=""></a></td>
+          <td>Krimhorn Helmet</td>
+          <td>6</td>
+          <td>-</td>
+          <td>51.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2479.gif" alt=""></a></td>
+          <td>Strange Helmet</td>
+          <td>6</td>
+          <td>-</td>
+          <td>46.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2457.gif" alt=""></a></td>
+          <td>Steel Helmet</td>
+          <td>6</td>
+          <td>-</td>
+          <td>46.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2502.gif" alt=""></a></td>
+          <td>Dwarven Helmet</td>
+          <td>6</td>
+          <td> Physical +2%</td>
+          <td>42.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/3969.gif" alt=""></a></td>
+          <td>Horseman Helmet</td>
+          <td>6</td>
+          <td>-</td>
+          <td>42.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2462.gif" alt=""></a></td>
+          <td>Devil Helmet</td>
+          <td>7</td>
+          <td>-</td>
+          <td>50.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2491.gif" alt=""></a></td>
+          <td>Crown Helmet</td>
+          <td>7</td>
+          <td>-</td>
+          <td>29.50 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2499.gif" alt=""></a></td>
+          <td>Amazon Helmet</td>
+          <td>7</td>
+          <td>-</td>
+          <td>29.50 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/3972.gif" alt=""></a></td>
+          <td>Beholder Helmet</td>
+          <td>7</td>
+          <td>-</td>
+          <td>46.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/helmet_of_the_lost.gif" alt=""></a></td>
+          <td>Helmet of the Lost</td>
+          <td>7</td>
+          <td>-</td>
+          <td>35.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/shroud_of_despair.gif" alt=""></a></td>
+          <td>Shroud of Despair</td>
+          <td>7</td>
+          <td> Death +3%</td>
+          <td>34.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/gnome_helmet.gif" alt=""></a></td>
+          <td>Gnome Helmet</td>
+          <td>7</td>
+          <td>Magic Level +2<br>Energy +8%<br>Physical +3%<br>Ice -2%</td>
+          <td>24.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/item_9219.png" alt=""></a></td>
+          <td>Frozen Helmet</td>
+          <td>7</td>
+          <td>Ice +3%</td>
+          <td>29.50 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/item_9227.png" alt=""></a></td>
+          <td>Rotten Helmet</td>
+          <td>7</td>
+          <td>Earth +5%<br>Fire -5%</td>
+          <td>48.80 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/item_9232.png" alt=""></a></td>
+          <td>Thorn Helmet</td>
+          <td>7</td>
+          <td>Earth +3%</td>
+          <td>35.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2342.gif" alt=""></a></td>
+          <td>Helmet of the Ancients</td>
+          <td>8</td>
+          <td>-</td>
+          <td>27.60 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2497.gif" alt=""></a></td>
+          <td>Crusader Helmet</td>
+          <td>8</td>
+          <td>-</td>
+          <td>52.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2475.gif" alt=""></a></td>
+          <td>Warrior Helmet</td>
+          <td>8</td>
+          <td>-</td>
+          <td>68.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/item_9246.png" alt=""></a></td>
+          <td>Undead Helmet</td>
+          <td>8</td>
+          <td>Physical +5%</td>
+          <td>46.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/item_9279.png" alt=""></a></td>
+          <td>Brave Helmet</td>
+          <td>8</td>
+          <td>-</td>
+          <td>58.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/depth_galea.gif" alt=""></a></td>
+          <td>Depth Galea</td>
+          <td>8</td>
+          <td>Drowning +100%</td>
+          <td>46.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2498.gif" alt=""></a></td>
+          <td>Royal Helmet</td>
+          <td>9</td>
+          <td>-</td>
+          <td>48.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2501.gif" alt=""></a></td>
+          <td>Ceremonial Mask</td>
+          <td>9</td>
+          <td>-</td>
+          <td>10.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/skull_helmet.gif" alt=""></a></td>
+          <td>Skull Helmet</td>
+          <td>9</td>
+          <td>-</td>
+          <td>42.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/zaoan_helmet.gif" alt=""></a></td>
+          <td>Zaoan Helmet</td>
+          <td>9</td>
+          <td> Physical +5%</td>
+          <td>66.00 oz</td>
+          <td>Knight,<br>Paladin</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/werewolf_helmet.gif" alt=""></a></td>
+          <td>Werewolf Helmet</td>
+          <td>9</td>
+          <td>Speed +30</td>
+          <td>25.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/prismatic_helmet.gif" alt=""></a></td>
+          <td>Prismatic Helmet</td>
+          <td>9</td>
+          <td>Shielding +1<br>Physical +5%</td>
+          <td>56.00 oz</td>
+          <td>Knight</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/item_9242.png" alt=""></a></td>
+          <td>Firewalker Helmet</td>
+          <td>9</td>
+          <td>Fire +4%<br>Speed +10</td>
+          <td>66.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/item_9243.png" alt=""></a></td>
+          <td>Scary Hat</td>
+          <td>9</td>
+          <td>Death +4%</td>
+          <td>66.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2474.gif" alt=""></a></td>
+          <td>Winged Helmet</td>
+          <td>10</td>
+          <td>-</td>
+          <td>12.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2493.gif" alt=""></a></td>
+          <td>Demon Helmet</td>
+          <td>10</td>
+          <td>-</td>
+          <td>29.50 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2506.gif" alt=""></a></td>
+          <td>Dragon Scale Helmet</td>
+          <td>10</td>
+          <td>Physical +5%<br>Axe +1<br>Sword +1<br>Club +1<br>Dist +1</td>
+          <td>60.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/enchanted_werewolf_helmet.gif" alt=""></a></td>
+          <td>Enchanted Werewolf Helmet</td>
+          <td>10</td>
+          <td>Axe +1<br>Sword +1<br> Club +1</td>
+          <td>25.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/item_10045.png" alt=""></a></td>
+          <td>Visage of the End Days</td>
+          <td>10</td>
+          <td>-</td>
+          <td>38.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2343.gif" alt=""></a></td>
+          <td>Helmet of the Ancients</td>
+          <td>11</td>
+          <td>-</td>
+          <td>27.60 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2496.gif" alt=""></a></td>
+          <td>Horned Helmet</td>
+          <td>11</td>
+          <td>-</td>
+          <td>51.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href="#"><img src="../imgs/items/2471.gif" alt=""></a></td>
+          <td>Golden Helmet</td>
+          <td>12</td>
+          <td>-</td>
+          <td>32.00 oz</td>
+          <td>All</td>
+        </tr>      
+      </tbody>
+    </table>
+    <div class="back">
+      <h2><a href="#top">Back to the top</a></h2>
+    </div>
+  </div>
+  <!-- End of main page -->
+  <div class="side-bar">
+    <div class="content">
+      <div class="interactive">
+        <h2><i class="fa-solid fa-map map"></i>Map viewer</h2>
+        <a href="https://ramonia.pl/map_viewer/#zoom,14,position,1263,1278,7"><img src="../imgs/intertactive.png" alt="" class="image"></a>
+      </div>
+      <div class="widget">
+        <iframe src="https://discord.com/widget?id=457182944260390912&theme=dark" width="100%" height="435" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="socials">
+        <h2>Server Status & Socials</h2>
+        <a href="https://www.facebook.com/people/Ramoniapl/100063498342253/" class="fb" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/invite/V6wwZXfZ4a" class="dsc" target="blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

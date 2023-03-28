@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ramonia Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="top">
+    <div class="top_container">
+      <a href="index.html"><img src="../imgs/ramoniawiki.gif" alt="Logo" class="logo"></a>
+      <form action="">
+        <input type="text" name="search" id="input-search" placeholder="Search..." size="22" maxlength="64">
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+  </div>
+  <!-- End of div top -->
+
+  <!-- Left bar -->
+  <div class="side-bar">
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+      <div class="item"><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></div>
+      <div class="item">
+        <a href="#" class="sub-btn"><i class="fa-solid fa-book"></i>Library<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="items.html">Items</a>
+          <a href="quests.html">Quests</a>
+          <a href="tasks.html">Tasks</a>
+          <a href="addons.html">Addons</a>
+          <a href="spells.html">Spells</a>
+          <a href="mounts.html">Mounts</a>
+        </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //jquery sub menu
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+    });
+    </script>
+  <!-- End of left bar -->
+  <!-- Main Page -->
+  <div id="main-page">
+    <div class="header">
+      <h1>About (Server Info)</h1>
+    </div>
+
+    <div class="qq">
+      <h3>Balanced Vocations</h3>
+    </div>
+    <div class="aa">
+      <h4>Each vocation possess new or tweaked spells. We tried our hardest to balance the vocations so that all of them would be enjoyable in PvE as well as in the PvP gameplay. Here's the list of changes:<br>
+      - Druid - Poison Storm deals 80% of UE damage. Poison Storm applies physical damage.<br>
+      - Knight - Fierce Berserker deals 60% higher damage than usual Berserk. Better instant healing - "Wound Cleansing".<br>
+      - Paladin - New ammounition (spears, arrows, bolts). New spells - "Divine Caldera" & "Ethereal Spear".<br>
+    All the tweaks were made to accelerate PvE & PvP feelings in short time.</h4>
+    </div>
+    <div class="qq">
+      <h3>Blessing System</h3>
+    </div>
+    <div class="aa">
+      <h4>There are 2 options to gain blessings: <br>
+      1. Buy 3 blessings from: <br>
+    - Humphrley (Ankrahmun depo) - cost 10k,<br>
+  - Eremo (Edron depo) - cost 10k,<br>
+- Norf (Yurcity temple)- cost 10k.<br>
+2. Buy all blessings (5) at once from Avar Tar - cost 60k. Only available for those who finished the Inquisition Quest or bought Avar Tar scroll.<br><span style="color: #f0a938">Blesses don't fully protect you from item loss, therefore both options require you to wear AOL.</span></h4>
+    </div>
+
+    <div class="qq">
+      <h3>Exercise Weapons</h3>
+    </div>
+    <div class="aa">
+      <h4>These weapons are the fastest way to reach desired skills. Eeach vocation can use it's own type of exercise weapon:<br>
+      - Druid - Exercise Rod - cost 100k<br>
+      - Socerer - Exercise Wand - cost 100k<br>
+      - Knight - Exercise Sword | Exercise Club | Exercise Axe - cost 70k<br>
+      - Paladin - Exercise Spear - cost 70k<br>
+      - All Vocations - Exercise Magic - cost 70k</h4>
+    </div>
+
+    <div class="qq">
+      <h3>Exchange System</h3>
+    </div>
+    <div class="aa">
+      <h4>You can exchange various items like: <br>- Minor Crystalline Token, <br> - Major Crystalline Token,<br>- Silver Token,<br>- Gold Token.<br>
+      For shop points, equipment, outfits, miscallaneouses. More info on each item in FAQ.</h4>
+    </div>
+
+    <div class="qq">
+      <h3>Frag System</h3>
+    </div>
+    <div class="aa">
+      <h4>- Time to decrease 1 frag - 10h<br>
+      - Red Skull - 3 unjustified kills<br>
+    - Banishment - 6 unjustified kills<br>
+ -  Red Skull duration - until all frags are gone<br>
+- Banishment duration - 4 days</h4>
+    </div>
+
+    <div class="qq">
+      <h3>Shared Experience System</h3>
+    </div>
+    <div class="aa">
+      <h4>You can trigger shared experience by using "!share" command. Shared experience gives you up to 40% bonus exp:<br>
+      - 2 different vocations - 10% bonus experience,<br>
+    - 3 different vocations - 20% bonus experience,<br>
+  - 4 different vocations - 40% bonus experience.</h4>
+    </div>
+    <table class="items">
+      <caption>Exp Stages</caption>
+      <thead>
+        <tr>
+          <th>From Level</th>
+          <th>To Level</th>
+          <th>Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>7</td>
+          <td>8x</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>20</td>
+          <td>6x</td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>40</td>
+          <td>4x</td>
+        </tr>
+        <tr>
+          <td>41</td>
+          <td>60</td>
+          <td>3x</td>
+        </tr>
+        <tr>
+          <td>61</td>
+          <td>80</td>
+          <td>2x</td>
+        </tr>
+        <tr>
+          <td>81</td>
+          <td>100</td>
+          <td>1.5x</td>
+        </tr>
+        <tr>
+          <td>101</td>
+          <td>120</td>
+          <td>1.3x</td>
+        </tr>
+        <tr>
+          <td>121</td>
+          <td>140</td>
+          <td>1.2x</td>
+        </tr>
+        <tr>
+          <td>141</td>
+          <td>999</td>
+          <td>1.1x</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>Server Stages</caption>
+      <thead>
+        <tr>
+          <th>Magic Rate</th>
+          <th>Skills Rate</th>
+          <th>Loot Rate</th>
+          <th>Conjuring Runes</th>
+          <th>Conjuring Ammunition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2x</td>
+          <td>3x</td>
+          <td>3x</td>
+          <td>2x</td>
+          <td>3x</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>Useful commands</caption>
+      <thead>
+        <tr>
+          <th>Commands</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>[Vocation] please<br>example: hi > paladin please</td>
+          <td>Use these words to leave rookmekgaard without standing in queues at the Oracle NPC.</td>
+        </tr>
+        <tr>
+          <td>Hi > Sell All</td>
+          <td>Sell all your items from backpack (doesn't sell your equipped items).</td>
+        </tr>
+        <tr>
+          <td>Instant buy/sell all</td>
+          <td>Sell all your items instantly without waiting in queue.</td>
+        </tr>
+        <tr>
+          <td>Instant buy <span style="color: #f0a938;">x</span> runes</td>
+          <td>Buy any amout of runes you want instantly without waiting in queue.<br><h5><span style="color: #f0a938;">x</span> - input any amount of runes you want to buy here</h5></td>
+        </tr>
+        <tr>
+          <td>!share</td>
+          <td>Activate shared experience. Gives additional 10% exp bonus.</td>
+        </tr>
+        <tr>
+          <td>!task list</td>
+          <td>Displays a list of your undergoing tasks.</td>
+        </tr>
+        <tr>
+          <td>!autoloot</td>
+          <td>Autoloot system, for more information check the FAQ page.</td>
+        </tr>
+        <tr>
+          <td>!mana</td>
+          <td>Shows a number of mana needed to next magic level.</td>
+        </tr>
+        <tr>
+          <td>!online</td>
+          <td>Displays all players that are currently online.</td>
+        </tr>
+        <tr>
+          <td>!buyhouse</td>
+          <td>Stand in front of the house in order to buy it.</td>
+        </tr>
+        <tr>
+          <td>!sellhouse</td>
+          <td>You can sell your house. Use house ticket to trade your house to another player.</td>
+        </tr>
+        <tr>
+          <td>!leavehouse</td>
+          <td>Immediately abandon your house. All the items from your house will be teleported to depot.</td>
+        </tr>
+        <tr>
+          <td>!frags</td>
+          <td>Shows amount of frags you currently have.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>Vocations Regeneration</caption>
+      <thead>
+        <tr>
+          <th>Vocations</th>
+          <th>Health Regeneration</th>
+          <th>Mana Regeneration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Druid | Sorcerer</td>
+          <td>1 hp / 6 s</td>
+          <td>2 mp / 2 s</td>
+        </tr>
+        <tr>
+          <td>Elder Druid | Master Sorcerer</td>
+          <td>1 hp / 6 s</td>
+          <td>3 mp / 2 s</td>
+        </tr>
+        <tr>
+          <td>Paladin</td>
+          <td>1 hp / 5 s</td>
+          <td>2 mp / 3 s</td>
+        </tr>
+        <tr>
+          <td>Royal Paladin</td>
+          <td>1 hp / 4 s</td>
+          <td>2 mp / 2 s</td>
+        </tr>
+        <tr>
+          <td>Knight</td>
+          <td>2 hp / 4 s</td>
+          <td>2 mp / 4 s</td>
+        </tr>
+        <tr>
+          <td>Elite Knight</td>
+          <td>2 hp / 3 s</td>
+          <td>2 mp / 4 s</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>Items Regeneration</caption>
+      <thead>
+        <tr>
+          <th>Items</th>
+          <th>Health Regeneration</th>
+          <th>Mana Regeneration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Life Ring</td>
+          <td>1 hp / 2 s</td>
+          <td>4 mp / 2 s</td>
+        </tr>
+        <tr>
+          <td>Ring of Healing</td>
+          <td>3 hp / 2 s</td>
+          <td>12 mp / 2 s</td>
+        </tr>
+        <tr>
+          <td>Soft Boots</td>
+          <td>3 hp / 4 s</td>
+          <td>6 mp / 2 s</td>
+        </tr>
+        <tr>
+          <td>Bunnyslippers</td>
+          <td>3 hp / 4 s</td>
+          <td>5 mp / 2 s</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- End of main page -->
+  <div class="side-bar">
+    <div class="content">
+      <div class="interactive">
+        <h2><i class="fa-solid fa-map map"></i>Map viewer</h2>
+        <a href="https://ramonia.pl/map_viewer/#zoom,14,position,1263,1278,7"><img src="../imgs/intertactive.png" alt="" class="image"></a>
+      </div>
+      <div class="widget">
+        <iframe src="https://discord.com/widget?id=457182944260390912&theme=dark" width="100%" height="435" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="socials">
+        <h2>Server Status & Socials</h2>
+        <a href="https://www.facebook.com/people/Ramoniapl/100063498342253/" class="fb" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/invite/V6wwZXfZ4a" class="dsc" target="blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

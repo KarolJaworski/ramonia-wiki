@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Exotic Bat" nameDescription="an exotic bat" race="venom" experience="1200" speed="200" manacost="0">
+	<health now="1500" max="1500"/>
+	<look type="578" corpse="15578"/>
+	<targetchange interval="4000" chance="5"/>
+	<targetstrategies nearest="100" health="0" damage="0" random="0"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag summonable="0"/>
+		<flag convinceable="0"/>
+		<flag illusionable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="10"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-100"/>
+		<attack name="physical" interval="2000" chance="12" range="7" radius="3" target="1" min="-60" max="-110">
+			<attribute key="shootEffect" value="smallstone"/>
+			<attribute key="areaEffect" value="stones"/>
+		</attack>
+		<attack name="earth" interval="2000" chance="12" length="5" spread="2" min="-80" max="-110">
+			<attribute key="areaEffect" value="hitbyposion"/>
+		</attack>
+	</attacks>	
+	<defenses armor="40" defense="40">
+	</defenses>
+	<elements>
+		<element icePercent="5"/>
+		<element holyPercent="5"/>
+		<element firePercent="-10"/>
+		<element energyPercent="5"/>
+		<element earthPercent="1"/>
+		<element deathPercent="5"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2000" chance="5">
+	</voices>
+	<loot>
+		<item id="2152" countmax="4" chance="100000"/>	<!-- platinum coin -->	
+		<item id="9293" countmax="2" chance="29280"/>	<!-- great mana potion -->
+		<item id="2792" countmax="6" chance="15000"/>	<!-- dark mushrooms -->
+		<item id="2796" countmax="5" chance="15000"/>	<!-- green mushrooms -->
+		<item id="5525" chance="6130"/>	<!-- terra amulet -->
+		<item id="2199" chance="5170"/>	<!-- garlic necklace -->
+		<item id="7736" countmax="2" chance="4940"/>	<!-- bat wing -->
+	</loot>
+</monster>

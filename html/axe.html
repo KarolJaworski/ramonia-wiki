@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ramonia Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="top">
+    <div class="top_container">
+      <a href="index.html"><img src="../imgs/ramoniawiki.gif" alt="Logo" class="logo"></a>
+      <form action="">
+        <input type="text" name="search" id="input-search" placeholder="Search..." size="22" maxlength="64">
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+  </div>
+  <!-- End of div top -->
+
+  <!-- Left bar -->
+  <div class="side-bar">
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+      <div class="item"><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></div>
+      <div class="item">
+        <a href="#" class="sub-btn"><i class="fa-solid fa-book"></i>Library<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="items.html">Items</a>
+          <a href="quests.html">Quests</a>
+          <a href="tasks.html">Tasks</a>
+          <a href="addons.html">Addons</a>
+          <a href="spells.html">Spells</a>
+          <a href="mounts.html">Mounts</a>
+        </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //jquery sub menu
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+    });
+    </script>
+  <!-- End of left bar -->
+  <!-- Main Page -->
+  <div id="main-page">
+    <div class="header">
+      <h1>Axes</h1>
+    </div>
+    <table class="items">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Item Name</th>
+          <th>Attack</th>
+          <th>Def</th>
+          <th>Specials</th>
+          <th>Type</th>
+          <th>Weight</th>
+          <th>Req. Lvl</th>
+          <th>Voc.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2405.gif" alt=""></a></td>
+          <td>Sickle</td>
+          <td>5</td>
+          <td>4</td>
+          <td>-</td>
+          <td>1-handed</td>
+          <td>10.50 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/2380.gif" alt=""></a></td>
+          <td>Hand Axe</td>
+          <td>10</td>
+          <td>5</td>
+          <td>-</td>
+          <td>1-handed</td>
+          <td>18.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+	<tr>
+          <td><a href=""><img src="../imgs/items/2386.gif" alt=""></a></td>
+          <td>Axe</td>
+          <td>12</td>
+          <td>6</td>
+          <td>-</td>
+          <td>1-handed</td>
+          <td>40.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2418.gif" alt=""></a></td>
+          <td>Golden Sickle</td>
+          <td>13</td>
+          <td>6</td>
+          <td>-</td>
+          <td>1-handed</td>
+          <td>19.50 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2388.gif" alt=""></a></td>
+          <td>Hatchet</td>
+          <td>15</td>
+          <td>8</td>
+          <td>-</td>
+          <td>1-handed</td>
+          <td>35.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2428.gif" alt=""></a></td>
+          <td>Orcish Axe</td>
+          <td>23</td>
+          <td>12</td>
+          <td>-</td>
+          <td>1-handed</td>
+          <td>45.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2378.gif" alt=""></a></td>
+          <td>Battle Axe</td>
+          <td>25</td>
+          <td>10</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>50.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2429.gif" alt=""></a></td>
+          <td>Barbarian Axe</td>
+          <td>28</td>
+          <td>18</td>
+          <td>-</td>
+          <td>1-handed</td>
+          <td>51.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/3964.gif" alt=""></a></td>
+          <td>Ripper Lance</td>
+          <td>28</td>
+          <td>7</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>80.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2435.gif" alt=""></a></td>
+          <td>Dwarven Axe</td>
+          <td>31</td>
+          <td>19</td>
+          <td>-</td>
+          <td>1-handed</td>
+          <td>82.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2430.gif" alt=""></a></td>
+          <td>Knight Axe</td>
+          <td>33</td>
+          <td>21</td>
+          <td>-</td>
+          <td>1-handed</td>
+          <td>59.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2425.gif" alt=""></a></td>
+          <td>Obsidian Lance</td>
+          <td>34</td>
+          <td>10</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>80.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9215.png" alt=""></a></td>
+          <td>Frozen Axe</td>
+          <td>34 (+5)</td>
+          <td>20</td>
+          <td>Def +1<br>Ice +5</td>
+          <td>1-handed</td>
+          <td>69.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2387.gif" alt=""></a></td>
+          <td>Double Axe</td>
+          <td>35</td>
+          <td>12</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>70.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2381.gif" alt=""></a></td>
+          <td>Halberd</td>
+          <td>35</td>
+          <td>14</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>90.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/3962.gif" alt=""></a></td>
+          <td>Beastslayer Axe</td>
+          <td>35</td>
+          <td>12</td>
+          <td>-</td>
+          <td>1-handed</td>
+          <td>61.50 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/zaoan_halberd.gif" alt=""></a></td>
+          <td>Zaoan Halberd</td>
+          <td>37</td>
+          <td>15</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>87.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2432.gif" alt=""></a></td>
+          <td>Fire Axe</td>
+          <td>38</td>
+          <td>16</td>
+          <td>-</td>
+          <td>1-handed</td>
+          <td>40.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2426.gif" alt=""></a></td>
+          <td>Naginata</td>
+          <td>39</td>
+          <td>25</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>80.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/glooth_axe.gif" alt=""></a></td>
+          <td>Glooth Axe</td>
+          <td>39</td>
+          <td>1</td>
+          <td>Earth +26</td>
+          <td>2-handed</td>
+          <td>19.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/ogre_choppa.gif" alt=""></a></td>
+          <td>Ogre Choppa</td>
+          <td>39</td>
+          <td>23</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>75.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/noble_axe.gif" alt=""></a></td>
+          <td>Noble Axe</td>
+          <td>39</td>
+          <td>22</td>
+          <td>-</td>
+          <td>1-handed</td>
+          <td>38.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2440.gif" alt=""></a></td>
+          <td>Daramian Waraxe</td>
+          <td>39</td>
+          <td>15</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>52.50 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/dreaded_cleaver.gif" alt=""></a></td>
+          <td>Dreaded Cleaver</td>
+          <td>40</td>
+          <td>10</td>
+          <td>Def -3</td>
+          <td>1-handed</td>
+          <td>38.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/glorious_axe.gif" alt=""></a></td>
+          <td>Glorious Axe</td>
+          <td>40</td>
+          <td>23</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>95.00 oz</td>
+          <td>-</td>
+          <td>Knight</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/mino_lance.gif" alt=""></a></td>
+          <td>Mino Lance</td>
+          <td>40</td>
+          <td>23</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>65.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/butchers_axe.gif" alt=""></a></td>
+          <td>Butcher's Axe</td>
+          <td>41</td>
+          <td>24</td>
+          <td>Def -2</td>
+          <td>1-handed</td>
+          <td>63.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/warriors_axe.gif" alt=""></a></td>
+          <td>Warrior's Axe</td>
+          <td>42</td>
+          <td>21</td>
+          <td>-</td>
+          <td>1-handed</td>
+          <td>88.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/headchopper.gif" alt=""></a></td>
+          <td>Headchopper</td>
+          <td>42</td>
+          <td>20</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>45.00 oz</td>
+          <td>-</td>
+          <td>Knight</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/titan_axe.gif" alt=""></a></td>
+          <td>Titan Axe</td>
+          <td>43</td>
+          <td>30</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>81.00 oz</td>
+          <td>-</td>
+          <td>Knight</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/vile_axe.gif" alt=""></a></td>
+          <td>Vile Axe</td>
+          <td>43</td>
+          <td>30</td>
+          <td>Def +3</td>
+          <td>1-handed</td>
+          <td>52.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/angelic_axe.gif" alt=""></a></td>
+          <td>Angelic Axe</td>
+          <td>44</td>
+          <td>24</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>56.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/heroic_axe.gif" alt=""></a></td>
+          <td>Heroic Axe</td>
+          <td>44</td>
+          <td>24</td>
+          <td>Def +1</td>
+          <td>1-handed</td>
+          <td>61.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2447.gif" alt=""></a></td>
+          <td>Twin Axe</td>
+          <td>45</td>
+          <td>24</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>64.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/ravenwing.gif" alt=""></a></td>
+          <td>Ravenwing</td>
+          <td>45</td>
+          <td>22</td>
+          <td>Def +1</td>
+          <td>1-handed</td>
+          <td>55.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/hive_scythe.gif" alt=""></a></td>
+          <td>Hive Scythe</td>
+          <td>46</td>
+          <td>24</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>75.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/guardian_axe.gif" alt=""></a></td>
+          <td>Guardian Axe</td>
+          <td>46</td>
+          <td>11</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>110.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/reapers_axe.gif" alt=""></a></td>
+          <td>Reaper's Axe</td>
+          <td>46</td>
+          <td>25</td>
+          <td>Def +2</td>
+          <td>1-handed</td>
+          <td>59.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/execowtioner_axe.gif" alt=""></a></td>
+          <td>Execowtioner Axe</td>
+          <td>46</td>
+          <td>18</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>82.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2427.gif" alt=""></a></td>
+          <td>Guardian Halberd</td>
+          <td>46</td>
+          <td>15</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>110.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/drakinata.gif" alt=""></a></td>
+          <td>Drakinata</td>
+          <td>47</td>
+          <td>20</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>54.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/royal_axe.gif" alt=""></a></td>
+          <td>Royal Axe</td>
+          <td>47</td>
+          <td>25</td>
+          <td>Def +3</td>
+          <td>1-handed</td>
+          <td>92.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2414.gif" alt=""></a></td>
+          <td>Dragon Lance</td>
+          <td>47</td>
+          <td>16</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>67.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2454.gif" alt=""></a></td>
+          <td>War Axe</td>
+          <td>48</td>
+          <td>10</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>61.50 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/mythril_axe.gif" alt=""></a></td>
+          <td>Mythril Axe</td>
+          <td>48</td>
+          <td>28</td>
+          <td>Def +2</td>
+          <td>1-handed</td>
+          <td>55.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/rift_lance.gif" alt=""></a></td>
+          <td>Rift Lance</td>
+          <td>48</td>
+          <td>28</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>66.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2443.gif" alt=""></a></td>
+          <td>Ravager's Axe</td>
+          <td>49</td>
+          <td>14</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>52.50 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/impaler.gif" alt=""></a></td>
+          <td>Impaler</td>
+          <td>49</td>
+          <td>25</td>
+          <td>Def -2</td>
+          <td>1-handed</td>
+          <td>82.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/crude_umbral_axe.gif" alt=""></a></td>
+          <td>Crude Umbral Axe</td>
+          <td>49</td>
+          <td>24</td>
+          <td>Axe +1</td>
+          <td>1-handed</td>
+          <td>90.00 oz</td>
+          <td>-</td>
+          <td>Knight</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/deepling_axe.gif" alt=""></a></td>
+          <td>Deepling Axe</td>
+          <td>49</td>
+          <td>29</td>
+          <td>-</td>
+          <td>1-handed</td>
+          <td>91.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2431.gif" alt=""></a></td>
+          <td>Stonecutter Axe</td>
+          <td>50</td>
+          <td>30</td>
+          <td>-</td>
+          <td>1-handed</td>
+          <td>99.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/ruthless_axe.gif" alt=""></a></td>
+          <td>Ruthless Axe</td>
+          <td>50</td>
+          <td>15</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>58.80 oz</td>
+          <td>-</td>
+          <td>Knight</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/hellforged_axe.gif" alt=""></a></td>
+          <td>Hellforged Axe</td>
+          <td>51</td>
+          <td>28</td>
+          <td>Def +2</td>
+          <td>1-handed</td>
+          <td>88.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/executioner.gif" alt=""></a></td>
+          <td>Executioner</td>
+          <td>51</td>
+          <td>20</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>99.00 oz</td>
+          <td>-</td>
+          <td>Knight</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/crystalline_axe.gif" alt=""></a></td>
+          <td>Crystalline Axe</td>
+          <td>51</td>
+          <td>20</td>
+          <td>Def +3<br>Axe +1</td>
+          <td>1-handed</td>
+          <td>76.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/umbral_axe.gif" alt=""></a></td>
+          <td>Umbral Axe</td>
+          <td>51</td>
+          <td>27</td>
+          <td>Def +2<br>Axe +2</td>
+          <td>1-handed</td>
+          <td>85.00 oz</td>
+          <td>-</td>
+          <td>Knight</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/crude_umbral_chopper.gif" alt=""></a></td>
+          <td>Crude Umbral Chopper</td>
+          <td>51</td>
+          <td>27</td>
+          <td>Axe +1</td>
+          <td>2-handed</td>
+          <td>120.00 oz</td>
+          <td>-</td>
+          <td>Knight</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/axe_of_destruction.gif" alt=""></a></td>
+          <td>Axe of Destruction</td>
+          <td>51</td>
+          <td>31</td>
+          <td>-</td>
+          <td>1-handed</td>
+          <td>50.00 oz</td>
+          <td>-</td>
+          <td>Knight</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2415.gif" alt=""></a></td>
+          <td>Great Axe</td>
+          <td>52</td>
+          <td>22</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>90.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/plague_bite.gif" alt=""></a></td>
+          <td>Plague Bite</td>
+          <td>26 (+26)</td>
+          <td>31</td>
+          <td>Def +3<br>Earth +26</td>
+          <td>1-handed</td>
+          <td>99.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9262.png" alt=""></a></td>
+          <td>Velvet Axe</td>
+          <td>52</td>
+          <td>34</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>78.00 oz</td>
+          <td>-</td>
+          <td>Knight</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/umbral_chopper.gif" alt=""></a></td>
+          <td>Umbral Chopper</td>
+          <td>52</td>
+          <td>30</td>
+          <td>Axe +2</td>
+          <td>2-handed</td>
+          <td>115.00 oz</td>
+          <td>-</td>
+          <td>Knight</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/chopper_of_destruction.gif" alt=""></a></td>
+          <td>Chopper of Destruction</td>
+          <td>52</td>
+          <td>32</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>70.00 oz</td>
+          <td>-</td>
+          <td>Knight</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/demonwing_axe.gif" alt=""></a></td>
+          <td>Demonwing Axe</td>
+          <td>53</td>
+          <td>20</td>
+          <td>-</td>
+          <td>2-handed</td>
+          <td>120.00 oz</td>
+          <td>-</td>
+          <td>Knight</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/umbral_master_axe.gif" alt=""></a></td>
+          <td>Umbral Master Axe</td>
+          <td>53</td>
+          <td>30</td>
+          <td>Def +3<br>Axe +3</td>
+          <td>1-handed</td>
+          <td>80.00 oz</td>
+          <td>-</td>
+          <td>Knight</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/solar_axe.gif" alt=""></a></td>
+          <td>Solar Axe</td>
+          <td>53</td>
+          <td>29</td>
+          <td>Def +3<br>Axe +2</td>
+          <td>1-handed</td>
+          <td>110.00 oz</td>
+          <td>-</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/umbral_master_chopper.gif" alt=""></a></td>
+          <td>Umbral Master Chopper</td>
+          <td>54</td>
+          <td>34</td>
+          <td>Axe +3</td>
+          <td>2-handed</td>
+          <td>110.00 oz</td>
+          <td>-</td>
+          <td>Knight</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="back">
+      <h2><a href="#top">Back to the top</a></h2>
+    </div>
+  </div>
+  <!-- End of main page -->
+  <div class="side-bar">
+    <div class="content">
+      <div class="interactive">
+        <h2><i class="fa-solid fa-map map"></i>Map viewer</h2>
+        <a href="https://ramonia.pl/map_viewer/#zoom,14,position,1263,1278,7"><img src="../imgs/intertactive.png" alt="" class="image"></a>
+      </div>
+      <div class="widget">
+        <iframe src="https://discord.com/widget?id=457182944260390912&theme=dark" width="100%" height="435" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="socials">
+        <h2>Server Status & Socials</h2>
+        <a href="https://www.facebook.com/people/Ramoniapl/100063498342253/" class="fb" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/invite/V6wwZXfZ4a" class="dsc" target="blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ramonia Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="top">
+    <div class="top_container">
+      <a href="index.html"><img src="../imgs/ramoniawiki.gif" alt="Logo" class="logo"></a>
+      <form action="">
+        <input type="text" name="search" id="input-search" placeholder="Search..." size="22" maxlength="64">
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+  </div>
+  <!-- End of div top -->
+
+  <!-- Left bar -->
+  <div class="side-bar">
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+      <div class="item"><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></div>
+      <div class="item">
+        <a href="#" class="sub-btn"><i class="fa-solid fa-book"></i>Library<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="items.html">Items</a>
+          <a href="quests.html">Quests</a>
+          <a href="tasks.html">Tasks</a>
+          <a href="addons.html">Addons</a>
+          <a href="spells.html">Spells</a>
+          <a href="mounts.html">Mounts</a>
+        </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //jquery sub menu
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+    });
+    </script>
+  <!-- End of left bar -->
+  <!-- Main Page -->
+  <div id="main-page">
+    <div class="header">
+      <h1>Legs</h1>
+    </div>
+    <table class="items">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Item Name</th>
+          <th>Armor</th>
+          <th>Specials</th>
+          <th>Weight</th>
+          <th>Vocation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href=""><img src="../imgs/items/3983.gif" alt=""></a></td>
+          <td>Bast Skirt</td>
+          <td>0</td>
+          <td>-</td>
+          <td>3.50 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/rusted_legs.gif" alt=""></a></td>
+          <td>Rusted Legs</td>
+          <td>0</td>
+          <td>Use flask of rusted remover to uncover legs.</td>
+          <td>70.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/mammoth_fur_shorts.gif" alt=""></a></td>
+          <td>Mammoth Fur Shorts</td>
+          <td>0</td>
+          <td>-</td>
+          <td>1.50 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/2649.gif" alt=""></a></td>
+          <td>Leather Legs</td>
+          <td>1</td>
+          <td>-</td>
+          <td>18.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/pirate_knee_breeches.gif" alt=""></a></td>
+          <td>Pirate Knee Breeches</td>
+          <td>1</td>
+          <td>-</td>
+          <td>12.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2468.gif" alt=""></a></td>
+          <td>Studded Legs</td>
+          <td>2</td>
+          <td>-</td>
+          <td>26.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs/items/2648.gif" alt=""></a></td>
+          <td>Chain Legs</td>
+          <td>3</td>
+          <td>-</td>
+          <td>35.00 oz</td>
+          <td>All</td>
+        </tr>  
+        <tr>
+          <td><a href=""><img src="../imgs/items/2507.gif" alt=""></a></td>
+          <td>Ranger Legs</td>
+          <td>4</td>
+          <td>-</td>
+          <td>35.00 oz</td>
+          <td>Paladin</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/2478.gif" alt=""></a></td>
+          <td>Brass Legs</td>
+          <td>5</td>
+          <td>-</td>
+          <td>38.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/wereboar_loincloth.gif" alt=""></a></td>
+          <td>Wereboar Loincloth</td>
+          <td>6</td>
+          <td>-</td>
+          <td>13.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9247.png" alt=""></a></td>
+          <td>Witchy Legs</td>
+          <td>6</td>
+          <td>Manadrain +20%</td>
+          <td>36.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/alloy_legs.gif" alt=""></a></td>
+          <td>Alloy Legs</td>
+          <td>6</td>
+          <td>Speed +10</td>
+          <td>45.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/2504.gif" alt=""></a></td>
+          <td>Dwarven Legs</td>
+          <td>7</td>
+          <td>Physical +3%</td>
+          <td>49.00 oz</td>
+          <td>All</td>
+        </tr>       
+        <tr>
+          <td><a href=""><img src="../imgs/items/2647.gif" alt=""></a></td>
+          <td>Plate Legs</td>
+          <td>7</td>
+          <td>-</td>
+          <td>50.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs/items/grasshopper_legs.gif" alt=""></a></td>
+          <td>Grasshopper Legs</td>
+          <td>7</td>
+          <td>Speed +10</td>
+          <td>32.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9254.png" alt=""></a></td>
+          <td>Overlord Legs</td>
+          <td>7</td>
+          <td>Death +4%<br>Earth -4%<br>Holy -4%</td>
+          <td>28.00 oz</td>
+          <td>All</td>
+        </tr>    
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9255.png" alt=""></a></td>
+          <td>Dragonling Legs</td>
+          <td>7</td>
+          <td>Earth +6%<br>Fire -6%</td>
+          <td>28.00 oz</td>
+          <td>All</td>
+        </tr>       
+        <tr>
+          <td><a href=""><img src="../imgs/items/gill_legs.gif" alt=""></a></td>
+          <td>Gill Legs</td>
+          <td>7</td>
+          <td>Magic Level +1<br>Earth +8%<br>Fire -8%</td>
+          <td>28.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>          
+        <tr>
+          <td><a href=""><img src="../imgs/items/2477.gif" alt=""></a></td>
+          <td>Knight Legs</td>
+          <td>8</td>
+          <td>-</td>
+          <td>70.00 oz</td>
+          <td>All</td>
+        </tr>        
+        <tr>
+          <td><a href=""><img src="../imgs/items/2488.gif" alt=""></a></td>
+          <td>Crown Legs</td>
+          <td>8</td>
+          <td>-</td>
+          <td>65.00 oz</td>
+          <td>All</td>
+        </tr>                 
+        <tr>
+          <td><a href=""><img src="../imgs/items/lightning_legs.gif" alt=""></a></td>
+          <td>Lightning Legs</td>
+          <td>8</td>
+          <td>Energy +6%<br>Earth -6%</td>
+          <td>19.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>    
+        <tr>
+          <td><a href=""><img src="../imgs/items/magma_legs.gif" alt=""></a></td>
+          <td>Magma Legs</td>
+          <td>8</td>
+          <td>Fire +6%<br>Ice -6%</td>
+          <td>19.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>    
+        <tr>
+          <td><a href=""><img src="../imgs/items/terra_legs.gif" alt=""></a></td>
+          <td>Terra Legs</td>
+          <td>8</td>
+          <td>Earth +6%<br>Fire -6%</td>
+          <td>19.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>    
+        <tr>
+          <td><a href=""><img src="../imgs/items/zaoan_legs.gif" alt=""></a></td>
+          <td>Zaoan Legs</td>
+          <td>8</td>
+          <td>Physical +2%</td>
+          <td>66.00 oz</td>
+          <td>All</td>
+        </tr>    
+        <tr>
+          <td><a href=""><img src="../imgs/items/yalahari_leg_piece.gif" alt=""></a></td>
+          <td>Yalahari Legs</td>
+          <td>8</td>
+          <td>Distance +2<br>Death +5%</td>
+          <td>65.00 oz</td>
+          <td>Paladin</td>
+        </tr>    
+        <tr>
+          <td><a href=""><img src="../imgs/items/glacier_kilt.gif" alt=""></a></td>
+          <td>Glacier Kilt</td>
+          <td>8</td>
+          <td>Energy -6%<br>Ice +6%</td>
+          <td>19.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>               
+        <tr>
+          <td><a href=""><img src="../imgs/items/depth_ocrea.gif" alt=""></a></td>
+          <td>Depth Ocrea</td>
+          <td>8</td>
+          <td>Manadrain +15%</td>
+          <td>48.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>    
+        <tr>
+          <td><a href=""><img src="../imgs/items/ornate_legs.gif" alt=""></a></td>
+          <td>Ornate Legs</td>
+          <td>8</td>
+          <td>Physical +5%</td>
+          <td>77.00 oz</td>
+          <td>Knight</td>
+        </tr>    
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9221.png" alt=""></a></td>
+          <td>Frozen Legs</td>
+          <td>8</td>
+          <td>Ice +4%<br>Fire -3%</td>
+          <td>70.00 oz</td>
+          <td>All</td>
+        </tr>    
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9233.png" alt=""></a></td>
+          <td>Thorn Legs</td>
+          <td>8</td>
+          <td>77.00 oz</td>
+          <td>Earth +5%</td>
+          <td>All</td>
+        </tr>       
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9248.png" alt=""></a></td>
+          <td>Magic Plate Legs</td>
+          <td>8</td>
+          <td>Magic Level +2</td>
+          <td>48.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>    
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9249.png" alt=""></a></td>
+          <td>Urban Legs</td>
+          <td>8</td>
+          <td>Magic Level +1</td>
+          <td>48.00 oz</td>
+          <td>All</td>
+        </tr>    
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9251.png" alt=""></a></td>
+          <td>Scaly Legs</td>
+          <td>8</td>
+          <td>Physical +2%</td>
+          <td>77.00 oz</td>
+          <td>All</td>
+        </tr>    
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9252.png" alt=""></a></td>
+          <td>Bony Legs</td>
+          <td>8</td>
+          <td>Physical +2%</td>
+          <td>77.00 oz</td>
+          <td>All</td>
+        </tr>    
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9253.png" alt=""></a></td>
+          <td>Platinum Legs</td>
+          <td>8</td>
+          <td>Physical +3%<br>Holy -3%</td>
+          <td>28.80 oz</td>
+          <td>All</td>
+        </tr>     
+        <tr>
+          <td><a href=""><img src="../imgs/items/prismatic_legs.gif" alt=""></a></td>
+          <td>Prismatic Legs</td>
+          <td>8</td>
+          <td>Distance +2<br>Physical +3%</td>
+          <td>71.00 oz</td>
+          <td>Paladin</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/2470.gif" alt=""></a></td>
+          <td>Golden Legs</td>
+          <td>9</td>
+          <td>-</td>
+          <td>56.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/2495.gif" alt=""></a></td>
+          <td>Demon Legs</td>
+          <td>9</td>
+          <td>-</td>
+          <td>70.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/gnome_legs.gif" alt=""></a></td>
+          <td>Gnome Legs</td>
+          <td>9</td>
+          <td>Magic Level +2%<br>Energy +7%<br>Ice -2%</td>
+          <td>25.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>              
+        <tr>
+          <td><a href=""><img src="../imgs/items/2469.gif" alt=""></a></td>
+          <td>Dragon Scale Legs</td>
+          <td>10</td>
+          <td>Physical +5%<br>Sword +1<br>Club +1<br>Axe +1<br>Distance +1</td>
+          <td>48.00 oz</td>
+          <td>Paladin,<br>Knight</td>
+        </tr>    
+      </tbody>
+    </table>
+    <div class="back">
+      <h2><a href="#top">Back to the top</a></h2>
+    </div>
+  </div>
+  <!-- End of main page -->
+  <div class="side-bar">
+    <div class="content">
+      <div class="interactive">
+        <h2><i class="fa-solid fa-map map"></i>Map viewer</h2>
+        <a href="https://ramonia.pl/map_viewer/#zoom,14,position,1263,1278,7"><img src="../imgs/intertactive.png" alt="" class="image"></a>
+      </div>
+      <div class="widget">
+        <iframe src="https://discord.com/widget?id=457182944260390912&theme=dark" width="100%" height="435" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="socials">
+        <h2>Server Status & Socials</h2>
+        <a href="https://www.facebook.com/people/Ramoniapl/100063498342253/" class="fb" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/invite/V6wwZXfZ4a" class="dsc" target="blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

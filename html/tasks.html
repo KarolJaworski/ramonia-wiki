@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ramonia Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="top">
+    <div class="top_container">
+      <a href="index.html"><img src="../imgs/ramoniawiki.gif" alt="Logo" class="logo"></a>
+      <form action="">
+        <input type="text" name="search" id="input-search" placeholder="Search..." size="22" maxlength="64">
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+  </div>
+  <!-- End of div top -->
+
+  <!-- EAEEEC, D68E19, 2D2E38, 884234, 3B3D49 -->
+
+  <!-- Left bar -->
+  <div class="side-bar">
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+      <div class="item"><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></div>
+      <div class="item">
+        <a href="#" class="sub-btn"><i class="fa-solid fa-book"></i>Library<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="items.html">Items</a>
+          <a href="quests.html">Quests</a>
+          <a href="tasks.html">Tasks</a>
+          <a href="addons.html">Addons</a>
+          <a href="spells.html">Spells</a>
+          <a href="mounts.html">Mounts</a>
+        </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //jquery sub menu
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+    });
+  </script>
+  <!-- End of left bar -->
+  <!-- Main Page -->
+  <div id="main-page">
+    <div class="tip">
+      <h3>To start a new task, go to the NPC Grizzly Adams.</h3>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Creatures</th>
+          <th>Amount</th>
+          <th>Required Level</th>
+          <th>Reward</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Trolls</td>
+          <td><img src="../imgs/creatures/Troll.gif" alt=""><img src="../imgs/creatures/Frost_Troll.gif" alt=""><img src="../imgs/creatures/Swamp_Troll.gif" alt=""></td>
+          <td>100</td>
+          <td>min. level - 6</td>
+          <td><div class="tooltip"><span class="tooltip-text">15x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Goblins</td>
+          <td><img src="../imgs/creatures/Goblin.gif" alt=""></td>
+          <td>100</td>
+          <td>min. level - 6</td>
+          <td><div class="tooltip"><span class="tooltip-text">15x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Amazons</td>
+          <td><img src="../imgs/creatures/Amazon.gif" alt=""></td>
+          <td>100</td>
+          <td>min. level - 6</td>
+          <td><div class="tooltip"><span class="tooltip-text">15x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Rotworms</td>
+          <td><img src="../imgs/creatures/Rotworm.gif" alt=""></td>
+          <td>150</td>
+          <td>min. level - 6</td>
+          <td><div class="tooltip"><span class="tooltip-text">20x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Tarantulas</td>
+          <td><img src="../imgs/creatures/Tarantula.gif" alt=""></td>
+          <td>75</td>
+          <td>min. level - 6</td>
+          <td><div class="tooltip"><span class="tooltip-text">20x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Elves</td>
+          <td><img src="../imgs/creatures/Elf.gif" alt=""><img src="../imgs/creatures/Elf_Scout.gif" alt=""><img src="../imgs/creatures/Elf_Arcanist.gif" alt=""></td>
+          <td>150</td>
+          <td>min. level - 6</td>
+          <td><div class="tooltip"><span class="tooltip-text">20x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Stone Golems</td>
+          <td><img src="../imgs/creatures/Stone_Golem.gif" alt=""></td>
+          <td>75</td>
+          <td>min. level - 6</td>
+          <td><div class="tooltip"><span class="tooltip-text">20x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Larvas</td>
+          <td><img src="../imgs/creatures/Larva.gif" alt=""></td>
+          <td>200</td>
+          <td>min. level - 6</td>
+          <td><div class="tooltip"><span class="tooltip-text">25x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Chakoyas</td>
+          <td><img src="../imgs/creatures/Chakoya_Windcaller.gif" alt=""><img src="../imgs/creatures/Chakoya_Tribewarden.gif" alt=""><img src="../imgs/creatures/Chakoya_Toolshaper.gif" alt=""></td>
+          <td>250</td>
+          <td>min. level - 6</td>
+          <td><div class="tooltip"><span class="tooltip-text">25x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Leaf Golems</td>
+          <td><img src="../imgs/creatures/Leaf_Golem.gif" alt=""><img src="../imgs/creatures/Wilting_Leaf_Golem.gif" alt=""></td>
+          <td>75</td>
+          <td>min. level - 6</td>
+          <td><div class="tooltip"><span class="tooltip-text">25x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Slimes and Beholders</td>
+          <td><img src="../imgs/creatures/Slime.gif" alt=""><img src="../imgs/creatures/Bonelord.gif" alt=""></td>
+          <td>100</td>
+          <td>min. level - 6</td>
+          <td><div class="tooltip"><span class="tooltip-text">25x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Scarabs</td>
+          <td><img src="../imgs/creatures/Scarab.gif" alt=""></td>
+          <td>200</td>
+          <td>min. level - 6</td>
+          <td><div class="tooltip"><span class="tooltip-text">35x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Terramites</td>
+          <td><img src="../imgs/creatures/Terramite.gif" alt=""></td>
+          <td>200</td>
+          <td>min. level - 6</td>
+          <td><div class="tooltip"><span class="tooltip-text">35x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Minotaurs</td>
+          <td><img src="../imgs/creatures/Minotaur.gif" alt=""><img src="../imgs/creatures/Minotaur_Archer.gif" alt=""><img src="../imgs/creatures/Minotaur_Guard.gif" alt=""><img src="../imgs/creatures/Minotaur_Mage.gif" alt=""></td>
+          <td>250</td>
+          <td>min. level - 6</td>
+          <td><div class="tooltip"><span class="tooltip-text">35x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Dwarfs</td>
+          <td><img src="../imgs/creatures/Dwarf.gif" alt=""><img src="../imgs/creatures/Dwarf_Geomancer.gif" alt=""><img src="../imgs/creatures/Dwarf_Guard.gif" alt=""><img src="../imgs/creatures/Dwarf_Soldier.gif" alt=""></td>
+          <td>250</td>
+          <td>min. level - 6</td>
+          <td><div class="tooltip"><span class="tooltip-text">40x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Vermins</td>
+          <td><img src="../imgs/creatures/Lancer_Beetle.gif" alt=""><img src="../imgs/creatures/Sandcrawler.gif" alt=""><img src="../imgs/creatures/Swarmer.gif" alt=""><img src="../imgs/creatures/Insectoid_Worker.gif" alt=""></td>
+          <td>250</td>
+          <td>min. level - 6</td>
+          <td><div class="tooltip"><span class="tooltip-text">40x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Frost Giants</td>
+          <td><img src="../imgs/creatures/Frost_Giant.gif" alt=""><img src="../imgs/creatures/Frost_Giantess.gif" alt=""></td>
+          <td>200</td>
+          <td>min. level - 15</td>
+          <td><div class="tooltip"><span class="tooltip-text">40x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Darks</td>
+          <td><img src="../imgs/creatures/Dark_Apprentice.gif" alt=""><img src="../imgs/creatures/Dark_Magician.gif" alt=""></td>
+          <td>200</td>
+          <td>min. level - 15</td>
+          <td><div class="tooltip"><span class="tooltip-text">40x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Barbarians</td>
+          <td><img src="../imgs/creatures/Barbarian_Bloodwalker.gif" alt=""><img src="../imgs/creatures/Barbarian_Brutetamer.gif" alt=""><img src="../imgs/creatures/Barbarian_Headsplitter.gif" alt=""><img src="../imgs/creatures/Barbarian_Skullhunter.gif" alt=""></td>
+          <td>200</td>
+          <td>min. level - 15</td>
+          <td><div class="tooltip"><span class="tooltip-text">40x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Outlaws</td>
+          <td><img src="../imgs/creatures/Assassin.gif" alt=""><img src="../imgs/creatures/Bandit.gif" alt=""><img src="../imgs/creatures/Valkyrie.gif" alt=""><img src="../imgs/creatures/Wild_Warrior.gif" alt=""></td>
+          <td>250</td>
+          <td>min. level - 15</td>
+          <td><div class="tooltip"><span class="tooltip-text">40x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Humans</td>
+          <td><img src="../imgs/creatures/Gang_Member.gif" alt=""><img src="../imgs/creatures/Nomad_(Basic).gif" alt=""><img src="../imgs/creatures/Mutated_Human.gif" alt=""></td>
+          <td>250</td>
+          <td>min. level - 15</td>
+          <td><div class="tooltip"><span class="tooltip-text">40x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Undeads</td>
+          <td><img src="../imgs/creatures/Ghoul (1).gif" alt=""><img src="../imgs/creatures/Ghost.gif" alt=""><img src="../imgs/creatures/Monk.gif" alt=""><img src="../imgs/creatures/Mummy.gif" alt=""><img src="../imgs/creatures/Skeleton (1).gif" alt=""><img src="../imgs/creatures/Demon_Skeleton.gif" alt=""><img src="../imgs/creatures/Lich.gif" alt=""><img src="../imgs/creatures/Bonebeast.gif" alt=""><img src="../imgs/creatures/Crypt_Shambler.gif" alt=""></td>
+          <td>350</td>
+          <td>min. level - 15</td>
+          <td><div class="tooltip"><span class="tooltip-text">40x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Tortoises</td>
+          <td><img src="../imgs/creatures/Tortoise.gif" alt=""><img src="../imgs/creatures/Thornback_Tortoise.gif" alt=""><img src="../imgs/creatures/Blood_Crab.gif" alt=""></td>
+          <td>350</td>
+          <td>min. level - 15</td>
+          <td><div class="tooltip"><span class="tooltip-text">50x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Voodo Cultists</td>
+          <td><img src="../imgs/creatures/Adept_of_the_Cult.gif" alt=""><img src="../imgs/creatures/Novice_of_the_Cult.gif" alt=""><img src="../imgs/creatures/Acolyte_of_the_Cult.gif" alt=""><img src="../imgs/creatures/Enlightened_of_the_Cult.gif" alt=""></td>
+          <td>250</td>
+          <td>min. level - 15</td>
+          <td><div class="tooltip"><span class="tooltip-text">50x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Pirates</td>
+          <td><img src="../imgs/creatures/Pirate_Buccaneer.gif" alt=""><img src="../imgs/creatures/Pirate_Corsair.gif" alt=""><img src="../imgs/creatures/Pirate_Marauder.gif" alt=""><img src="../imgs/creatures/Pirate_Skeleton.gif" alt=""></td>
+          <td>350</td>
+          <td>min. level - 15</td>
+          <td><div class="tooltip"><span class="tooltip-text">50x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Cyclops</td>
+          <td><img src="../imgs/creatures/Cyclops.gif" alt=""><img src="../imgs/creatures/Cyclops_Drone.gif" alt=""><img src="../imgs/creatures/Cyclops_Smith.gif" alt=""></td>
+          <td>300</td>
+          <td>min. level - 15</td>
+          <td><div class="tooltip"><span class="tooltip-text">50x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Forest Furys</td>
+          <td><img src="../imgs/creatures/Forest_Fury.gif" alt=""></td>
+          <td>150</td>
+          <td>min. level - 15</td>
+          <td><div class="tooltip"><span class="tooltip-text">50x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Crystal Wolfs</td>
+          <td><img src="../imgs/creatures/Crystal_Wolf.gif" alt=""></td>
+          <td>300</td>
+          <td>min. level - 15</td>
+          <td><div class="tooltip"><span class="tooltip-text">50x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Orcs</td>
+          <td><img src="../imgs/creatures/Orc_Rider.gif" alt=""><img src="../imgs/creatures/Orc (1).gif" alt=""><img src="../imgs/creatures/Orc_Shaman (1).gif" alt=""><img src="../imgs/creatures/Orc_Spearman.gif" alt=""><img src="../imgs/creatures/Orc_Warlord.gif" alt=""><img src="../imgs/creatures/Orc_Warrior.gif" alt=""><img src="../imgs/creatures/Orc_Leader (1).gif" alt=""></td>
+          <td>350</td>
+          <td>min. level - 15</td>
+          <td><div class="tooltip"><span class="tooltip-text">50x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Coryms</td>
+          <td><img src="../imgs/creatures/corym_charlatan.gif" alt=""><img src="../imgs/creatures/corym_skirmisher.gif" alt=""><img src="../imgs/creatures/corym_vanguard.gif" alt=""></td>
+          <td>300</td>
+          <td>min. level - 15</td>
+          <td><div class="tooltip"><span class="tooltip-text">50x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Djinns</td>
+          <td><img src="../imgs/creatures/Blue_Djinn.gif" alt=""><img src="../imgs/creatures/Green_Djinn.gif" alt=""><img src="../imgs/creatures/Marid.gif" alt=""></td>
+          <td>200</td>
+          <td>min. level - 15</td>
+          <td><div class="tooltip"><span class="tooltip-text">50x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Hatchlings</td>
+          <td><img src="../imgs/creatures/Dragon_Hatchling.gif" alt=""><img src="../imgs/creatures/Dragon_Lord_Hatchling.gif" alt=""><img src="../imgs/creatures/Frost_Dragon_Hatchling.gif" alt=""></td>
+          <td>300</td>
+          <td>min. level - 15</td>
+          <td><div class="tooltip"><span class="tooltip-text">70x</span><img src="../imgs/platinum_coin.gif" alt=""></div></td>
+        </tr>
+        <tr>
+          <td>Vampires</td>
+          <td><img src="../imgs/creatures/Vampire.gif" alt=""><img src="../imgs/creatures/Vampire_Bride.gif" alt=""><img src="../imgs/creatures/Vampire_Viscount.gif" alt=""></td>
+          <td>350</td>
+          <td>min. level - 30</td>
+          <td><div class="tooltip"><span class="tooltip-text">80x</span><img src="../imgs/platinum_coin.gif" alt=""><p>150.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Wailing Widows</td>
+          <td><img src="../imgs/creatures/Wailing_Widow.gif" alt=""></td>
+          <td>150</td>
+          <td>min. level - 30</td>
+          <td><div class="tooltip"><span class="tooltip-text">80x</span><img src="../imgs/platinum_coin.gif" alt=""><p>150.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Crystalcrushers</td>
+          <td><img src="../imgs/creatures/Crystalcrusher.gif" alt=""></td>
+          <td>300</td>
+          <td>min. level - 30</td>
+          <td><div class="tooltip"><span class="tooltip-text">80x</span><img src="../imgs/platinum_coin.gif" alt=""><p>150.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Wyverns</td>
+          <td><img src="../imgs/creatures/Wyvern.gif" alt=""></td>
+          <td>300</td>
+          <td>min. level - 30</td>
+          <td><div class="tooltip"><span class="tooltip-text">80x</span><img src="../imgs/platinum_coin.gif" alt=""><p>150.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Necromancers</td>
+          <td><img src="../imgs/creatures/Necromancer.gif" alt=""></td>
+          <td>300</td>
+          <td>min. level - 30</td>
+          <td><div class="tooltip"><span class="tooltip-text">80x</span><img src="../imgs/platinum_coin.gif" alt=""><p>150.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Servants</td>
+          <td><img src="../imgs/creatures/Iron_Servant.gif" alt=""><img src="../imgs/creatures/Golden_Servant.gif" alt=""><img src="../imgs/creatures/Diamond_Servant.gif" alt=""></td>
+          <td>350</td>
+          <td>min. level - 30</td>
+          <td><div class="tooltip"><span class="tooltip-text">20x</span><img src="../imgs/platinum_coin.gif" alt=""><br><span class="tooltip-text">1x</span><img src="../imgs/creatures/crystal_coin.gif" alt=""><p>150.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Quaras</td>
+          <td><img src="../imgs/creatures/Quara_Constrictor.gif" alt=""><img src="../imgs/creatures/Quara_Hydromancer.gif" alt=""><img src="../imgs/creatures/Quara_Mantassin.gif" alt=""><img src="../imgs/creatures/Quara_Pincher.gif" alt=""><img src="../imgs/creatures/Quara_Predator.gif" alt=""></td>
+          <td>400</td>
+          <td>min. level - 30</td>
+          <td><div class="tooltip"><span class="tooltip-text">20x</span><img src="../imgs/platinum_coin.gif" alt=""><br><span class="tooltip-text">1x</span><img src="../imgs/creatures/crystal_coin.gif" alt=""><p>150.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Frostclops</td>
+          <td><img src="../imgs/creatures/frostclop_cutthroat.gif" alt=""><img src="../imgs/creatures/frostclop_djinn.gif" alt=""><img src="../imgs/creatures/frostclop_thunderbolt.gif" alt=""></td>
+          <td>400</td>
+          <td>min. level - 30</td>
+          <td><div class="tooltip"><span class="tooltip-text">20x</span><img src="../imgs/platinum_coin.gif" alt=""><br><span class="tooltip-text">1x</span><img src="../imgs/creatures/crystal_coin.gif" alt=""><p>150.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Earth Elementals</td>
+          <td><img src="../imgs/creatures/Earth_Elemental.gif" alt=""><img src="../imgs/creatures/Jagged_Earth_Elemental.gif" alt=""></td>
+          <td>300</td>
+          <td>min. level - 30</td>
+          <td><div class="tooltip"><span class="tooltip-text">Green Lootbag</span><img src="../imgs/creatures/lootbag_green.gif" alt=""><p>150.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Mutates</td>
+          <td><img src="../imgs/creatures/Mutated_Bat.gif" alt=""><img src="../imgs/creatures/Mutated_Rat.gif" alt=""></td>
+          <td>300</td>
+          <td>min. level - 30</td>
+          <td><div class="tooltip"><span class="tooltip-text">Green Lootbag</span><img src="../imgs/creatures/lootbag_green.gif" alt=""><p>150.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Ice Golems</td>
+          <td><img src="../imgs/creatures/Ice_Golem.gif" alt=""></td>
+          <td>250</td>
+          <td>min. level - 30</td>
+          <td><div class="tooltip"><span class="tooltip-text">Blue Lootbag</span><img src="../imgs/items/lootbag_blue.gif" alt=""><p>150.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Crystal Spiders</td>
+          <td><img src="../imgs/creatures/Crystal_Spider.gif" alt=""></td>
+          <td>300</td>
+          <td>min. level - 30</td>
+          <td><div class="tooltip"><span class="tooltip-text">Blue Lootbag</span><img src="../imgs/items/lootbag_blue.gif" alt=""><p>150.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Brimstone Bugs</td>
+          <td><img src="../imgs/creatures/Brimstone_Bug.gif" alt=""></td>
+          <td>300</td>
+          <td>min. level - 30</td>
+          <td><div class="tooltip"><span class="tooltip-text">Green Lootbag</span><img src="../imgs/creatures/lootbag_green.gif" alt=""><p>250.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Bio Elementals</td>
+          <td><img src="../imgs/creatures/Bog_Raider.gif" alt=""><img src="../imgs/creatures/Earth_Elemental.gif" alt=""></td>
+          <td>500</td>
+          <td>min. level - 30</td>
+          <td><div class="tooltip"><span class="tooltip-text">5x Minor Crystalline Tokens</span><img src="../imgs/creatures/minor_crystalline_token.gif" alt=""><p>250.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Dragons</td>
+          <td><img src="../imgs/creatures/Dragon.gif" alt=""></td>
+          <td>400</td>
+          <td>min. level - 30</td>
+          <td><div class="tooltip"><span class="tooltip-text">5x Minor Crystalline Tokens</span><img src="../imgs/creatures/minor_crystalline_token.gif" alt=""><p>250.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Roaring Lions</td>
+          <td><img src="../imgs/creatures/Roaring_Lion.gif" alt=""></td>
+          <td>300</td>
+          <td>min. level - 40</td>
+          <td><div class="tooltip"><span class="tooltip-text">Green Lootbag</span><img src="../imgs/creatures/lootbag_green.gif" alt=""><p>250.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Giant Spiders</td>
+          <td><img src="../imgs/creatures/Giant_Spider.gif" alt=""></td>
+          <td>350</td>
+          <td>min. level - 40</td>
+          <td><div class="tooltip"><span class="tooltip-text">Green Lootbag</span><img src="../imgs/creatures/lootbag_green.gif" alt=""><p>250.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Ancient Scarabs</td>
+          <td><img src="../imgs/creatures/Ancient_Scarab.gif" alt=""></td>
+          <td>350</td>
+          <td>min. level - 40</td>
+          <td><div class="tooltip"><span class="tooltip-text">Green Lootbag</span><img src="../imgs/creatures/lootbag_green.gif" alt=""><p>250.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Arachnids</td>
+          <td><img src="../imgs/creatures/diaea dorsata.gif" alt=""><img src="../imgs/creatures/anyphaena.gif" alt=""><img src="../imgs/creatures/spider cocoon.gif" alt=""></td>
+          <td>250</td>
+          <td>min. level - 40</td>
+          <td><div class="tooltip"><span class="tooltip-text">Green Lootbag</span><img src="../imgs/creatures/lootbag_green.gif" alt=""><p>350.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Heroes</td>
+          <td><img src="../imgs/creatures/Hero.gif" alt=""></td>
+          <td>500</td>
+          <td>min. level - 40</td>
+          <td><div class="tooltip"><span class="tooltip-text">8x Minor Crystalline Tokens</span><img src="../imgs/creatures/minor_crystalline_token.gif" alt=""><p>450.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Weakened Dreamhunters</td>
+          <td><img src="../imgs/creatures/enfebleed_silencer.gif" alt=""><img src="../imgs/creatures/weakened_Frazzlemaw.gif" alt=""></td>
+          <td>400</td>
+          <td>min. level - 40</td>
+          <td><div class="tooltip"><span class="tooltip-text">8x Minor Crystalline Tokens</span><img src="../imgs/creatures/minor_crystalline_token.gif" alt=""><p>450.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Hives</td>
+          <td><img src="../imgs/creatures/Spitter.gif" alt=""><img src="../imgs/creatures/Waspoid.gif" alt=""><img src="../imgs/creatures/Crawler.gif" alt=""></td>
+          <td>500</td>
+          <td>min. level - 40</td>
+          <td><div class="tooltip"><span class="tooltip-text">8x Minor Crystalline Tokens</span><img src="../imgs/creatures/minor_crystalline_token.gif" alt=""><p>450.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Yielothaxs</td>
+          <td><img src="../imgs/creatures/Yielothax.gif" alt=""></td>
+          <td>400</td>
+          <td>min. level - 40</td>
+          <td><div class="tooltip"><span class="tooltip-text">8x Minor Crystalline Tokens</span><img src="../imgs/creatures/minor_crystalline_token.gif" alt=""><p>500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Drillworms</td>
+          <td><img src="../imgs/creatures/Drillworm.gif" alt=""></td>
+          <td>400</td>
+          <td>min. level - 40</td>
+          <td><div class="tooltip"><span class="tooltip-text">8x Minor Crystalline Tokens</span><img src="../imgs/creatures/minor_crystalline_token.gif" alt=""><p>500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Souleaters</td>
+          <td><img src="../imgs/creatures/Souleater.gif" alt=""></td>
+          <td>400</td>
+          <td>min. level - 40</td>
+          <td><div class="tooltip"><span class="tooltip-text">8x Minor Crystalline Tokens</span><img src="../imgs/creatures/minor_crystalline_token.gif" alt=""><p>500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Outlaw Humans</td>
+          <td><img src="../imgs/creatures/Vicious_Squire.gif" alt=""><img src="../imgs/creatures/Blood_Priest.gif" alt=""><img src="../imgs/creatures/Renegade_Knight.gif" alt=""></td>
+          <td>600</td>
+          <td>min. level - 50</td>
+          <td><div class="tooltip"><span class="tooltip-text">Blue Lootbag</span><img src="../imgs/items/lootbag_blue.gif" alt=""><p>500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Cults</td>
+          <td><img src="../imgs/creatures/Cult_Believer.gif" alt=""><img src="../imgs/creatures/Cult_Enforcer.gif" alt=""><img src="../imgs/creatures/Cult_Scholar.gif" alt=""></td>
+          <td>600</td>
+          <td>min. level - 50</td>
+          <td><div class="tooltip"><span class="tooltip-text">Red Lootbag</span><img src="../imgs/items/lootbag_red.gif" alt=""><p>500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Rottens</td>
+          <td><img src="../imgs/creatures/rotten_devil.gif" alt=""><img src="../imgs/creatures/rotten_dragon.gif" alt=""><img src="../imgs/creatures/rotten_spider.gif" alt=""></td>
+          <td>600</td>
+          <td>min. level - 50</td>
+          <td><div class="tooltip"><span class="tooltip-text">10x Minor Crystalline Tokens</span><img src="../imgs/creatures/minor_crystalline_token.gif" alt=""><p>600.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Exotics</td>
+          <td><img src="../imgs/creatures/Exotic_Bat.gif" alt=""><img src="../imgs/creatures/Exotic_Cave_Spider.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 50</td>
+          <td><div class="tooltip"><span class="tooltip-text">Green Lootbag</span><img src="../imgs/creatures/lootbag_green.gif" alt=""><p>600.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Ice Witches</td>
+          <td><img src="../imgs/creatures/Ice_Witch.gif" alt=""></td>
+          <td>500</td>
+          <td>min. level - 50</td>
+          <td><div class="tooltip"><span class="tooltip-text">10x Minor Crystalline Tokens</span><img src="../imgs/creatures/minor_crystalline_token.gif" alt=""><p>650.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Pirats</td>
+          <td><img src="../imgs/creatures/Pirat_Bombardier.gif" alt=""><img src="../imgs/creatures/Pirat_Cutthroat.gif" alt=""><img src="../imgs/creatures/Pirat_Mate.gif" alt=""><img src="../imgs/creatures/Pirat_Scoundrel.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 50</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coin</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>800.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Askaraks and Shaburaks</td>
+          <td><img src="../imgs/creatures/Askarak_Demon.gif" alt=""><img src="../imgs/creatures/Askarak_Lord.gif" alt=""><img src="../imgs/creatures/Askarak_Prince.gif" alt=""><img src="../imgs/creatures/Shaburak_Demon.gif" alt=""><img src="../imgs/creatures/Shaburak_Lord.gif" alt=""><img src="../imgs/creatures/Shaburak_Prince.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 50</td>
+          <td><div class="tooltip"><span class="tooltip-text">Red Lootbag</span><img src="../imgs/items/lootbag_red.gif" alt=""><p>800.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Outlaw Knights</td>
+          <td><img src="../imgs/creatures/Black_Knight.gif" alt=""><img src="../imgs/creatures/Vile_Grandmaster.gif" alt=""></td>
+          <td>450</td>
+          <td>min. level - 50</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>800.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Seas</td>
+          <td><img src="../imgs/creatures/Sea_Serpent.gif" alt=""><img src="../imgs/creatures/Young_Sea_Serpent.gif" alt=""></td>
+          <td>650</td>
+          <td>min. level - 50</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>800.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Lizards</td>
+          <td><img src="../imgs/creatures/Lizard_Chosen.gif" alt=""><img src="../imgs/creatures/Lizard_Dragon_Priest.gif" alt=""><img src="../imgs/creatures/Lizard_High_Guard.gif" alt=""><img src="../imgs/creatures/Lizard_Legionnaire.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 50</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>800.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Wyrms</td>
+          <td><img src="../imgs/creatures/Wyrm.gif" alt=""><img src="../imgs/creatures/Elder_Wyrm.gif" alt=""></td>
+          <td>650</td>
+          <td>min. level - 50</td>
+          <td><div class="tooltip"><span class="tooltip-text">Red Lootbag</span><img src="../imgs/items/lootbag_red.gif" alt=""><p>800.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Behemoths</td>
+          <td><img src="../imgs/creatures/Behemoth.gif" alt=""></td>
+          <td>500</td>
+          <td>min. level - 60</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Yalahar Golems</td>
+          <td><img src="../imgs/creatures/War_Golem.gif" alt=""><img src="../imgs/creatures/Worker_Golem.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 60</td>
+          <td><div class="tooltip"><p style="color: #f79c1c">Yalahari [Q] Access</p><p>1.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Lycanths</td>
+          <td><img src="../imgs/creatures/Werebadger.gif" alt=""><img src="../imgs/creatures/Werebear.gif" alt=""><img src="../imgs/creatures/Wereboar.gif" alt=""><img src="../imgs/creatures/Werewolf.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 60</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Destroyers</td>
+          <td><img src="../imgs/creatures/Destroyer.gif" alt=""></td>
+          <td>500</td>
+          <td>min. level - 60</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Lost Dwarves</td>
+          <td><img src="../imgs/creatures/Lost_Basher.gif" alt=""><img src="../imgs/creatures/Lost_Berserker.gif" alt=""><img src="../imgs/creatures/Lost_Husher.gif" alt=""><img src="../imgs/creatures/Lost_Thrower.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 60</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Gloots</td>
+          <td><img src="../imgs/creatures/glooth_bandit.gif" alt=""><img src="../imgs/creatures/glooth_brigand.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 60</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Frost Dragons</td>
+          <td><img src="../imgs/creatures/Frost_Dragon.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 60</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Dragonlings</td>
+          <td><img src="../imgs/creatures/Dragonling.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 60</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Dragon Lords</td>
+          <td><img src="../imgs/creatures/Dragon_Lord.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 60</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Hydras</td>
+          <td><img src="../imgs/creatures/Hydra.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 60</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Nightmares</td>
+          <td><img src="../imgs/creatures/Nightmare.gif" alt=""></td>
+          <td>550</td>
+          <td>min. level - 60</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Hellish Tortoises</td>
+          <td><img src="../imgs/creatures/hellish_tortoise.gif" alt=""></td>
+          <td>550</td>
+          <td>min. level - 60</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Ice Dragons</td>
+          <td><img src="../imgs/creatures/ice_dragon.gif" alt=""></td>
+          <td>650</td>
+          <td>min. level - 60</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Machines</td>
+          <td><img src="../imgs/creatures/Blood_Beast.gif" alt=""><img src="../imgs/creatures/Glooth_Golem.gif" alt=""><img src="../imgs/creatures/Metal_Gargoyle.gif" alt=""><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/Rustheap_Golem.gif" alt=""><img src="../imgs/creatures/Walker.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 60</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Shock Heads</td>
+          <td><img src="../imgs/creatures/Shock_Head.gif" alt=""></td>
+          <td>400</td>
+          <td>min. level - 60</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.250.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Hellspawns</td>
+          <td><img src="../imgs/creatures/Hellspawn.gif" alt=""></td>
+          <td>600</td>
+          <td>min. level - 60</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.250.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Mad Mages</td>
+          <td><img src="../imgs/creatures/mad_mage.gif" alt=""></td>
+          <td>600</td>
+          <td>min. level - 60</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.250.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Serpent Spawns</td>
+          <td><img src="../imgs/creatures/Serpent_Spawn.gif" alt=""></td>
+          <td>550</td>
+          <td>min. level - 60</td>
+          <td><div class="tooltip"><span class="tooltip-text">Red Surprise Bag</span><img src="../imgs/creatures/red_surprise.gif" alt=""><p>1.250.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Werelions</td>
+          <td><img src="../imgs/creatures/Werelion.gif" alt=""><img src="../imgs/creatures/Werelioness.gif" alt=""><img src="../imgs/creatures/White_Lion.gif" alt=""></td>
+          <td>750</td>
+          <td>min. level - 60</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.250.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Asuras</td>
+          <td><img src="../imgs/creatures/Dawnfire_Asura.gif" alt=""><img src="../imgs/creatures/Midnight_Asura.gif" alt=""><img src="../imgs/creatures/Frost_Flower_Asura.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 75</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Drakens</td>
+          <td><img src="../imgs/creatures/Draken_Abomination.gif" alt=""><img src="../imgs/creatures/Draken_Elite.gif" alt=""><img src="../imgs/creatures/Draken_Spellweaver.gif" alt=""><img src="../imgs/creatures/Draken_Warmaster.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 75</td>
+          <td><div class="tooltip"><span class="tooltip-text">3x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.500.000 experience</p><p style="color: #f79c1c">Draken Final [Q] Access</p></div></td>
+        </tr>
+        <tr>
+          <td>Deeplings</td>
+          <td><img src="../imgs/creatures/Deepling_Master_Librarian.gif" alt=""><img src="../imgs/creatures/Deepling_Tyrant.gif" alt=""><img src="../imgs/creatures/Deepling_Warrior.gif" alt=""></td>
+          <td>800</td>
+          <td>min. level - 75</td>
+          <td><div class="tooltip"><span class="tooltip-text">3x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Overhives</td>
+          <td><img src="../imgs/creatures/Kollos.gif" alt=""><img src="../imgs/creatures/Spidris.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 75</td>
+          <td><div class="tooltip"><span class="tooltip-text">3x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Medusas</td>
+          <td><img src="../imgs/creatures/Medusa.gif" alt=""></td>
+          <td>600</td>
+          <td>min. level - 75</td>
+          <td><div class="tooltip"><span class="tooltip-text">Blue Surprise Bag</span><img src="../imgs/creatures/blue_surprise.gif" alt=""><p>1.500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Ogre Giants</td>
+          <td><img src="../imgs/creatures/Ogre_Rowdy.gif" alt=""><img src="../imgs/creatures/Ogre_Ruffian.gif" alt=""><img src="../imgs/creatures/Ogre_Sage.gif" alt=""></td>
+          <td>800</td>
+          <td>min. level - 75</td>
+          <td><div class="tooltip"><span class="tooltip-text">3x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Infernalists</td>
+          <td><img src="../imgs/creatures/Infernalist.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 75</td>
+          <td><div class="tooltip"><span class="tooltip-text">Red Surprise Bag</span><img src="../imgs/creatures/red_surprise.gif" alt=""><p>1.500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Warlocks</td>
+          <td><img src="../imgs/creatures/Warlock.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 75</td>
+          <td><div class="tooltip"><span class="tooltip-text">3x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Black Mages</td>
+          <td><img src="../imgs/creatures/Black_Mage.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 75</td>
+          <td><div class="tooltip"><span class="tooltip-text">3x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Raging Mages</td>
+          <td><img src="../imgs/creatures/Raging_Mage.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 75</td>
+          <td><div class="tooltip"><span class="tooltip-text">3x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Furys</td>
+          <td><img src="../imgs/creatures/Fury.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 90</td>
+          <td><div class="tooltip"><span class="tooltip-text">3x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.750.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Grim Reapers</td>
+          <td><img src="../imgs/creatures/Grim_Reaper.gif" alt=""></td>
+          <td>600</td>
+          <td>min. level - 90</td>
+          <td><div class="tooltip"><span class="tooltip-text">Red Surprise Bag</span><img src="../imgs/creatures/red_surprise.gif" alt=""><p>1.750.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Dragon Overlords</td>
+          <td><img src="../imgs/creatures/dragon_overlord.gif" alt=""></td>
+          <td>600</td>
+          <td>min. level - 90</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Major Crystalline Tokens</span><img src="../imgs/creatures/major_crystalline_token.gif" alt=""><p>1.750.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Ghastly Dragons</td>
+          <td><img src="../imgs/creatures/Ghastly_Dragon.gif" alt=""></td>
+          <td>600</td>
+          <td>min. level - 90</td>
+          <td><div class="tooltip"><span class="tooltip-text">Blue Surprise Bag</span><img src="../imgs/creatures/blue_surprise.gif" alt=""><p>2.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Frozemoths</td>
+          <td><img src="../imgs/creatures/frozemoth.gif" alt=""></td>
+          <td>600</td>
+          <td>min. level - 90</td>
+          <td><div class="tooltip"><span class="tooltip-text">Blue Surprise Bag</span><img src="../imgs/creatures/blue_surprise.gif" alt=""><p>2.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Maws</td>
+          <td><img src="../imgs/creatures/Frazzlemaww.gif" alt=""><img src="../imgs/creatures/Guzzlemaw.gif" alt=""></td>
+          <td>650</td>
+          <td>min. level - 90</td>
+          <td><div class="tooltip"><span class="tooltip-text">1x Dream Matter</span><img src="../imgs/creatures/dream_matter.gif" alt=""><p>2.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Demons</td>
+          <td><img src="../imgs/creatures/Demon_Old.gif" alt=""></td>
+          <td>666</td>
+          <td>min. level - 90</td>
+          <td><div class="tooltip"><p style="color: #f79c1c">Demon Oak [Q] Access</p><p>2.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Undead Dragons</td>
+          <td><img src="../imgs/creatures/Undead_Dragon.gif" alt=""></td>
+          <td>350</td>
+          <td>min. level - 100</td>
+          <td><div class="tooltip"><p style="color: #f79c1c">Firewalker Boots [Q] Access</p><p>2.500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Hellish</td>
+          <td><img src="../imgs/creatures/Hellhound.gif" alt=""><img src="../imgs/creatures/Hellfire_Fighter.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 100</td>
+          <td><div class="tooltip"><span class="tooltip-text">3x Major Crystalline Token</span><img src="../imgs/creatures/major_crystalline_token.gif" alt=""><p>2.500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Plaguesmiths and Blightwalkers</td>
+          <td><img src="../imgs/creatures/Plaguesmith.gif" alt=""><img src="../imgs/creatures/Blightwalker.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 100</td>
+          <td><div class="tooltip"><span class="tooltip-text">3x Major Crystalline Token</span><img src="../imgs/creatures/major_crystalline_token.gif" alt=""><p>2.500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Defilers and Son of Verminors</td>
+          <td><img src="../imgs/creatures/Defiler.gif" alt=""><img src="../imgs/creatures/Son_of_Verminor.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 100</td>
+          <td><div class="tooltip"><span class="tooltip-text">3x Major Crystalline Token</span><img src="../imgs/creatures/major_crystalline_token.gif" alt=""><p>2.500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Lost and Torturers</td>
+          <td><img src="../imgs/creatures/Lost_Soul.gif" alt=""><img src="../imgs/creatures/Dark_Torturer.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 100</td>
+          <td><div class="tooltip"><span class="tooltip-text">3x Major Crystalline Token</span><img src="../imgs/creatures/major_crystalline_token.gif" alt=""><p>2.500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Magical Pits of Inferno</td>
+          <td><img src="../imgs/creatures/Hand_of_Cursed_Fate.gif" alt=""><img src="../imgs/creatures/Phantasm.gif" alt=""><img src="../imgs/creatures/Spectre.gif" alt=""></td>
+          <td>750</td>
+          <td>min. level - 100</td>
+          <td><div class="tooltip"><span class="tooltip-text">3x Major Crystalline Token</span><img src="../imgs/creatures/major_crystalline_token.gif" alt=""><p>2.500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Demon Outcasts</td>
+          <td><img src="../imgs/creatures/Demon_Outcast.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 100</td>
+          <td><div class="tooltip"><span class="tooltip-text">1x Dream Matter</span><img src="../imgs/creatures/dream_matter.gif" alt=""><p>2.500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Juggernauts</td>
+          <td><img src="../imgs/creatures/Juggernaut.gif" alt=""></td>
+          <td>333</td>
+          <td>min. level - 100</td>
+          <td><div class="tooltip"><span class="tooltip-text">3x Major Crystalline Token</span><img src="../imgs/creatures/major_crystalline_token.gif" alt=""><p>2.750.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Lucifers</td>
+          <td><img src="../imgs/creatures/lucifer.gif" alt=""></td>
+          <td>466</td>
+          <td>min. level - 100</td>
+          <td><div class="tooltip"><span class="tooltip-text">4x Major Crystalline Token</span><img src="../imgs/creatures/major_crystalline_token.gif" alt=""><p>3.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Dreamhunters</td>
+          <td><img src="../imgs/creatures/Choking_Fear.gif" alt=""><img src="../imgs/creatures/Feversleep.gif" alt=""><img src="../imgs/creatures/Retching_Horror.gif" alt=""><img src="../imgs/creatures/Sight_Of_Surrender.gif" alt=""><img src="../imgs/creatures/Silencer (1).gif" alt=""></td>
+          <td>800</td>
+          <td>min. level - 100</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Dreamhunters</span><img src="../imgs/creatures/dream_matter.gif" alt=""><p>3.500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Lurkers</td>
+          <td><img src="../imgs/creatures/Lava_Lurker.gif" alt=""></td>
+          <td>800</td>
+          <td>min. level - 120</td>
+          <td><div class="tooltip"><span class="tooltip-text">3x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>1.500.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Chasm Spawns</td>
+          <td><img src="../imgs/creatures/Chasm_Spawn.gif" alt=""></td>
+          <td>600</td>
+          <td>min. level - 120</td>
+          <td><div class="tooltip"><span class="tooltip-text">2x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>4.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Warzone First</td>
+          <td><img src="../imgs/creatures/Armadile.gif" alt=""><img src="../imgs/creatures/Hideous_Fungus.gif" alt=""><img src="../imgs/creatures/Humongous_Fungus.gif" alt=""><img src="../imgs/creatures/Stone_Devourer.gif" alt=""></td>
+          <td>1200</td>
+          <td>min. level - 120</td>
+          <td><div class="tooltip"><span class="tooltip-text">10x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>4.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Warzone Second</td>
+          <td><img src="../imgs/creatures/Lava_Golem.gif" alt=""><img src="../imgs/creatures/Vulcongra.gif" alt=""><img src="../imgs/creatures/Weeper.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 120</td>
+          <td><div class="tooltip"><span class="tooltip-text">10x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>4.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Warzone Third</td>
+          <td><img src="../imgs/creatures/Cliff_Strider.gif" alt=""><img src="../imgs/creatures/Ironblight.gif" alt=""><img src="../imgs/creatures/Orewalker.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 120</td>
+          <td><div class="tooltip"><span class="tooltip-text">10x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>4.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Warzone Fifth</td>
+          <td><img src="../imgs/creatures/High_Voltage_Elemental.gif" alt=""><img src="../imgs/creatures/Cave_Devourer.gif" alt=""><img src="../imgs/creatures/Tunnel_Tyrant.gif" alt=""></td>
+          <td>750</td>
+          <td>min. level - 120</td>
+          <td><div class="tooltip"><span class="tooltip-text">1x Silver Token</span><img src="../imgs/creatures/silver_token.gif" alt=""><p>2.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Warzone Sixth</td>
+          <td><img src="../imgs/creatures/Diremaw.gif" alt=""><img src="../imgs/creatures/Deepworm.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 120</td>
+          <td><div class="tooltip"><span class="tooltip-text">10x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>4.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>Ferumbras Ascends</td>
+          <td><img src="../imgs/creatures/Hellflayer.gif" alt=""><img src="../imgs/creatures/Grimeleech.gif" alt=""><img src="../imgs/creatures/Vexclaw.gif" alt=""></td>
+          <td>800</td>
+          <td>min. level - 140</td>
+          <td><div class="tooltip"><span class="tooltip-text">25x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><br><span class="tooltip-text">2x Dream Matter</span><img src="../imgs/creatures/dream_matter.gif" alt=""><br><span class="tooltip-text">75x Cluster of Solace</span><img src="../imgs/creatures/cluster_of_solace.gif" alt=""><p>6.000.000 experience</p></div></td>
+        </tr>
+        <tr>
+          <td>True Asuras</td>
+          <td><img src="../imgs/creatures/True_Dawnfire_Asura.gif" alt=""><img src="../imgs/creatures/True_Frost_Flower_Asura.gif" alt=""><img src="../imgs/creatures/True_Midnight_Asura.gif" alt=""></td>
+          <td>700</td>
+          <td>min. level - 150</td>
+          <td><div class="tooltip"><span class="tooltip-text">6x Ramonia Coins</span><img src="../imgs/creatures/ramonia_coins.gif" alt=""><p>2.500.000 experience</p></div></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="back">
+      <h2><a href="#top">Back to the top</a></h2>
+    </div>
+  </div>
+  <!-- End of main page -->
+  <div class="side-bar">
+    <div class="content">
+      <div class="interactive">
+        <h2><i class="fa-solid fa-map map"></i>Map viewer</h2>
+        <a href="https://ramonia.pl/map_viewer/#zoom,14,position,1263,1278,7"><img src="../imgs/intertactive.png" alt="" class="image"></a>
+      </div>
+      <div class="widget">
+        <iframe src="https://discord.com/widget?id=457182944260390912&theme=dark" width="100%" height="435" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="socials">
+        <h2>Server Status & Socials</h2>
+        <a href="https://www.facebook.com/people/Ramoniapl/100063498342253/" class="fb" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/invite/V6wwZXfZ4a" class="dsc" target="blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

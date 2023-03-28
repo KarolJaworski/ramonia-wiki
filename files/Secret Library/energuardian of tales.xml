@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Energuardian of Tales" nameDescription="an energuardian of tales" race="undead" experience="11361" speed="420" manacost="0">
+	<health now="14000" max="14000"/>
+	<look type="586" head="66" body="85" legs="82" feet="93" corpse="15611" />
+	<targetchange interval="5000" chance="8"/>
+	<targetstrategies nearest="100" health="0" damage="0" random="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-100" max="-500"/>
+		<attack name="energy" interval="2000" chance="10" range="7" target="1" min="-800" max="-1500">
+			<attribute key="shootEffect" value="energyshot"/>
+			<attribute key="areaEffect" value="purplearea"/>
+		</attack>
+		<attack name="energy" interval="2000" chance="14" radius="3" target="0" min="-650" max="-800">
+			<attribute key="areaEffect" value="energyhit"/>
+		</attack>		
+		<attack name="energy" interval="2000" chance="12" radius="3" range="7" target="1" min="-550" max="-650">
+			<attribute key="shootEffect" value="energyball"/>
+			<attribute key="areaEffect" value="energyhit"/>
+		</attack>
+		<attack name="energy" interval="2000" chance="13" length="6" spread="0" target="0" min="-650" max="-850">
+			<attribute key="areaEffect" value="purplearea" />
+		</attack>			
+	</attacks>
+	<defenses armor="82" defense="40">
+	</defenses>
+	<elements>
+		<element earthPercent="-12"/>
+	</elements>
+	<immunities>
+		<immunity energy="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+	</voices>
+	<loot>
+		<item id="15686" countmax="6" chance="58680" /><!-- book page -->
+		<item id="2150" countmax="10" chance="55620"/><!-- small amethyst -->	
+		<item id="15687" countmax="4" chance="20290" /><!-- glowing rune -->
+		<item id="5279" chance="9110" /><!-- spellbook of warding-->	
+		<item id="9294" chance="9000" /><!-- ultimate mana potion-->
+		<item id="5241" chance="7700" /><!-- lightning legs-->
+		<item id="15339" countmax="15" chance="7500"/><!-- flash arrow -->
+		<item id="5518" chance="7130" /><!-- wand of starstorm-->
+		<item id="5298" countmax="2" chance="4110" /><!-- lightning pendant -->
+		<item id="2164" chance="2440" /><!--might ring -->
+		<item id="2171" chance="2350" /><!-- platinum amulet-->
+		<item id="5519" chance="1270" /><!-- wand of defiance-->
+		<item id="5280" chance="890" /><!-- spellweaver's robe-->
+		<item id="5301" chance="700" /><!-- shockwave amulet-->
+	</loot>
+</monster>

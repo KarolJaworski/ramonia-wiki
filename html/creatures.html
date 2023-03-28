@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ramonia Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="../js/test.js"></script>
+</head>
+<body>
+  <div id="top">
+    <div class="top_container">
+      <a href="index.html"><img src="../imgs/ramoniawiki.gif" alt="Logo" class="logo"></a>
+      <form action="">
+        <input type="text" name="search" id="input-search" placeholder="Search..." size="22" maxlength="64">
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+  </div>
+  <!-- End of div top -->
+
+  <!-- EAEEEC, D68E19, 2D2E38, 884234, 3B3D49 -->
+
+  <!-- Left bar -->
+  <div class="side-bar">
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+      <div class="item"><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></div>
+      <div class="item">
+        <a href="#" class="sub-btn"><i class="fa-solid fa-book"></i>Library<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="items.html">Items</a>
+          <a href="quests.html">Quests</a>
+          <a href="tasks.html">Tasks</a>
+          <a href="addons.html">Addons</a>
+          <a href="spells.html">Spells</a>
+          <a href="mounts.html">Mounts</a>
+        </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //jquery sub menu
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+    });
+  </script>
+  <!-- End of left bar -->
+  <!-- Main Page -->
+  <div id="main-page">
+    <table class="creatures table table-sortable">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>HP</th>
+          <th>Exp</th>
+          <th>Loot</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/Amazon.gif" alt=""></a></td>
+          <td>Amazon</td>
+          <td>110</td>
+          <td>60</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/ancient_scarab (1).gif" alt=""></a></td>
+          <td>Ancient Scarab</td>
+          <td>1000</td>
+          <td>720</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/Badger.gif" alt=""></a></td>
+          <td>Badger</td>
+          <td>23</td>
+          <td>5</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/Banshee.gif" alt=""></a></td>
+          <td>Banshee</td>
+          <td>1000</td>
+          <td>900</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/bat (1).gif" alt=""></a></td>
+          <td>Bat</td>
+          <td>30</td>
+          <td>10</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/bear (1).gif" alt=""></a></td>
+          <td>Bear</td>
+          <td>80</td>
+          <td>23</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/Behemoth.gif" alt=""></a></td>
+          <td>Behemoth</td>
+          <td>4000</td>
+          <td>2500</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/bonelord (1).gif" alt=""></a></td>
+          <td>Beholder</td>
+          <td>260</td>
+          <td>170</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/black_sheep (1).gif" alt=""></a></td>
+          <td>Black Sheep</td>
+          <td>20</td>
+          <td>0</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/blue_djinn (1).gif" alt=""></a></td>
+          <td>Blue Djinn</td>
+          <td>330</td>
+          <td>215</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/Blood_Crab.gif" alt=""></a></td>
+          <td>Blood Crab</td>
+          <td>290</td>
+          <td>160</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/Bonebeast.gif" alt=""></a></td>
+          <td>Bonebeast</td>
+          <td>515</td>
+          <td>580</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/bug_retro.gif" alt=""></a></td>
+          <td>Bug</td>
+          <td>29</td>
+          <td>15</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/carniphila (1).gif" alt=""></a></td>
+          <td>Carniphila</td>
+          <td>255</td>
+          <td>150</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/cave_rat.gif" alt=""></a></td>
+          <td>Cave Rat</td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/centipede (1).gif" alt=""></a></td>
+          <td>Centipede</td>
+          <td>70</td>
+          <td>34</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/Chicken.gif" alt=""></a></td>
+          <td>Chicken</td>
+          <td>15</td>
+          <td>0</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/Cobra.gif" alt=""></a></td>
+          <td>Cobra</td>
+          <td>65</td>
+          <td>30</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/Crab.gif" alt=""></a></td>
+          <td>Crab</td>
+          <td>55</td>
+          <td>30</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/Crocodile.gif" alt=""></a></td>
+          <td>Crocodile</td>
+          <td>105</td>
+          <td>40</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/Crypt_Shambler.gif" alt=""></a></td>
+          <td>Crypt Shambler</td>
+          <td>330</td>
+          <td>195</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/Cyclops.gif" alt=""></a></td>
+          <td>Cyclops</td>
+          <td>260</td>
+          <td>150</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/Cyclops_Smith.gif" alt=""></a></td>
+          <td>Cyclops Smith</td>
+          <td>435</td>
+          <td>255</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/Cyclops_Drone.gif" alt=""></a></td>
+          <td>Cyclops Drone</td>
+          <td>325</td>
+          <td>200</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/Dark_Monk.gif" alt=""></a></td>
+          <td>Dark Monk</td>
+          <td>190</td>
+          <td>145</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/Deer.gif" alt=""></a></td>
+          <td>Deer</td>
+          <td>25</td>
+          <td>0</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/Demon_Skeleton.gif" alt=""></a></td>
+          <td>Demon Skeleton</td>
+          <td>400</td>
+          <td>240</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/creatures/Demon.gif" alt=""></a></td>
+          <td>Demon</td>
+          <td>8200</td>
+          <td>6000</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>?</td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="../js/tablesort.js"></script>
+  </div>
+  <!-- End of main page -->
+  <div class="side-bar">
+    <div class="content">
+      <div class="interactive">
+        <h2><i class="fa-solid fa-map map"></i>Map viewer</h2>
+        <a href="https://ramonia.pl/map_viewer/#zoom,14,position,1263,1278,7"><img src="../imgs/intertactive.png" alt="" class="image"></a>
+      </div>
+      <div class="widget">
+        <iframe src="https://discord.com/widget?id=457182944260390912&theme=dark" width="100%" height="435" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="socials">
+        <h2>Server Status & Socials</h2>
+        <a href="https://www.facebook.com/people/Ramoniapl/100063498342253/" class="fb" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/invite/V6wwZXfZ4a" class="dsc" target="blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

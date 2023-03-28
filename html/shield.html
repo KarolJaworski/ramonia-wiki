@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ramonia Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="top">
+    <div class="top_container">
+      <a href="index.html"><img src="../imgs/ramoniawiki.gif" alt="Logo" class="logo"></a>
+      <form action="">
+        <input type="text" name="search" id="input-search" placeholder="Search..." size="22" maxlength="64">
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+  </div>
+  <!-- End of div top -->
+
+  <!-- Left bar -->
+  <div class="side-bar">
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+      <div class="item"><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></div>
+      <div class="item">
+        <a href="#" class="sub-btn"><i class="fa-solid fa-book"></i>Library<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="items.html">Items</a>
+          <a href="quests.html">Quests</a>
+          <a href="tasks.html">Tasks</a>
+          <a href="addons.html">Addons</a>
+          <a href="spells.html">Spells</a>
+          <a href="mounts.html">Mounts</a>
+        </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //jquery sub menu
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+    });
+    </script>
+  <!-- End of left bar -->
+  <!-- Main Page -->
+  <div id="main-page">
+    <div class="header">
+      <h1>Shields</h1>
+    </div>
+    <table class="items">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Item Name</th>
+          <th>Defense</th>
+          <th>Specials</th>
+          <th>Weight</th>
+          <th>Vocation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2512.gif" alt=""></a></td>
+          <td>Wooden Shield</td>
+          <td>14</td>
+          <td>-</td>
+          <td>40.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/2526.gif" alt=""></a></td>
+          <td>Studded Shield</td>
+          <td>15</td>
+          <td>-</td>
+          <td>59.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/2511.gif" alt=""></a></td>
+          <td>Brass Shield</td>
+          <td>16</td>
+          <td>-</td>
+          <td>60.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/2510.gif" alt=""></a></td>
+          <td>Plate Shield</td>
+          <td>17</td>
+          <td>-</td>
+          <td>65.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/2529.gif" alt=""></a></td>
+          <td>Black Shield</td>
+          <td>18</td>
+          <td>-</td>
+          <td>42.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/2530.gif" alt=""></a></td>
+          <td>Copper Shield</td>
+          <td>19</td>
+          <td>-</td>
+          <td>63.00 oz</td>
+          <td>All</td>
+        </tr>  
+        <tr>
+          <td><a href=""><img src="../imgs/items/2541.gif" alt=""></a></td>
+          <td>Bone Shield</td>
+          <td>20</td>
+          <td>-</td>
+          <td>55.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2509.gif" alt=""></a></td>
+          <td>Steel Shield</td>
+          <td>21</td>
+          <td>-</td>
+          <td>69.00 oz</td>
+          <td>All</td>
+        <tr>                                                                      <tr>
+          <td><a href=""><img src="../imgs/items/2524.gif" alt=""></a></td>
+          <td>Ornamented Shield</td>
+          <td>22</td>
+          <td>-</td>
+          <td>67.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/2531.gif" alt=""></a></td>
+          <td>Viking Shield</td>
+          <td>22</td>
+          <td>-</td>
+          <td>66.00 oz</td>
+          <td>All</td>
+        </tr>  
+        <tr>
+          <td><a href=""><img src="../imgs/items/3974.gif" alt=""></a></td>
+          <td>Sentinel Shield</td>
+          <td>22</td>
+          <td>-</td>
+          <td>49.00 oz</td>
+          <td>All</td>
+        </tr>     
+        <tr>
+          <td><a href=""><img src="../imgs/items/2513.gif" alt=""></a></td>
+          <td>Battle Shield</td>
+          <td>23</td>
+          <td>-</td>
+          <td>62.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs/items/2521.gif" alt=""></a></td>
+          <td>Dark Shield</td>
+          <td>25</td>
+          <td>-</td>
+          <td>52.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/2540.gif" alt=""></a></td>
+          <td>Scarab Shield</td>
+          <td>25</td>
+          <td>-</td>
+          <td>47.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs/items/2525.gif" alt=""></a></td>
+          <td>Dwarven Shield</td>
+          <td>26</td>
+          <td>-</td>
+          <td>55.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/3975.gif" alt=""></a></td>
+          <td>Salamander Shield</td>
+          <td>26</td>
+          <td>-</td>
+          <td>59.00 oz</td>
+          <td>All</td>
+        </tr>      
+        <tr>
+          <td><a href=""><img src="../imgs/items/tortoise_shield.gif" alt=""></a></td>
+          <td>Tortoise Shield</td>
+          <td>26</td>
+          <td>-</td>
+          <td>52.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs/items/2527.gif" alt=""></a></td>
+          <td>Rose Shield</td>
+          <td>27</td>
+          <td>-</td>
+          <td>52.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs/items/2532.gif" alt=""></a></td>
+          <td>Ancient Shield</td>
+          <td>27</td>
+          <td>-</td>
+          <td>61.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/3973.gif" alt=""></a></td>
+          <td>Tusk Shield</td>
+          <td>27</td>
+          <td>-</td>
+          <td>69.00 oz</td>
+          <td>All</td>
+        </tr>  
+        <tr>
+          <td><a href=""><img src="../imgs/items/2518.gif" alt=""></a></td>
+          <td>Beholder Shield</td>
+          <td>28</td>
+          <td>-</td>
+          <td>47.00 oz</td>
+          <td>All</td>
+        </tr>  
+        <tr>
+          <td><a href=""><img src="../imgs/items/2535.gif" alt=""></a></td>
+          <td>Castle Shield</td>
+          <td>28</td>
+          <td>-</td>
+          <td>49.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs/items/norse_shield.gif" alt=""></a></td>
+          <td>Norse Shield</td>
+          <td>28</td>
+          <td>-</td>
+          <td>41.00 oz</td>
+          <td>All</td>
+        </tr>                 
+        <tr>
+          <td><a href=""><img src="../imgs/items/spike_shield.gif" alt=""></a></td>
+          <td>Spike Shield</td>
+          <td>28</td>
+          <td>-</td>
+          <td>59.00 oz</td>
+          <td>All</td>
+        </tr>  
+        <tr>
+          <td><a href=""><img src="../imgs/items/2533.gif" alt=""></a></td>
+          <td>Griffin Shield</td>
+          <td>29</td>
+          <td>-</td>
+          <td>50.00 oz</td>
+          <td>All</td>
+        </tr>  
+        <tr>
+          <td><a href=""><img src="../imgs/items/2515.gif" alt=""></a></td>
+          <td>Guardian Shield</td>
+          <td>30</td>
+          <td>-</td>
+          <td>55.00 oz</td>
+          <td>All</td>
+        </tr>    
+        <tr>
+          <td><a href=""><img src="../imgs/items/2516.gif" alt=""></a></td>
+          <td>Dragon Shield</td>
+          <td>31</td>
+          <td>-</td>
+          <td>60.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/runic_ice_shield.gif" alt=""></a></td>
+          <td>Runic Ice Shield</td>
+          <td>31</td>
+          <td>-</td>
+          <td>49.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/mino_shield.gif" alt=""></a></td>
+          <td>Mino Shield</td>
+          <td>31</td>
+          <td>-</td>
+          <td>65.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/2519.gif" alt=""></a></td>
+          <td>Crown Shield</td>
+          <td>32</td>
+          <td>-</td>
+          <td>62.00 oz</td>
+          <td>All</td>
+        </tr>               
+           
+        <tr>
+          <td><a href=""><img src="../imgs/items/2528.gif" alt=""></a></td>
+          <td>Tower Shield</td>
+          <td>32</td>
+          <td>-</td>
+          <td>82.00 oz</td>
+          <td>All</td>
+        <tr>                   
+        <tr>
+          <td><a href=""><img src="../imgs/items/2537.gif" alt=""></a></td>
+          <td>Amazon Shield</td>
+          <td>32</td>
+          <td>-</td>
+          <td>62.00 oz</td>
+          <td>All</td>
+        </tr>                 
+        <tr>
+          <td><a href=""><img src="../imgs/items/2538.gif" alt=""></a></td>
+          <td>Eagle Shield</td>
+          <td>32</td>
+          <td>-</td>
+          <td>62.00 oz</td>
+          <td>All</td>
+        </tr>                              
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9228.png" alt=""></a></td>
+          <td>Rotten Shield</td>
+          <td>32</td>
+          <td>Earth +7%<br>Fire -7%</td>
+          <td>58.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/warriors_shield.gif" alt=""></a></td>
+          <td>Warrior's Shield</td>
+          <td>33</td>
+          <td>-</td>
+          <td>75.00 oz</td>
+          <td>All</td>
+        </tr>                                 
+        <tr>
+          <td><a href=""><img src="../imgs/items/item_9238.png" alt=""></a></td>
+          <td>Thorn Shield</td>
+          <td>33</td>
+          <td>-</td>
+          <td>58.00 oz</td>
+          <td>All</td>
+        </tr>     
+                                     
+        <tr>
+          <td><a href=""><img src="../imgs/items/2534.gif" alt=""></a></td>
+          <td>Vampire Shield</td>
+          <td>34</td>
+          <td>-</td>
+          <td>38.00 oz</td>
+          <td>All</td>
+        </tr>                                                                
+        <tr>
+          <td><a href=""><img src="../imgs/items/2539.gif" alt=""></a></td>
+          <td>Phoenix Shield</td>
+          <td>34</td>
+          <td>-</td>
+          <td>35.00 oz</td>
+          <td>All</td>
+        </tr>    
+                          
+        <tr>
+          <td><a href=""><img src="../imgs/items/2520.gif" alt=""></a></td>
+          <td>Demon Shield</td>
+          <td>35</td>
+          <td>-</td>
+          <td>26.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/shield_of_corruption.gif" alt=""></a></td>
+          <td>Shield of Corruption</td>
+          <td>36</td>
+          <td>Sword +3</td>
+          <td>49.00 oz</td>
+          <td>Knight</td>
+        </tr>                 
+        <tr>
+          <td><a href=""><img src="../imgs/items/carapace_shield.gif" alt=""></a></td>
+          <td>Carapace Shield</td>
+          <td>36</td>
+          <td>-</td>
+          <td>55.00 oz</td>
+          <td>All</td>
+        </tr>                 
+        <tr>
+          <td><a href=""><img src="../imgs/items/ornate_shield.gif" alt=""></a></td>
+          <td>Ornate Shield</td>
+          <td>36</td>
+          <td>Physical +5%</td>
+          <td>71.00 oz</td>
+          <td>Knight</td>
+        </tr>  
+        <tr>
+          <td><a href=""><img src="../imgs/items/2542.gif" alt=""></a></td>
+          <td>Tempest Shield</td>
+          <td>36</td>
+          <td>-</td>
+          <td>51.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs/items/2514.gif" alt=""></a></td>
+          <td>Mastermind Shield</td>
+          <td>37</td>
+          <td>-</td>
+          <td>57.00 oz</td>
+          <td>All</td>
+        </tr>                   
+        <tr>
+          <td><a href=""><img src="../imgs/items/rift_shield.gif" alt=""></a></td>
+          <td>Rift Shield</td>
+          <td>37</td>
+          <td>-</td>
+          <td>65.00 oz</td>
+          <td>All</td>
+        </tr>           
+        <tr>
+          <td><a href=""><img src="../imgs/items/prismatic_shield.gif" alt=""></a></td>
+          <td>Prismatic Shield</td>
+          <td>37</td>
+          <td>Shielding +2<br>Physical +4%</td>
+          <td>72.00 oz</td>
+          <td>Knight</td>
+        </tr>    
+        <tr>
+          <td><a href=""><img src="../imgs/items/2522.gif" alt=""></a></td>
+          <td>Great Shield</td>
+          <td>38</td>
+          <td>-</td>
+          <td>84.00 oz</td>
+          <td>All</td>
+        </tr>  
+        <tr>
+          <td><a href=""><img src="../imgs/items/death_gaze.gif" alt=""></a></td>
+          <td>Death Gaze</td>
+          <td>38</td>
+          <td>-</td>
+          <td>79.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs/items/gnome_shield.gif" alt=""></a></td>
+          <td>Gnome Shield</td>
+          <td>38</td>
+          <td>Shielding +2<br>Energy +8%<br>Physical +6%<br>Ice -2%</td>
+          <td>60.00 oz</td>
+          <td>Paladin,<br>Knight</td>
+        </tr>  
+        <tr>
+          <td><a href=""><img src="../imgs/items/rainbow_shield.gif" alt=""></a></td>
+          <td>Rainbow Shield</td>
+          <td>39</td>
+          <td>Physical +3%<br>Axe +2<br>Sword +2<br>Club +2</td>
+          <td>69.00 oz</td>
+          <td>Knight</td>
+        </tr>                                                  
+        <tr>
+          <td><a href=""><img src="../imgs/items/2523.gif" alt=""></a></td>
+          <td>Blessed Shield</td>
+          <td>40</td>
+          <td>-</td>
+          <td>68.00 oz</td>
+          <td>All</td>
+        <tr>                                                             
+      </tbody>
+    </table>
+    <div class="back">
+      <h2><a href="#top">Back to the top</a></h2>
+    </div>
+  </div>
+  <!-- End of main page -->
+  <div class="side-bar">
+    <div class="content">
+      <div class="interactive">
+        <h2><i class="fa-solid fa-map map"></i>Map viewer</h2>
+        <a href="https://ramonia.pl/map_viewer/#zoom,14,position,1263,1278,7"><img src="../imgs/intertactive.png" alt="" class="image"></a>
+      </div>
+      <div class="widget">
+        <iframe src="https://discord.com/widget?id=457182944260390912&theme=dark" width="100%" height="435" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="socials">
+        <h2>Server Status & Socials</h2>
+        <a href="https://www.facebook.com/people/Ramoniapl/100063498342253/" class="fb" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/invite/V6wwZXfZ4a" class="dsc" target="blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

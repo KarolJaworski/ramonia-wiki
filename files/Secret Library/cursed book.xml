@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Cursed Book" nameDescription="a cursed book" race="ink" experience="13345" speed="440" manacost="0">
+	<health now="20000" max="20000"/>
+	<look type="587" head="79" body="83" legs="113" feet="0" corpse="15623" />
+	<targetchange interval="5000" chance="8"/>
+	<targetstrategies nearest="100" health="0" damage="0" random="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-100" max="-850"/>
+		<attack name="earth" interval="2000" chance="15" range="7" target="1" min="-600" max="-800">
+			<attribute key="shootEffect" value="smallearth"/>
+			<attribute key="areaEffect" value="stones"/>
+		</attack>
+		<attack name="earth" interval="2000" chance="12" length="5" spread="3" target="0" min="-750" max="-1300">
+			<attribute key="areaEffect" value="smallplants" />
+		</attack>		
+		<attack name="earth" interval="2000" chance="13" radius="3" target="0" min="-650" max="-950">
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>			
+	</attacks>
+	<defenses armor="82" defense="40">
+		<defense name="healing" interval="3000" chance="15" min="200" max="350">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+	</voices>
+	<loot>
+		<item id="2152" countmax="10" chance="75500"/><!-- platinum coin -->
+		<item id="15686" countmax="3" chance="64750" /><!-- book page -->
+		<item id="2145" countmax="7" chance="48560"/><!-- small diamond -->	
+		<item id="15683" chance="37370"/><!-- silken bookmark -->
+		<item id="5560" countmax="3" chance="26890"/><!-- small topaz -->	
+		<item id="1294" countmax="3" chance="19110"/><!-- small stone -->	
+		<item id="2200" chance="9290" /><!-- protection amulet -->	
+		<item id="7547" chance="6060"/><!-- diamond sceptre-->	
+		<item id="5282" chance="5440" /><!-- terra boots -->	
+		<item id="7490" chance="4200" /><!-- terra hood -->	
+		<item id="5525" chance="3980" /><!-- terra amulet -->
+		<item id="2197" chance="1810" /><!-- stone skin amulet -->	
+		<item id="5300" chance="1770" /><!-- sacred tree amulet -->	
+		<item id="5283" chance="1190" /><!-- terra legs -->	
+		<item id="5517" chance="660" /><!-- springsprout rod -->
+		<item id="5284" chance="660" /><!-- terra mantle -->	
+		<item id="14662" chance="220" /><!-- swamplair armor -->	
+	</loot>
+</monster>

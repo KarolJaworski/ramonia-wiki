@@ -1,0 +1,911 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Lora', serif;
+  background-color: #3b3d49;
+}
+html *, body * {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navigation bar styling */
+
+.logo {
+  width: 13em;
+}
+
+#top {
+  background-color: #2d2e38;
+  box-shadow: inset 0px -3px 4px 0px rgb(31, 32, 36);
+  width: 100%;
+}
+
+.top_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0px 16px;
+  height: 8vh;
+}
+
+#input-search {
+  outline: none;
+  border-radius: 6px;
+  border: 2px solid #2E2F39;
+  padding: 15px;
+  background-color: #FFFFFF;
+  background-image: url('../imgs/searchicon.png');
+  background-repeat: no-repeat;
+  background-position: 8px 11.5px;
+  padding-left: 2.9em;
+}
+
+#input-search:focus {
+  border-radius: 6px;
+  border: 2px solid #855760;
+}
+
+#search-button {
+  outline: none;
+  border-radius: 6px;
+  border: none;
+  padding: 13.5px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #855760;
+  font-size: 1em;
+  color: #EAEEEC;
+  transition: 0.35 ease-in-out;
+}
+
+#search-button:hover {
+  background-color: #855760;
+  color: #dde7e2;
+  box-shadow: 3px 5px 24px 8px rgba(222, 88, 142, 0.25);
+}
+
+#search-button:active {
+  border: 1px solid #864d5a;
+  transform: scale(0.98);
+  box-shadow: 2px 4px 23px 7px rgba(222, 88, 142, 0.25);
+}
+
+/* End of navigation bar styling */
+
+/* Left menu styling */
+
+.side-bar {
+  background-color: #3b3d49;
+  min-width: 16%;
+  max-width: 16%;
+  height: 92vh;
+  left: 0;
+  overflow-y: auto;
+  float: left;
+}
+
+.side-bar .menu .item {
+  position: relative;
+  cursor: pointer;
+}
+
+.side-bar .menu .item a {
+  color: #EAEEEC;
+  background-color: #3b3d49;
+  font-size: 19px;
+  text-decoration: none;
+  display: block;
+  padding: 5px 30px;
+  line-height: 60px;
+}
+
+.side-bar .menu .item a:hover {
+  background-color: #484b57;
+  border-left: 3px solid #c98018;
+  transition: all 0.1s ease;
+}
+
+.side-bar .menu .item i {
+  margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  transition: 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+/* End of left menu styling */
+
+/* Main page styling */
+
+#main-page {
+  background-color:  #2d2e38;
+  min-height: 92vh;
+  float: left;
+  width: 68%;
+  padding: 20px;
+  color: #EAEEEC;
+  font-size: 17px;
+}
+
+/* End of main page styling */
+
+/* Right bar styling */
+
+.side-bar .content .socials {
+  text-align: center;
+  margin-top: 10px;
+}
+.socials h2 {
+  color: #EAEEEC;
+  text-align: center;
+}
+
+.socials a {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  padding: 24px;
+  transition: 0.2s ease;
+}
+
+.socials a:hover {
+ background-color: #2d2e38;
+}
+.socials .fb {
+  background-color: #3b5998;
+  border-radius: 5px;
+}
+
+.socials .dsc {
+  background-color: #7289da;
+  border-radius: 5px;
+}
+
+.socials i {
+  color: #EAEEEC;
+  font-size: 21px;
+}
+
+.interactive h2 {
+  margin-top: 1px;
+  text-align: center;
+  color: #EAEEEC;
+  background-color: #d68e19;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.interactive h2 .map {
+  margin-right: 15px;
+}
+.interactive .image {
+  text-align: center;
+  width: 100%;
+  border-radius: 7px;
+  font-size: 15px;
+  border-bottom: 2px solid #d68e19;
+  margin-bottom: 10px;
+}
+/* End of right bar styling */
+
+/* Items styling */
+
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.regen {
+  color: #d68e19;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+/* Styling Quests spoiler*/
+
+.qname {
+  font-weight: bold;
+}
+.qname:hover {
+  text-decoration: underline;
+}
+
+table.items tbody tr td.spoiler {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+} 
+
+table.items tbody tr td.spoiler:hover {
+  cursor: pointer;
+} 
+
+.showhide {
+  color: #f0a938;
+  transition: all 0.25s ease;
+}
+
+.showhide:hover {
+  text-decoration: underline;
+}
+
+.spoiler-content {
+  display: none;
+  text-align: left;
+  margin: 13px;
+  font-size: 17px;
+  padding: 5px;
+  font-weight: normal;
+  border-radius: 7px;
+  background-color: #3b3d49;
+}
+
+.spoiler-content:hover {
+  cursor: default;
+}
+
+.spoiler-content img {
+  border: 1px solid #d68e19;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* End of styling quests spoiler */
+
+.grid-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  grid-template-rows: 37.39px repeat(6, 90px);
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+.grid-category {
+  background-image: url('../imgs/backgroundgood.png');
+  background-repeat: round;
+  text-align: center;
+  line-height: 220%;
+}
+
+.grid-item {
+  position: absolute;
+  background-color: #3b3d49;
+  border-radius: 15px;
+  width: 50%;
+  position: relative;
+  justify-self: center;
+  transition: all 0.2s ease;
+}
+
+.grid-container .grid-item .text {
+  position: relative;
+  margin-top: 60px;
+  text-align: center;
+  color: #EAEEEC;
+}
+.grid-container .useless {
+  visibility: hidden;
+}
+
+.grid-container a {
+  text-decoration: none;
+  color: #EAEEEC;
+}
+.grid-container a:link, .grid-container a:visited, .grid-container a:active {
+  text-decoration: none;
+  color: #EAEEEC;
+}
+
+.grid-container .grid-item:hover {
+  background-color: #525977;
+  cursor: pointer;
+}
+
+.grid-container .grid-item1 {
+  background-image: url('../imgs/helmet.png');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+.grid-container .grid-item2 {
+  background-image: url('../imgs/rod.png');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+.grid-container .grid-item3 {
+  background-image: url('../imgs/arrow.png');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+.grid-container .grid-item4 {
+  background-image: url('../imgs/necklace.png');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+.grid-container .grid-item5 {
+  background-image: url('../imgs/armor.png');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+.grid-container .grid-item6 {
+  background-image: url('../imgs/wand.png');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+.grid-container .grid-item7 {
+  background-image: url('../imgs/bolt.png');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+.grid-container .grid-item8 {
+  background-image: url('../imgs/ring.png');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+.grid-container .grid-item9 {
+  background-image: url('../imgs/legs.png');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+.grid-container .grid-item10 {
+  background-image: url('../imgs/axe.png');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+.grid-container .grid-item11 {
+  background-image: url('../imgs/ammunition/assassin_star.png');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+.grid-container .grid-item12 {
+  background-image: url('../imgs/bp.png');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+.grid-container .grid-item13 {
+  background-image: url('../imgs/boots.png');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+.grid-container .grid-item14 {
+  background-image: url('../imgs/club.png');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+.grid-container .grid-item15 {
+  background-image: url('../imgs/spellbook.png');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+.grid-container .grid-item16 {
+  background-image: url('../imgs/sword.png');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+.grid-container .grid-item17 {
+  background-image: url('../imgs/shield.png');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+.grid-container .grid-item18 {
+  background-image: url('../imgs/bow.png');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+
+.grid-container .grid-item19 {
+  background-image: url('../imgs/creatures/red_surprise.gif');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+
+.grid-container .grid-item20 {
+  background-image: url('../imgs/items/exercise_wand.gif');
+  background-repeat: no-repeat;
+  background-position: top 15px center;
+}
+
+/* End of items styling */
+
+/* Helmet styling */
+
+table {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-collapse: collapse;
+  text-align: left;
+  background-color: #3b3d49;
+  box-shadow: 0px 5px 10px rgb(31, 32, 36);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+table thead {
+  box-shadow: 0px 5px 10px rgb(31, 32, 36);
+}
+
+table th {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+table td {
+  padding: 1rem 2rem;
+}
+
+table a {
+  text-decoration: none;
+  color: #EAEEEC;
+}
+
+tr:nth-child(even) {
+  background-color: #31333d;
+}
+
+table tr {
+  transition: all 0.2s ease;
+}
+table tbody tr:hover {
+  background-color: #2b2c35;
+}
+/* End of items styling */
+
+/* Spells styling */
+
+.grid-container-spells {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  grid-template-rows: 37.39px repeat(1, 90px);
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+.grid-container-spells a {
+  text-decoration: none;
+  color: #EAEEEC;
+}
+.grid-container-spells a:link, .grid-container a:visited, .grid-container a:active {
+  text-decoration: none;
+  color: #EAEEEC;
+}
+
+.grid-container-spells .grid-item:hover {
+  background-color: #525977;
+  cursor: pointer;
+}
+
+.grid-container-spells .grid-druid {
+  background-image: url('../imgs/vocations/druid.gif');
+  background-repeat: no-repeat;
+  background-position: top 27px center;
+}
+.grid-container-spells .grid-sorcerer {
+  background-image: url('../imgs/vocations/sorcerer.gif');
+  background-repeat: no-repeat;
+  background-position: top 16px center;
+}
+.grid-container-spells .grid-knight {
+  background-image: url('../imgs/vocations/knight.gif');
+  background-repeat: no-repeat;
+  background-position: top 27px center;
+}
+.grid-container-spells .grid-paladin {
+  background-image: url('../imgs/vocations/paladin.gif');
+  background-repeat: no-repeat;
+  background-position: top 27px center;
+}
+
+table caption {
+  color: #EAEEEC;
+  font-size: 25px;
+  margin-bottom: 7px;
+}
+
+.knight-table, .sorcerer-table, .druid-table, .paladin-table {
+  display: none;
+}
+
+.return {
+  text-align: center;
+  display: none;
+}
+
+.back, .back a {
+  text-align: center;
+  color: #EAEEEC;
+  text-decoration: underline;
+  text-decoration-color: #d68e19;
+}
+.return a {
+  color: #EAEEEC;
+  text-decoration: underline;
+  text-decoration-color: #d68e19;
+}
+
+.tip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  letter-spacing: 0.06em;
+  border-radius: 7px;
+  margin: 10px;
+  background-color: #3b3d49;
+  width: 60%;
+  height: 35px;
+  margin: 0 auto;
+}
+/* End of spells styling */
+
+/* Tasks styling */
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  position: absolute;
+  text-align: left;
+  font-size: 14px;
+  background-color: #d68e19;
+  width: fit-content;
+  white-space: nowrap;
+  border-radius: 7px;
+  padding: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tooltip:hover .tooltip-text {
+  left: 17%;
+  visibility: visible;
+  opacity: 1;
+}
+
+table p {
+  width: 220px;
+}
+/* End of tasks styling */
+
+/* Main page styling */
+.mainpage-content {
+  text-align: center;
+
+}
+
+.mainpage-content a {
+  transition: all 0.1s ease;
+}
+.mainpage-content a, .mainpage-content a:link, .mainpage-content a:visited, .mainpage-content a:active {
+  text-decoration: inherit;
+  color: #5a5c6b;
+}
+
+.mainpage-content a:hover {
+  color: #525977;
+  text-decoration: underline;
+}
+
+/* End of main page styling */
+
+/* Styling gallery*/
+
+.question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  background-color: #3b3d49;
+  letter-spacing: 0.04em;
+  padding: 5px;
+  border-radius: 10px;
+  height: 35px;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.question1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  background-color: #3b3d49;
+  letter-spacing: 0.04em;
+  padding: 5px;
+  border-radius: 10px;
+  height: 35px;
+  margin: 0 auto;
+  width: 65%;
+}
+.gallery-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 30px 2%;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0.9;
+  transition: 0.25s ease;
+  border-bottom: 2px solid #d68e19;
+}
+
+.gallery-grid img:hover {
+  width: 100%;
+  opacity: 1;
+  scale: 1.05;
+}
+/* End of gallery styling*/
+
+/* Quests styling */
+.quests tbody {
+  cursor: pointer;
+}
+/* End of quests styling */
+
+/* Creatures styling */
+
+.table-sortable th {
+  cursor: pointer;
+}
+
+.table-sortable .th-sort-asc::after {
+  content: "\25b4";
+}
+
+.table-sortable .th-sort-desc::after {
+  content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+  margin-left: 5px;
+}
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+
+/* End of creatures styling */
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #855760;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 4px;
+  background-color: #834954;
+}
+/* End of scrollbar styling*/
+
+/* FAQ styling*/
+.q {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #d68e19;
+  border-radius: 7px;
+  font-weight: normal;
+  color: #EAEEEC;
+  margin-bottom: 5px;
+}
+.a {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  height: fit-content;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #3b3d49;
+  border-radius: 7px;
+  font-weight: normal;
+  color: #EAEEEC;
+  margin-bottom: 35px;
+  flex-direction: column;
+  gap: 15px;
+}
+/* End of FAQ styling*/
+
+/* Addons styling*/
+.npc {
+  border-bottom: 1px solid #f0a938;
+}
+
+.f h3 {
+  font-weight: normal;
+}
+
+.a img {
+  margin: 3px;
+  border-radius: 7px;
+  border: 1px solid #d68e19;
+  transition: all 0.3s ease;
+}
+.a a img {
+  margin: 3px;
+  border-radius: 7px;
+  border: 1px solid #d68e19;
+  opacity: 0.88;
+  transition: all 0.3s ease;
+}
+
+.a a img:hover {
+  opacity: 1;
+}
+/* End of addons styling*/
+
+/* About styling*/
+.qq {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 95%;
+  margin: 0 auto;
+  background-color: #d68e19;
+  border-radius: 7px;
+  font-weight: normal;
+  color: #EAEEEC;
+}
+
+.aa {
+  padding: 10px;
+  line-height: 150%;
+  display: flex;
+  justify-content: center;
+  min-height: 40px;
+  height: fit-content;
+  width: 95%;
+  margin: 0 auto;
+  background-color: #3b3d49;
+  border-radius: 7px;
+  font-weight: normal;
+  color: #EAEEEC;
+  margin-bottom: 35px;
+  flex-direction: column;
+  gap: 15px;
+}
+.aa h4 {
+  font-weight: normal;
+}
+/* End of about styling*/
+
+/* Quests Tooltip */
+.tooltipq {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip-textq {
+  position: absolute;
+  text-align: left;
+  font-size: 14px;
+  background-color: #d68e19;
+  width: fit-content;
+  white-space: nowrap;
+  border-radius: 7px;
+  padding: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -35px;
+}
+
+.tooltipq:hover .tooltip-textq {
+  left: 50%;
+  top: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+.tooltipq1 {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip-textq1 {
+  position: absolute;
+  text-align: left;
+  font-size: 14px;
+  background-color: #d68e19;
+  width: fit-content;
+  white-space: nowrap;
+  border-radius: 7px;
+  padding: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -35px;
+}
+
+.tooltipq1:hover .tooltip-textq1 {
+  left: 110%;
+  top: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltipqq {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip-textqq {
+  position: absolute;
+  text-align: left;
+  font-size: 14px;
+  background-color: #d68e19;
+  width: fit-content;
+  white-space: nowrap;
+  border-radius: 7px;
+  padding: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -35px;
+}
+
+.tooltipqq:hover .tooltip-textqq {
+  left: 50%;
+  top: -205%;
+  visibility: visible;
+  opacity: 1;
+}
+/* End of quests Tooltip */

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ramonia Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="top">
+    <div class="top_container">
+      <a href="index.html"><img src="../imgs/ramoniawiki.gif" alt="Logo" class="logo"></a>
+      <form action="">
+        <input type="text" name="search" id="input-search" placeholder="Search..." size="22" maxlength="64">
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+  </div>
+  <!-- End of div top -->
+
+  <!-- Left bar -->
+  <div class="side-bar">
+    <div class="menu">
+      <div class="item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+      <div class="item"><a href="gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></div>
+      <div class="item">
+        <a href="#" class="sub-btn"><i class="fa-solid fa-book"></i>Library<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="items.html">Items</a>
+          <a href="quests.html">Quests</a>
+          <a href="tasks.html">Tasks</a>
+          <a href="addons.html">Addons</a>
+          <a href="spells.html">Spells</a>
+          <a href="mounts.html">Mounts</a>
+        </div>
+        <div class="item"><a href="about.html"><i class="fas fa-info-circle"></i>About</a></div>
+        <div class="item"><a href="faq.html"><i class="fa-solid fa-circle-question"></i>FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //jquery sub menu
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+    });
+    </script>
+  <!-- End of left bar -->
+  <!-- Main Page -->
+  <div id="main-page">
+    <div class="header">
+      <h1>Boots</h1>
+    </div>
+    <table class="items">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Item Name</th>
+          <th>Armor</th>
+          <th>Specials</th>
+          <th>Weight</th>
+          <th>Vocation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2643.gif" alt=""></a></td>
+          <td>Leather Boots</td>
+          <td>1</td>
+          <td>-</td>
+          <td>9.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs//items/3982.gif" alt=""></a></td>
+          <td>Crocodile Boots</td>
+          <td>1</td>
+          <td>-</td>
+          <td>9.00 oz</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs/items/2642.gif" alt=""></a></td>
+          <td>Sandals</td>
+          <td>0</td>
+          <td>-</td>
+          <td>6.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs/items/2195.gif" alt=""></a></td>
+          <td>Boots of Haste</td>
+          <td>0</td>
+          <td>Speed +20</td>
+          <td>7.50 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs/items/2640.gif" alt=""></a></td>
+          <td>Soft Boots</td>
+          <td>0</td>
+          <td>Faster Regeneration</td>
+          <td>8.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs/items/2644.gif" alt=""></a></td>
+          <td>Bunny Slippers</td>
+          <td>0</td>
+          <td>Speed +20<br>Faster Regeneration</td>
+          <td>6.80 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs//items/zaoan_shoes.gif" alt=""></a></td>
+          <td>Zaoan Shoes</td>
+          <td>1</td>
+          <td>Speed +5</td>
+          <td>7.00 oz</td>
+          <td>All</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs//items/item_9225.png" alt=""></a></td>
+          <td>Rotten Boots</td>
+          <td>1</td>
+          <td>Speed +15<br>Earth +3%<br>Fire -3%</td>
+          <td>20.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs//items/metal_spats.gif" alt=""></a></td>
+          <td>Metal Spats</td>
+          <td>1</td>
+          <td>Physical +1%</td>
+          <td>18.00 oz</td>
+          <td>Paladin,<br>Knight</td>
+        </tr>    
+        <tr>
+          <td><a href=""><img src="../imgs/items/2641.gif" alt=""></a></td>
+          <td>Patched Boots</td>
+          <td>2</td>
+          <td>-</td>
+          <td>10.00 oz</td>
+          <td>All</td>
+        </tr>       
+        <tr>
+          <td><a href=""><img src="../imgs//items/glacier_shoes.gif" alt=""></a></td>
+          <td>Glacier Shoes</td>
+          <td>2</td>
+          <td>Ice +5%<br>Energy -5%</td>
+          <td>7.50 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr> 
+       <tr>
+          <td><a href=""><img src="../imgs//items/magma_boots.gif" alt=""></a></td>
+          <td>Magma Boots</td>
+          <td>2</td>
+          <td>Fire +5%<br>Ice -5%</td>
+          <td>7.50 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs//items/terra_boots.gif" alt=""></a></td>
+          <td>Terra Boots</td>
+          <td>2</td>
+          <td>Earth +5%<br>Fire -5%</td>
+          <td>7.50 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>     
+        <tr>
+          <td><a href=""><img src="../imgs//items/lightning_boots.gif" alt=""></a></td>
+          <td>Lightning Boots</td>
+          <td>2</td>
+          <td>Energy +5%<br>Earth -5%</td>
+          <td>7.50 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs//items/firewalker_boots.gif" alt=""></a></td>
+          <td>Firewalker Boots</td>
+          <td>2</td>
+          <td>Fire +12%<br>Death +8%</td>
+          <td>9.50 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs//items/oriental_shoes.gif" alt=""></a></td>
+          <td>Oriental Shoes</td>
+          <td>2</td>
+          <td>Speed +15</td>
+          <td>5.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs//items/badger_boots.gif" alt=""></a></td>
+          <td>Badger Boots</td>
+          <td>2</td>
+          <td>Speed +10</td>
+          <td>12.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs//items/item_9218.png" alt=""></a></td>
+          <td>Frozen Boots</td>
+          <td>2</td>
+          <td>Speed +20<br>Ice +6%<br>Fire -5%</td>
+          <td>9.50 oz</td>
+          <td>All</td>
+        </tr>  
+        <tr>
+          <td><a href=""><img src="../imgs//items/fur_boots.gif" alt=""></a></td>
+          <td>Fur Boots</td>
+          <td>2</td>
+          <td>Speed -6</td>
+          <td>12.00 oz</td>
+          <td>All</td>
+        </tr>   
+       <tr>
+          <td><a href=""><img src="../imgs//items/pirate_boots.gif" alt=""></a></td>
+          <td>Pirate Boots</td>
+          <td>2</td>
+          <td>-</td>
+          <td>8.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs//items/pair_of_dreamwalkers.gif" alt=""></a></td>
+          <td>Dreamwalkers</td>
+          <td>2</td>
+          <td>Magic Level +1<br>Earth +8%</td>
+          <td>8.00 oz</td>
+          <td>Druid,<br>Sorcerer</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs//items/void_boots.gif" alt=""></a></td>
+          <td>Void Boots</td>
+          <td>2</td>
+          <td>Speed +30<br>Energy +10%<br>Faster Regeneration</td>
+          <td>15.00 oz</td>
+          <td>All</td>
+        </tr>  
+        <tr>
+          <td><a href=""><img src="../imgs//items/2645.gif" alt=""></a></td>
+          <td>Steel Boots</td>
+          <td>3</td>
+          <td>-</td>
+          <td>29.00 oz</td>
+          <td>All</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs//items/guardian_boots.gif" alt=""></a></td>
+          <td>Guardian Boots</td>
+          <td>3</td>
+          <td>Physical +2%<br>Holy -2%</td>
+          <td>22.50 oz</td>
+          <td>Knight,<br>Paladin</td>
+        </tr>     
+        <tr>
+          <td><a href=""><img src="../imgs//items/draken_boots.gif" alt=""></a></td>
+          <td>Draken Boots</td>
+          <td>3</td>
+          <td>Speed +15</td>
+          <td>25.00 oz</td>
+          <td>Knight,<br>Paladin</td>
+        </tr>   
+        <tr>
+          <td><a href=""><img src="../imgs//items/depth_calcei.gif" alt=""></a></td>
+          <td>Depth Calcei</td>
+          <td>3</td>
+          <td>Speed -5<br>Physical +5%</td>
+          <td>37.00 oz</td>
+          <td>Knight</td>
+        </tr> 
+        <tr>
+          <td><a href=""><img src="../imgs//items/prismatic_boots.gif" alt=""></a></td>
+          <td>Prismatic Boots</td>
+          <td>3</td>
+          <td>Speed +15<br>Death +3%</td>
+          <td>18.00 oz</td>
+          <td>Paladin</td>
+        </tr>
+        <tr>
+          <td><a href=""><img src="../imgs//items/2646.gif" alt=""></a></td>
+          <td>Golden Boots</td>
+          <td>4</td>
+          <td>-</td>
+          <td>31.00 oz</td>
+          <td>All</td>
+        </tr>      
+        <tr>
+          <td><a href=""><img src="../imgs//items/treader_of_torment.gif" alt=""></a></td>
+          <td>Treader of Torment</td>
+          <td>4</td>
+          <td>-</td>
+          <td>36.00 oz</td>
+          <td>All</td>
+        </tr>       
+      </tbody>
+    </table>
+    <div class="back">
+      <h2><a href="#top">Back to the top</a></h2>
+    </div>
+  </div>
+  <!-- End of main page -->
+  <div class="side-bar">
+    <div class="content">
+      <div class="interactive">
+        <h2><i class="fa-solid fa-map map"></i>Map viewer</h2>
+        <a href="https://ramonia.pl/map_viewer/#zoom,14,position,1263,1278,7"><img src="../imgs/intertactive.png" alt="" class="image"></a>
+      </div>
+      <div class="widget">
+        <iframe src="https://discord.com/widget?id=457182944260390912&theme=dark" width="100%" height="435" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div class="socials">
+        <h2>Server Status & Socials</h2>
+        <a href="https://www.facebook.com/people/Ramoniapl/100063498342253/" class="fb" target="blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://discord.com/invite/V6wwZXfZ4a" class="dsc" target="blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
